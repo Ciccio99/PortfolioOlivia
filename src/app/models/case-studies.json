@@ -1,0 +1,34 @@
+[
+    {
+        "id": "sartorial",
+        "name": "Sartorial",
+        "type": "Mobile app",
+        "description": "Challenge creativity on a daily basis, through a photo sharing platform and also build brand loyalty.",
+        "letter_path": "../assets/letters/S.png",
+        "preview_image_path": "../assets/homepage-devices/sartorial-iphone.png"
+    },
+    {
+        "id": "tidal",
+        "name": "Tidal",
+        "type": "Mobile app",
+        "description": "Is there a way tsunami impact could be reduced? This project focused on procedural design for an earthquake and tsunami evacuation. Did the app just sound an alarm? If it did, you better start running, because a tusnami is coming towards your general direction, buddy.",
+        "letter_path": "../assets/letters/T.png",
+        "preview_image_path": "../assets/homepage-devices/tidal-iphone.png"
+    },
+    {
+        "id": "concerto",
+        "name": "Concert Infograph",
+        "type": "Mobile app",
+        "description": "Ever wonder where music artists make all that sweet dough? This case studies explores the world of music concerts, the cost it takes to bring them to the people and the profit margins musicians see from it.",
+        "letter_path": "../assets/letters/C.png",
+        "preview_image_path": "../assets/homepage-devices/converto-macbook.png"
+    },
+    {
+        "id": "misfit",
+        "name": "Misfit Wearables Internship",
+        "type": "Mobile app",
+        "description": "I did some dope work over at Misfit during my summer break. I learned alot, made some new friends and partied hard. Learn about my ups and downs, as well as the work I accomplished while interning at Misfit Wearables.",
+        "letter_path": "../assets/letters/M.png",
+        "preview_image_path": "../assets/homepage-devices/misfit-iphone.png"
+    }
+]
