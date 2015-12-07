@@ -1,16 +1,16 @@
 main-navbar
 md-content(layout='column')
     .jumbotron(flex, layout='row')
-    .project-cases
-        .project-cases-item.project-case-item-sartorial(layout='row')
+    .project-cases(layout='column')
+        .project-cases-item(layout='row')
             .project-case-item-info-panel(flex='55', layout='column', layout-align='start center')
-                img.project-case-sartorial-letter(src='../assets/letters/s.png', alt='Sartorial Letter S')
+                img(src='{{main.case_studies[0].letter_path}}', alt='Big Letter')
                 .project-case-body(layout='column')
                     .project-case-headers(layout='column')
-                        span.project-case-sub-header Mobile app
-                        span.project-case-main-header Sartorial
+                        span.project-case-sub-header {{main.case_studies[0].type}}
+                        span.project-case-main-header {{main.case_studies[0].name}}
                     .project-case-info(layout='column')
-                        p Challenge Creativity on daily basis, through a photo sharing platform and also build brand loyalty.
-                        a.case-study-link(ui-ref='#') view case study
-            img.project-case-image(src='../assets/homepage-devices/sartorial-iphone.png' alt='Sartorial iPhone image')
+                        p {{main.case_studies[0].description}}
+                        a.case-study-link(ui-ref='{{main.case_studies[0].id}}') view case study
+            img.project-case-image(src='{{main.case_studies[0].preview_image_path}}' alt='Sartorial iPhone image')
             

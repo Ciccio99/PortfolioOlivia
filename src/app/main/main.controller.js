@@ -3,16 +3,17 @@
 
     angular
     .module('portfolioOlivia')
-    .controller('MainController', ['$scope', 'ModelsService', MainController]);
+    .controller('MainController', MainController);
 
     /** @ngInject */
-    function MainController($scope, ModelsService) {
+    function MainController($log, ModelsService) {
+        var vm = this;
         ModelsService.get()
             .success(function(data) {
-                $scope.project = data;
+                vm.case_studies = data;
             })
             .error(function() {
-                console.log('Could not retrieve case studies list.');
+                $log.debug('Could not retrieve case studies list.');
             });
     }
 })();
