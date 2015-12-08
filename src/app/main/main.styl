@@ -1,45 +1,128 @@
 .jumbotron
 	background url('../../assets/images/bw.jpg') no-repeat
 	background-size cover
-	height 670px
+	height 690px
+	width 100%
+
+.project-cases
+	max-width 1440px
+	width 100%
+	padding-top 120px
 	
+// Shared case study styling elements
+
 .project-cases-item
 	position relative
-	margin-top 12rem
 	height 1000px
-
-.project-case-image
-		position absolute
-		left: 750px
-
+	&:not(:first-child)
+		margin-top 80px
+		
 .project-case-item-info-panel
 	position relative
-	padding-top 15rem
-	
-.project-case-body
-	font-family 'Helvetica Neue'
-	position absolute
-	left 14%
-	right 0
-	margin-top 180px
+	padding-top 150px
 
 .project-case-main-header 
 	font 500 4.3rem 'Helvetica Neue' Arial
-	color #ad956b
 	margin-top 10px
 		
 .project-case-sub-header
-	font 400 1.6rem 'Helvetica Neue' Arial
+	font 500 1.4rem 'Helvetica Neue' Arial
 
 .project-case-info
-	position absolute
-	left 17%
-	right 0
 	& p
 		font 400 1.8rem 'Helvetica Neue' Arial
 		line-height 32px
 		letter-spacing: 0.1rem
+		margin-top 50px
 	& a
-		font 400 1.6rem 'Helvetica Neue' Arial
+		font 600 1.6rem 'Helvetica Neue' Arial
 		letter-spacing 0.1rem
 		margin-top 20px
+
+// Left oriented case studies
+
+// Right oriented case studies
+
+// Case study specific styling elements
+// Sartorial
+.project-case-image-sartorial
+	position absolute
+	left 53%
+
+.project-case-body-sartorial
+	font-family 'Helvetica Neue'
+	position absolute
+	left 14%
+	right 0
+	margin-top 150px
+
+.project-case-info-sartorial
+	padding-left 16%
+
+.project-case-main-header-sartorial
+	color #ad956b
+	
+// Tidal
+.project-case-image-tidal
+	position absolute
+	right 58%
+
+.project-case-item-info-panel-tidal
+	position relative
+	right 3%
+	padding-top 120px
+
+.project-case-body-tidal
+	font-family 'Helvetica Neue'
+	position absolute
+	right 14%
+	left 0
+	margin-top 150px
+
+.project-case-info-tidal
+	padding 0 10% 0 16%
+
+.project-case-main-header-tidal 
+	color #0099cb
+
+// Concerto
+.project-case-image-concerto
+	position absolute
+	top 15%
+	left 50%
+
+.project-case-body-concerto
+	font-family 'Helvetica Neue'
+	position absolute
+	left 14%
+	right 0
+	margin-top 150px
+
+.project-case-info-concerto
+	padding-left 16%
+	
+.project-case-main-header-concerto
+	color #f3484c
+	
+// Misfit
+.project-case-image-misfit
+	position absolute
+	right 58%
+
+.project-case-item-info-panel-misfit
+	position relative
+	right 3%
+	padding-top 120px
+
+.project-case-body-misfit
+	font-family 'Helvetica Neue'
+	position absolute
+	right 14%
+	left 0
+	margin-top 150px
+
+.project-case-info-misfit
+	padding 0 10% 0 16%
+	
+.project-case-main-header-misfit
+	color #e55c4a

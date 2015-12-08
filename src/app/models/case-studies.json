@@ -11,7 +11,7 @@
         "id": "tidal",
         "name": "Tidal",
         "type": "Mobile app",
-        "description": "Is there a way tsunami impact could be reduced? This project focused on procedural design for an earthquake and tsunami evacuation. Did the app just sound an alarm? If it did, you better start running, because a tusnami is coming towards your general direction, buddy.",
+        "description": "Is there a way tsunami impact could be reduced? This project focused on procedural design for an earthquake and tsunami evacuation. Did the app just sound an alarm? If it did, you better start running, because a tusnami is coming towards your general direction, buddy. Rejoice for TIDAL!",
         "letter_path": "../assets/letters/T.png",
         "preview_image_path": "../assets/homepage-devices/tidal-iphone.png"
     },
