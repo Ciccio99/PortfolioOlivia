@@ -12,10 +12,10 @@ md-content#Main_Content_Root(layout='column', layout-align='start center')
                     .project-case-info.project-case-info-sartorial(layout='column')
                         p {{main.case_studies[0].description}}
                         a.case-study-link(ui-ref='{{main.case_studies[0].id}}') view case study
-            img.project-case-image-sartorial(src='{{main.case_studies[0].preview_image_path}}' alt='Sartorial iPhone image')
+            img.project-case-image-sartorial.slide-animation-to-left(src='{{main.case_studies[0].preview_image_path}}' alt='Sartorial iPhone image')
 
         .project-cases-item(layout='row')
-            img.project-case-image-tidal(src='{{main.case_studies[1].preview_image_path}}' alt='Tidal iPhone image')
+            img.project-case-image-tidal.slide-animation-to-right(src='{{main.case_studies[1].preview_image_path}}' alt='Tidal iPhone image')
             .project-case-item-info-panel.project-case-item-info-panel-tidal(flex-offset='45', flex, layout='column', layout-align='start center')
                 img(src='{{main.case_studies[1].letter_path}}', alt='Big Letter')
                 .project-case-body-tidal(layout='column')
@@ -36,11 +36,11 @@ md-content#Main_Content_Root(layout='column', layout-align='start center')
                     .project-case-info.project-case-info-concerto(layout='column')
                         p {{main.case_studies[2].description}}
                         a.case-study-link(ui-ref='{{main.case_studies[2].id}}') view case study
-            img.project-case-image-concerto(src='{{main.case_studies[2].preview_image_path}}' alt='Concerto Mac image')
+            img.project-case-image-concerto.slide-animation-to-left(src='{{main.case_studies[2].preview_image_path}}' alt='Concerto Mac image')
 
 
         .project-cases-item(layout='row')
-            img.project-case-image-misfit(src='{{main.case_studies[3].preview_image_path}}' alt='Misfit iPhone image')
+            img.project-case-image-misfit.slide-animation-to-right(src='{{main.case_studies[3].preview_image_path}}' alt='Misfit iPhone image')
             .project-case-item-info-panel.project-case-item-info-panel-misfit(flex-offset='45', flex, layout='column', layout-align='start center')
                 img(src='{{main.case_studies[3].letter_path}}', alt='Big Letter')
                 .project-case-body-misfit(layout='column')
