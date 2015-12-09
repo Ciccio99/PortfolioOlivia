@@ -3,6 +3,7 @@ function checkIfInView() {
     var window_height = $window.height();
     var window_top_pos = $window.scrollTop();
     var window_bottom_pos = (window_top_pos + window_height);
+    
     $('.slide-animation-to-left').each(function() {
         var $element = $(this);
         var element_height = $element.outerHeight();
@@ -15,8 +16,7 @@ function checkIfInView() {
             } else {
                 perc = 1 - perc;
             }
-            
-            var transform_matrix = 'matrix(1, 0, 0, 1, ' + (246 * perc) + ', 0)'; 
+            var transform_matrix = 'translate3d(' + (30 * perc) + '%, 0, 0)';
             $element.css({transform: transform_matrix});
         } 
     });
@@ -32,8 +32,7 @@ function checkIfInView() {
             } else {
                 perc = 1 - perc;
             }
-            var x = parseInt($element.css('transform').split(', ')[4]);
-            var transform_matrix = 'matrix(1, 0, 0, 1, ' + (-246 * perc) + ', 0)'; 
+            var transform_matrix = 'translate3d(' + (-30 * perc) + '%, 0, 0)'; 
             $element.css({transform: transform_matrix});
         } 
     });
