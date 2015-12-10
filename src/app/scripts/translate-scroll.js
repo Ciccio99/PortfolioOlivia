@@ -8,7 +8,7 @@ function checkIfInView() {
         var $element = $(this);
         var element_height = $element.outerHeight();
         var element_top_pos = $element.offset().top;
-        var perc = (window_bottom_pos - element_top_pos) / element_height * 1.5;
+        var perc = (window_bottom_pos - element_top_pos) / element_height * 1.33;
     
         if (element_top_pos <= window_bottom_pos) {
             if (perc >= 1) {
@@ -24,7 +24,7 @@ function checkIfInView() {
         var $element = $(this);
         var element_height = $element.outerHeight();
         var element_top_pos = $element.offset().top;
-        var perc = (window_bottom_pos - element_top_pos) / element_height * 1.5;
+        var perc = (window_bottom_pos - element_top_pos) / element_height * 1.33;
     
         if (element_top_pos <= window_bottom_pos) {
             if (perc >= 1) {

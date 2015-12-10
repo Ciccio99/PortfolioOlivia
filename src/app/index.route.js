@@ -25,6 +25,30 @@
         templateUrl: 'app/components/resume/resume.html',
         controller: 'ResumeController',
         controllerAs: 'resume'
+      })
+      .state('sartorial', {
+        url: '/sartorial',
+        templateUrl: 'app/components/case-studies/sartorial/sartorial.html',
+        controller: 'SartorialController',
+        controllerAs: 'sartorial'
+      })
+      .state('tidal', {
+        url: '/tidal',
+        templateUrl: 'app/components/case-studies/tidal/tidal.html',
+        controller: 'TidalController',
+        controllerAs: 'tidal'
+      })
+      .state('concerto', {
+        url: '/concerto',
+        templateUrl: 'app/components/case-studies/concerto/concerto.html',
+        controller: 'ConcertoController',
+        controllerAs: 'concerto'
+      })
+      .state('misfit', {
+        url: '/misfit',
+        templateUrl: 'app/components/case-studies/misfit/misfit.html',
+        controller: 'MisfitController',
+        controllerAs: 'misfit'
       });
 
     $urlRouterProvider.otherwise('/');
