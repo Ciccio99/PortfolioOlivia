@@ -1,0 +1,27 @@
+{
+        "id": "misfit",
+        "name": "Misfit Wearables Internship",
+        "type": "Mobile app",
+        "description": "I did some dope work over at Misfit during my summer break. I learned alot, made some new friends and partied hard. Learn about my ups and downs, as well as the work I accomplished while interning at Misfit Wearables.",
+        "letter_path": "../assets/letters/M.png",
+        "preview_image_path": "../assets/homepage-devices/misfit-iphone.png",
+        "marquee_image": "../assets/Misfit/Marquee/Misfit.png",
+        "brief": "Over the summer 2015 I was fortunate enough to be able to work at Misfit as a user experience intern. Even though my title as a UX designer, I carried out tasks in both, interaction design and visual design.",
+        "sub_brief": "I did various tasks which ranged from connecting new features for the current Misfit app, creating user flows for new product on boarding experiences, redesigning a section from the current app, animating user on boarding animations, conducting user research interviews, worked on various inter projects, pitching concepts, updating current screens, designing for upcoming products but the main bulk of the project was redesigning the misfit devices screen.",
+        "client": "internship",
+        "role": "concept, user experience and visual design",
+        "duration": "12 weeks, Summer 2015",
+        "solution": "",
+        "visual_design_text": "",
+        "product_images": [
+                "../assets/Misfit/Product_Shots/Shot_1.png"
+        ],
+        "moodboard": "",
+        "wireframe_images": [],
+        "final_design_images": [
+                "../assets/Misfit/Final_Designs/1.png",
+                "../assets/Misfit/Final_Designs/2.png",
+                "../assets/Misfit/Final_Designs/3.png",
+                "../assets/Misfit/Final_Designs/4.png"
+        ]
+}
