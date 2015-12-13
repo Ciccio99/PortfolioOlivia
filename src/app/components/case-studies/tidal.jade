@@ -1,1 +1,56 @@
-h1 tidal page
+md-content#Main_Content_Root(layout='column', layout-align='start center')
+    .jumbotron-tidal(layout='row', layout-align='center center')
+        img(ng-src='{{case_study.case_study.marquee_image}}')
+
+    .project-case-content(layout='column')
+        .panel-row.brief-panel(layout='row', layout-wrap)
+            span.brief-header(flex='100') The brief
+            .left-brief-section(layout='column', flex='60')
+                p.main-brief {{case_study.case_study.brief}}
+                p.sub-brief {{case_study.case_study.sub_brief}}            
+            .right-brief-section(layout='column', flex)
+                div
+                    span Client
+                    p {{case_study.case_study.client}} 
+                div
+                    span Role
+                    p {{case_study.case_study.role}} 
+                div
+                    span Duration
+                    p {{case_study.case_study.duration}} 
+
+        .panel-row.product-shots-panel(layout='row', layout-align='center center')
+            img(ng-src='{{case_study.case_study.product_images[0]}}', alt='Product image')
+
+        .panel-row.solution-panel(layout='column', layout-align='start center')
+            span.panel-header-titles Solution
+            p.main-solution {{case_study.case_study.solution}}
+            .sub-solutions-tidal(layout='row', layout-align='center start', layout-wrap)
+                div(flex, flex-sm="100", layout='column', layout-align='start start', ng-repeat='sub_solution in case_study.case_study.sub_solutions')
+                    span {{sub_solution.title}}
+                    p {{sub_solution.body}}
+        .panel-row.visual-design-panel.visual-design-panel-tidal(layout='column', layout-align='start center')
+            span.panel-header-titles Visual Design
+            p {{case_study.case_study.visual_design_text}}
+            img(ng-src='{{case_study.case_study.moodboard}}', alt='Sartorial Moodboard')
+
+        .panel-row.final-designs-panel.final-designs-panel-tidal(layout='column', layout-align='start center')
+            span.panel-header-titles Final Designs
+            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='2', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images")
+                div.wireframe-slick(ng-repeat='final_img in case_study.case_study.final_design_images')
+                    img(ng-src='{{final_img}}', alt='Final Design image')
+
+        .panel-row.thanks-panel.thanks-panel-tidal(layout='column', layout-align='center center')
+            span Thanks for scrolling!
+            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>check out my other projects below:
+
+        .panel-row.other-projects-panel(layout='row')
+            .previous-project-panel(ui-sref='work({case_study: "misfit"})', flex='50')
+                .filter-layer(layout-fill, layout='column', layout-align='center center')
+                    span Previous Project
+                    p Misfit
+            .next-project-panel(ui-sref='work({case_study: "tidal"})', flex='50')
+                .filter-layer(layout-fill, layout='column', layout-align='center center')
+                    span Next Project
+                    p Tidal
+

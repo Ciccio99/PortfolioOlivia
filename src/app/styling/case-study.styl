@@ -1,8 +1,8 @@
-.jumbotron-sartorial
-    background-color #cdd6de
-    height 685px
-    width 100%
+@require './constants'
 
+.case-study-jumbotron
+    width 100%
+    
 .project-case-content
     max-width 1440px
     width 100%
@@ -22,11 +22,11 @@
         
 .left-brief-section
     & p.main-brief
-        font 500 2.5rem font-kepler
+        font 500 2.4rem font-kepler
         line-height 40px
         margin-bottom 40px
     & p.sub-brief
-        font 500 1.9rem font-dagny
+        font 400 1.6rem font-dagny
         color medium-gray
         line-height 30px
 
@@ -45,13 +45,14 @@
     
 // Solution section
 .solution-panel
-    padding 130px 18%
-    & p
+    padding 130px 8%
+    & p.main-solution
         font 300 2.5rem font-kepler
         text-align center
         line-height 40px
         margin-top 70px
-        
+        padding 0 14%
+    
 // Wireframes panel
 .wireframes-panel
     background-color wireframe-bg-color
@@ -82,7 +83,7 @@
 // Thanks panel
 .thanks-panel
     padding 75px 20px
-    background-color thanks-bg-color
+    background-color light-gray-bg-color
     & span
         font 600 3rem font-dagny
     & p
@@ -112,3 +113,32 @@
     & p
         margin-top 20px
         font 600 3rem font-dagny
+
+// Sartorial Specific
+.jumbotron-sartorial
+    background-color #cdd6de
+    height 685px
+    width 100%
+
+// Tidal Specific
+.jumbotron-tidal
+    width 100%
+.sub-solutions-tidal
+    width 100%
+    margin-top 100px
+    & div
+        padding 2%
+    & span
+        font 500 2.5rem font-dagny
+    & p 
+        margin-top 10px
+        font 400 1.8rem font-dagny
+        line-height 25px
+        color light-gray
+
+.visual-design-panel-tidal
+    background-color light-gray-bg-color
+.final-designs-panel-tidal
+    background-color light-gray-bg-color !important
+.thanks-panel-tidal
+    background-color white

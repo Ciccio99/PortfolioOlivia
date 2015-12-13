@@ -24,7 +24,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center')
                         span.project-case-main-header.project-case-main-header-tidal {{main.case_studies[1].name | uppercase}}
                     .project-case-info.project-case-info-tidal(layout='column')
                         p {{main.case_studies[1].description}}
-                        a.case-study-link(ui-sref='tidal') view case study &#8594;
+                        a.case-study-link(ui-sref='work({case_study: "tidal"})') view case study &#8594;
 
         .project-cases-item(layout='row')
             .project-case-item-info-panel(flex='55', layout='column', layout-align='start center')
@@ -35,7 +35,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center')
                         span.project-case-main-header.project-case-main-header-concerto {{main.case_studies[2].name}}
                     .project-case-info.project-case-info-concerto(layout='column')
                         p {{main.case_studies[2].description}}
-                        a.case-study-link(ui-sref='concerto') view case study &#8594;
+                        a.case-study-link(ui-sref='work({case_study: "concerto"})') view case study &#8594;
             img.project-case-image-concerto.slide-animation-to-left(src='{{main.case_studies[2].preview_image_path}}' alt='Concerto Mac image')
 
 
@@ -49,4 +49,4 @@ md-content#Main_Content_Root(layout='column', layout-align='start center')
                         span.project-case-main-header.project-case-main-header-misfit {{main.case_studies[3].name}}
                     .project-case-info.project-case-info-misfit(layout='column')
                         p {{main.case_studies[3].description}}
-                        a.case-study-link(ui-sref='misfit') view case study &#8594;
+                        a.case-study-link(ui-sref='work({case_study: "misfit"})') view case study &#8594;

@@ -1,6 +1,6 @@
 md-content#Main_Content_Root(layout='column', layout-align='start center')
     .jumbotron-sartorial(layout='row', layout-align='center center')
-        img(ng-src='../../../assets/Sartorial/Marquee/letter.png')
+        img(ng-src='{{case_study.case_study.marquee_image}}')
     .project-case-content(layout='column')
 
         .panel-row.brief-panel(layout='row', layout-wrap)
@@ -25,7 +25,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center')
 
         .panel-row.solution-panel(layout='column', layout-align='start center')
             span.panel-header-titles Solution
-            p(ng-bind-html='case_study.case_study.solution')
+            p.main-solution(ng-bind-html='case_study.case_study.solution')
 
         .panel-row.wireframes-panel(layout='column', layout-align='center center')
             span.panel-header-titles Wireframes
