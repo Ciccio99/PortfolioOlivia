@@ -3,17 +3,17 @@
 
     angular
     .module('portfolioOlivia')
-    .controller('SartorialController', SartorialController);
+    .controller('CaseStudyController', CaseStudyController);
 
     /** @ngInject */
-    function SartorialController($log, ModelsService) {
+    function CaseStudyController($log, $stateParams, ModelsService) {
         var vm = this;
-        ModelsService.get('sartorial')
+        ModelsService.get($stateParams.case_study)
             .success(function(data) {
                 vm.case_study = data;
             })
             .error(function() {
-                $log.debug('Could not retrieve case study.');
+                $log.error('Could not retrieve case study.');
             });
     }
 })();

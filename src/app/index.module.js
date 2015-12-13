@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('portfolioOlivia', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'ngMaterial', 'toastr']);
+    .module('portfolioOlivia', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'ngMaterial', 'toastr', 'slick']);
 
 })();

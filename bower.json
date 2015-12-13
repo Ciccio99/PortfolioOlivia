@@ -16,7 +16,7 @@
     "moment": "~2.10.6",
     "animate.css": "~3.4.0",
     "angular": "~1.4.2",
-    "jcarousel": "~0.3.4"
+    "angular-slick": "~0.2.1"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.2"
