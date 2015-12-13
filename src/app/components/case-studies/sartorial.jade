@@ -46,13 +46,15 @@ md-content#Main_Content_Root(layout='column', layout-align='start center')
 
         .panel-row.thanks-panel(layout='column', layout-align='center center')
             span Thanks for scrolling!
-            p Like what you see? Don't be shy and say hello! <br> check out my other project below:
+            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>check out my other projects below:
 
         .panel-row.other-projects-panel(layout='row')
-            .previous-project-panel(layout='column', layout-align='center center', flex)
-                span Previous Project
-                a(ui-sref='work({case_study: "misfit"})') Misfit
-            .next-project-panel(layout='column', layout-align='center center', flex)
-                span Next project
-                a(ui-sref='work({case_study: "tidal"})') Tidal
+            .previous-project-panel(ui-sref='work({case_study: "misfit"})', flex='50')
+                .filter-layer(layout-fill, layout='column', layout-align='center center')
+                    span Previous Project
+                    p Misfit
+            .next-project-panel(ui-sref='work({case_study: "tidal"})', flex='50')
+                .filter-layer(layout-fill, layout='column', layout-align='center center')
+                    span Next Project
+                    p Tidal
 
