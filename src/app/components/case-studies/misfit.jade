@@ -1,6 +1,6 @@
 main-navbar
 md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cloak)
-    .jumbotron-misfit(layout='row', layout-align='center center')
+    .jumbotron-misfit.become-sticky-here(layout='row', layout-align='center center')
         img(ng-src='{{case_study.case_study.marquee_image}}')
 
     .project-case-content(layout='column', ng-cloak)
@@ -33,12 +33,12 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
             p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>check out my other projects below:
 
         .panel-row.other-projects-panel(layout='row', ng-cloak)
-            .previous-project-panel-misfit(ui-sref='work({case_study: "tidal"})', flex='50')
+            .previous-project-panel-misfit(ui-sref='work({case_study: "sartorial"})', flex='50')
                 .filter-layer(layout-fill, layout='column', layout-align='center center')
                     span Previous Project
-                    p Tidal
-            .next-project-panel-misfit(ui-sref='work({case_study: "sartorial"})', flex='50')
+                    p Sartorial
+            .next-project-panel-misfit(ui-sref='work({case_study: "tidal"})', flex='50')
                 .filter-layer(layout-fill, layout='column', layout-align='center center')
                     span Next Project
-                    p Sartorial
+                    p Tidal
 
