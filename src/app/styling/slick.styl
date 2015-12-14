@@ -23,13 +23,18 @@
         width 100%
 
 .slick-next
+    background url('../assets/Arrows/Next_Arrow.png') center center no-repeat !important
     right 0
     top 0
     width 50px
     height 100%
     &:hover
         cursor pointer
+    &::before
+        content none !important
+
 .slick-prev
+    background url('../assets/Arrows/Previous_Arrow.png') center center no-repeat !important
     left 0
     top 0
     width 50px
@@ -37,6 +42,8 @@
     color black
     &:hover
         cursor pointer
+    &::before
+        content none !important
 
 .slick-disabled
     cursor default !important
@@ -46,3 +53,50 @@
 
 .slick-dots
     bottom 0
+    
+light-pagination = 
+    .slick-dots li button
+        background-color rgb(255, 255, 255)
+        border-radius 50%
+        color black
+        width 15px
+        height 15px
+        &::before
+            line-height 22px
+            opacity 0
+            font-size 11px
+            top -2.5px
+            width 15px
+            height 15px
+        &:hover
+            &::before
+                opacity .35 !important
+
+    .slick-dots li.slick-active button:before 
+        opacity .35 !important
+        color black !important
+
+dark-pagination = 
+    .slick-dots li button
+        border-radius 50%
+        color black
+        width 15px
+        height 15px
+        color #dbdbdb !important
+        &::before
+            line-height 22px
+            opacity 1
+            font-size 11px
+            top -2.5px
+            width 15px
+            height 15px
+            border-radius 50%
+            color #dbdbdb !important
+        &:hover
+            background-color #9b9b9b !important
+                
+    .slick-dots li.slick-active button
+        background-color #9b9b9b !important
+        &:before 
+            opacity 1 !important
+            color #dbdbdb !important
