@@ -2,25 +2,23 @@
     width 100%
     
 .wireframes-panel .slick-slide
-        width 420px !important
-        & img
-            margin-left auto
+    width 420px !important
+.wireframes-panel .slick-slide img
+    margin-left auto
 
-.wireframes-panel
-    & .slick-dots
+.wireframes-panel .slick-dots
         bottom -70px
 
 .final-designs-panel .slick-slide
         width 420px !important
-        & img
-            margin-left auto
-.final-designs-panel
-    & .slick-dots
+.final-designs-panel .slick-slide img
+    margin-left auto
+            
+.final-designs-panel .slick-dots
         bottom -40px
 
-.product-shots-panel
-    & img
-        width 100%
+.product-shots-panel img
+    width 100%
 
 .slick-next
     background url('../assets/Arrows/Next_Arrow.png') center center no-repeat !important
@@ -28,10 +26,12 @@
     top 0
     width 50px
     height 100%
-    &:hover
-        cursor pointer
-    &::before
-        content none !important
+    
+.slick-next:hover
+    cursor pointer
+    
+.slick-next::before
+    content none !important
 
 .slick-prev
     background url('../assets/Arrows/Previous_Arrow.png') center center no-repeat !important
@@ -40,10 +40,11 @@
     width 50px
     height 100%
     color black
-    &:hover
-        cursor pointer
-    &::before
-        content none !important
+    
+.slick-prev:hover
+    cursor pointer
+.slick-prev:before
+    content none !important
 
 .slick-disabled
     cursor default !important
@@ -58,8 +59,9 @@ light-pagination =
     .slick-dots li button
         background url('../assets/Pagination/Pagination_Light.png') center center no-repeat !important
         opacity 1
-        &::before
-            color transparent
+    .slick-dots li button::before
+        color transparent
+            
     .slick-dots li.slick-active button:before 
         background url('../assets/Pagination/Pagination_Selected_Light.png') center center no-repeat !important
         opacity 1
@@ -69,8 +71,8 @@ dark-pagination =
     .slick-dots li button
         background url('../assets/Pagination/Pagination_Dark.png') center center no-repeat !important
         opacity 1
-        &::before
-            color transparent
+    .slick-dots li button::before
+        color transparent
     .slick-dots li.slick-active button:before 
         background url('../assets/Pagination/Pagination_Selected_Dark.png') center center no-repeat !important
         opacity 1

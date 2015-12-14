@@ -11,12 +11,12 @@
 	width 100%
 	padding-top 120px
 	
-// Shared case study styling elements
+/* Shared case study styling elements*/
 
 .project-cases-item
 	position relative
 	height 1000px
-	&:not(:first-child)
+.project-cases-item:not(:first-child)
 		margin-top 80px
 		
 .project-case-item-info-panel
@@ -30,20 +30,20 @@
 .project-case-sub-header
 	font 600 1.5rem font-dagny
 
-.project-case-info
-	& p
-		font 400 2.1rem font-chaparral
-		line-height 32px
-		letter-spacing: 0.1rem
-		margin-top 50px
-	& a
-		font 600 1.7rem font-soleil
-		letter-spacing 0.05rem
-		margin-top 40px
-		text-decoration none
-		color normal-gray
+.project-case-info p
+	font 400 2.1rem font-chaparral
+	line-height 32px
+	letter-spacing: 0.1rem
+	margin-top 50px
 		
-// Sliding animation
+.project-case-info a
+	font 600 1.7rem font-soleil
+	letter-spacing 0.05rem
+	margin-top 40px
+	text-decoration none
+	color normal-gray
+		
+/* Sliding animation*/
 .slide-animation-to-left {
 	-moz- transform translate3d(30%, 0px, 0px);
  	-webkit- transform translate3d(30%, 0px, 0px);
@@ -62,8 +62,8 @@
   	transition 0 0 all ease
 }
 
-// Case study specific styling elements
-// Sartorial
+/* Case study specific styling elements
+	 Sartorial*/
 .project-case-image-sartorial
 	position absolute
 	left 53%
@@ -80,7 +80,7 @@
 .project-case-main-header-sartorial
 	color #B59B6D
 	
-// Tidal
+/* Tidal*/
 .project-case-image-tidal
 	position absolute
 	right 58%
@@ -102,7 +102,7 @@
 .project-case-main-header-tidal 
 	color #0099cb
 
-// Concerto
+/* Concerto */
 .project-case-image-concerto
 	position absolute
 	top 15%
@@ -120,7 +120,7 @@
 .project-case-main-header-concerto
 	color #f3484c
 	
-// Misfit
+/*  Misfit*/
 .project-case-image-misfit
 	position absolute
 	right 58%

@@ -1,0 +1,38 @@
+
+<main-navbar></main-navbar>
+<md-content id="Main_Content_Root" layout="column" layout-align="start center">
+  <div class="jumbotron"></div>
+  <div layout="column" class="project-cases">
+    <div layout="row" class="project-cases-item"><img src="{{main.case_studies[1].preview_image_path}}" alt="Tidal iPhone image" class="project-case-image-tidal slide-animation-to-right">
+      <div flex-offset="45" flex layout="column" layout-align="start center" class="project-case-item-info-panel project-case-item-info-panel-tidal"><img src="{{main.case_studies[1].letter_path}}" alt="Big Letter">
+        <div layout="column" class="project-case-body-tidal">
+          <div layout="column" class="project-case-headers"><span class="project-case-sub-header">{{main.case_studies[1].type}}</span><span class="project-case-main-header project-case-main-header-tidal">{{main.case_studies[1].name}}</span></div>
+          <div layout="column" class="project-case-info project-case-info-tidal">
+            <p>{{main.case_studies[1].description}}</p><a ui-sref="work({case_study: &quot;tidal&quot;})" class="case-study-link">view case study &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div layout="row" class="project-cases-item">
+      <div flex="55" layout="column" layout-align="start center" class="project-case-item-info-panel"><img src="{{main.case_studies[0].letter_path}}" alt="Big Letter">
+        <div layout="column" class="project-case-body-sartorial">
+          <div layout="column" class="project-case-headers"><span class="project-case-sub-header">{{main.case_studies[0].type}}</span><span class="project-case-main-header project-case-main-header-sartorial">{{main.case_studies[0].name}}</span></div>
+          <div layout="column" class="project-case-info project-case-info-sartorial">
+            <p>{{main.case_studies[0].description}}</p><a ui-sref="work({case_study: &quot;sartorial&quot;})" class="case-study-link">view case study &#8594;</a>
+          </div>
+        </div>
+      </div><img src="{{main.case_studies[0].preview_image_path}}" alt="Sartorial iPhone image" class="project-case-image-sartorial slide-animation-to-left">
+    </div>
+    
+    <div layout="row" class="project-cases-item"><img src="{{main.case_studies[3].preview_image_path}}" alt="Misfit iPhone image" class="project-case-image-misfit slide-animation-to-right">
+      <div flex-offset="45" flex layout="column" layout-align="start center" class="project-case-item-info-panel project-case-item-info-panel-misfit"><img src="{{main.case_studies[3].letter_path}}" alt="Big Letter">
+        <div layout="column" class="project-case-body-misfit">
+          <div layout="column" class="project-case-headers"><span class="project-case-sub-header">{{main.case_studies[3].type}}</span><span class="project-case-main-header project-case-main-header-misfit">{{main.case_studies[3].name}}</span></div>
+          <div layout="column" class="project-case-info project-case-info-misfit">
+            <p>{{main.case_studies[3].description}}</p><a ui-sref="work({case_study: &quot;misfit&quot;})" class="case-study-link">view case study &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</md-content>

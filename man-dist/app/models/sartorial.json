@@ -1,0 +1,45 @@
+{
+        "id": "sartorial",
+        "name": "Sartorial",
+        "type": "Mobile app",
+        "description": "Challenge creativity on a daily basis, through a photo sharing platform and also build brand loyalty.",
+        "letter_path": "../../assets/letters/S.png",
+        "preview_image_path": "../assets/homepage-devices/sartorial-iphone.png",
+        "marquee_image": "../assets/Sartorial/Marquee/letter.png",
+        "brief": "Clothing is a product essential to our daily lives. However, too often we get into a rut when it comes to dressing up; we have favorite outfits that we wear over and over again.",
+        "sub_brief": "In this school, project we were challenged to think of a creative solution to a problem using a mobile photosharing app. Aside from content sharing platform, I wanted the app to challenge the user's creativity regularaly, as well as build brand loyalty between clothes lovers and their favorite brands.",
+        "client": "school project",
+        "role": "concept, user experience and visual",
+        "duration": "9 weeks, Spring 2015",
+        "solution": "A mobile application that challenges our habits and makes dressing up fun.<br>Sartorial provides color palettes based on real time weather; challenging users to create a new looks using color pallete.",
+        "visual_design_text": "I wanted Sartorial's visual language to reflect the elegant, bold, feminine and clean design or editorial magazines.",
+        "product_images": [
+                "../assets/Sartorial/Product_Shots/Shot_1.png",
+                "../assets/Sartorial/Product_Shots/Shot_2.png"
+        ],
+        "moodboard": "../assets/Sartorial/Moodboard/moodboard.png",
+        "wireframe_images": [
+                "../assets/Sartorial/Wireframes/1.png",
+                "../assets/Sartorial/Wireframes/2.png",
+                "../assets/Sartorial/Wireframes/3.png",
+                "../assets/Sartorial/Wireframes/4.png",
+                "../assets/Sartorial/Wireframes/5.png",
+                "../assets/Sartorial/Wireframes/6.png",
+                "../assets/Sartorial/Wireframes/7.png",
+                "../assets/Sartorial/Wireframes/8.png",
+                "../assets/Sartorial/Wireframes/9.png",
+                "../assets/Sartorial/Wireframes/10.png",
+                "../assets/Sartorial/Wireframes/11.png",
+                "../assets/Sartorial/Wireframes/12.png",
+                "../assets/Sartorial/Wireframes/13.png",
+                "../assets/Sartorial/Wireframes/14.png",
+                "../assets/Sartorial/Wireframes/15.png",
+                "../assets/Sartorial/Wireframes/16.png"
+        ],
+        "final_design_images": [
+                "../assets/Sartorial/Final_Designs/1.png",
+                "../assets/Sartorial/Final_Designs/2.png",
+                "../assets/Sartorial/Final_Designs/3.png",
+                "../assets/Sartorial/Final_Designs/4.png"
+        ]
+}

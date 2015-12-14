@@ -1,0 +1,586 @@
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  stylus dependencies when defined in the bower.json of your dependencies
+ */
+@import url("//fonts.googleapis.com/css?family=Roboto\+Slab:400,700|Roboto:400,700,700italic,400italic");
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../bower_components/material-design-iconfont/iconfont/MaterialIcons-Regular.eot"); /* For IE6-8 */
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url("../../bower_components/material-design-iconfont/iconfont/MaterialIcons-Regular.woff2") format('woff2'), url("../../bower_components/material-design-iconfont/iconfont/MaterialIcons-Regular.woff") format('woff'), url("../../bower_components/material-design-iconfont/iconfont/MaterialIcons-Regular.ttf") format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+/* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+/* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+/* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+/* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
+html {
+  font-family: 'Roboto Slab', serif;
+  font-size: 62.5%;
+}
+#Main_Content_Root {
+  overflow-x: hidden;
+}
+[layout=row] {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+button {
+  padding: 0;
+}
+[ng-cloak] {
+  display: none !important;
+}
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your stylus files automatically
+ */
+.slick-carousel {
+  width: 100%;
+}
+.wireframes-panel .slick-slide {
+  width: 420px !important;
+}
+.wireframes-panel .slick-slide img {
+  margin-left: auto;
+}
+.wireframes-panel .slick-dots {
+  bottom: -70px;
+}
+.final-designs-panel .slick-slide {
+  width: 420px !important;
+}
+.final-designs-panel .slick-slide img {
+  margin-left: auto;
+}
+.final-designs-panel .slick-dots {
+  bottom: -40px;
+}
+.product-shots-panel img {
+  width: 100%;
+}
+.slick-next {
+  background: url("../assets/Arrows/Next_Arrow.png") center center no-repeat !important;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+}
+.slick-next:hover {
+  cursor: pointer;
+}
+.slick-next::before {
+  content: none !important;
+}
+.slick-prev {
+  background: url("../assets/Arrows/Previous_Arrow.png") center center no-repeat !important;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  color: #000;
+}
+.slick-prev:hover {
+  cursor: pointer;
+}
+.slick-prev:before {
+  content: none !important;
+}
+.slick-disabled {
+  cursor: default !important;
+}
+.slick-slider {
+  margin-bottom: 0px;
+}
+.slick-dots {
+  bottom: 0;
+}
+.case-study-jumbotron {
+  width: 100%;
+}
+.project-case-content {
+  max-width: 1440px;
+  width: 100%;
+}
+.panel-header-titles {
+  font: 600 1.6rem "ff-dagny-web-pro", Sans-Serif;
+  letter-spacing: 0.02rem;
+  color: #929292;
+}
+.brief-panel {
+  padding: 155px 9%;
+}
+.brief-panel span.brief-header {
+  font: 600 2rem "ff-dagny-web-pro", Sans-Serif;
+  color: #6f6f6f;
+  margin-bottom: 50px;
+}
+.left-brief-section p.main-brief {
+  font: 400 2.6rem "chaparral-pro", Serif;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+.left-brief-section p.sub-brief {
+  font: 400 1.8rem "ff-dagny-web-pro", Sans-Serif;
+  color: #4e4e4e;
+  line-height: 30px;
+}
+.right-brief-section {
+  padding-left: 120px;
+}
+.right-brief-section div {
+  padding-bottom: 20px;
+}
+.right-brief-section div span {
+  font: 600 1.6rem "ff-dagny-web-pro", Sans-Serif;
+  line-height: 40px;
+}
+.right-brief-section div p {
+  font: 400 1.7rem "ff-dagny-web-pro", Sans-Serif;
+}
+.solution-panel {
+  padding: 130px 8%;
+}
+.solution-panel p.main-solution {
+  font: 400 2.6rem "chaparral-pro", Serif;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 70px;
+  padding: 0 14%;
+}
+.wireframes-panel {
+  background-color: #d9e3eb;
+  padding: 120px 0 80px 0;
+}
+.wireframes-panel span {
+  margin-bottom: 55px;
+}
+.visual-design-panel {
+  padding: 120px 116px;
+}
+.visual-design-panel p {
+  font: 400 2.7rem "chaparral-pro", Serif;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 70px;
+  padding: 0 15%;
+}
+.visual-design-panel img {
+  margin-top: 30px;
+}
+.final-designs-panel {
+  padding: 20px 0 50px 0;
+  box-shadow: 0 5px 5px -6px #a4a4a4;
+  z-index: 1;
+}
+.final-designs-panel span {
+  margin-bottom: 40px;
+}
+.thanks-panel {
+  padding: 75px 20px;
+  background-color: #f2f2f2;
+}
+.thanks-panel span {
+  font: 600 3.2rem "ff-dagny-web-pro", Sans-Serif;
+}
+.thanks-panel p {
+  color: #6f6f6f;
+  margin-top: 40px;
+  text-align: center;
+  font: 400 2.4rem "chaparral-pro", Serif;
+  line-height: 28px;
+}
+.thanks-panel p .thanks-link {
+  color: #228a72;
+  font: 400 2.2rem "chaparral-pro", Serif;
+}
+.other-projects-panel {
+  color: #fafafa;
+}
+.other-projects-panel div {
+  height: 240px;
+  cursor: pointer;
+}
+.other-projects-panel .filter-layer {
+  background-color: rgba(0,0,0,0.3);
+}
+.other-projects-panel span {
+  font: 400 2.7rem "chaparral-pro", Serif;
+}
+.other-projects-panel p {
+  margin-top: 5px;
+  font: 600 3rem "ff-dagny-web-pro", Sans-Serif;
+}
+.jumbotron-sartorial {
+  background-color: #cdd6de;
+  height: 685px;
+  width: 100%;
+}
+.product-shots-panel-sartorial .slick-dots li button {
+  background: url("../assets/Pagination/Pagination_Light.png") center center no-repeat !important;
+  opacity: 1;
+}
+.product-shots-panel-sartorial .slick-dots li button::before {
+  color: transparent;
+}
+.product-shots-panel-sartorial .slick-dots li.slick-active button:before {
+  background: url("../assets/Pagination/Pagination_Selected_Light.png") center center no-repeat !important;
+  opacity: 1;
+  color: transparent !important;
+}
+.wireframes-panel-sartorial .slick-dots li button {
+  background: url("../assets/Pagination/Pagination_Light.png") center center no-repeat !important;
+  opacity: 1;
+}
+.wireframes-panel-sartorial .slick-dots li button::before {
+  color: transparent;
+}
+.wireframes-panel-sartorial .slick-dots li.slick-active button:before {
+  background: url("../assets/Pagination/Pagination_Selected_Light.png") center center no-repeat !important;
+  opacity: 1;
+  color: transparent !important;
+}
+.final-designs-panel-sartorial .slick-dots li button {
+  background: url("../assets/Pagination/Pagination_Dark.png") center center no-repeat !important;
+  opacity: 1;
+}
+.final-designs-panel-sartorial .slick-dots li button::before {
+  color: transparent;
+}
+.final-designs-panel-sartorial .slick-dots li.slick-active button:before {
+  background: url("../assets/Pagination/Pagination_Selected_Dark.png") center center no-repeat !important;
+  opacity: 1;
+  color: transparent !important;
+}
+.previous-project-panel-sartorial {
+  background: url("../assets/Misfit/Marquee/Misfit.png") center no-repeat;
+  background-size: cover;
+}
+.next-project-panel-sartorial {
+  background: url("../assets/Tidal/Marquee/Tidal_Marquee.png") center no-repeat;
+  background-size: cover;
+}
+.jumbotron-tidal {
+  width: 100%;
+}
+.sub-solutions-tidal {
+  width: 100%;
+  margin-top: 100px;
+}
+.sub-solutions-tidal div {
+  padding: 2%;
+}
+.sub-solutions-tidal span {
+  font: 500 2.5rem "ff-dagny-web-pro", Sans-Serif;
+}
+.sub-solutions-tidal p {
+  margin-top: 10px;
+  font: 400 1.8rem "ff-dagny-web-pro", Sans-Serif;
+  line-height: 25px;
+  color: #a4a4a4;
+}
+.visual-design-panel-tidal {
+  background-color: #f2f2f2;
+}
+.final-designs-panel-tidal {
+  background-color: #f2f2f2 !important;
+}
+.final-designs-panel-tidal .slick-dots li button {
+  background: url("../assets/Pagination/Pagination_Dark.png") center center no-repeat !important;
+  opacity: 1;
+}
+.final-designs-panel-tidal .slick-dots li button::before {
+  color: transparent;
+}
+.final-designs-panel-tidal .slick-dots li.slick-active button:before {
+  background: url("../assets/Pagination/Pagination_Selected_Dark.png") center center no-repeat !important;
+  opacity: 1;
+  color: transparent !important;
+}
+.thanks-panel-tidal {
+  background-color: #fff;
+}
+.previous-project-panel-tidal {
+  background: url("../assets/Sartorial/Marquee/Letter.png") center center no-repeat;
+  background-color: #cdd6de;
+  background-size: 28%;
+}
+.next-project-panel-tidal {
+  background: url("../assets/Misfit/Marquee/Misfit.png") center no-repeat;
+  background-size: cover;
+}
+.jumbotron-misfit {
+  width: 100%;
+}
+.final-designs-panel-misfit {
+  padding: 130px 0;
+  background-color: #f2f2f2 !important;
+}
+.final-designs-panel-misfit .slick-dots li button {
+  background: url("../assets/Pagination/Pagination_Dark.png") center center no-repeat !important;
+  opacity: 1;
+}
+.final-designs-panel-misfit .slick-dots li button::before {
+  color: transparent;
+}
+.final-designs-panel-misfit .slick-dots li.slick-active button:before {
+  background: url("../assets/Pagination/Pagination_Selected_Dark.png") center center no-repeat !important;
+  opacity: 1;
+  color: transparent !important;
+}
+.thanks-panel-misfit {
+  background-color: #fff;
+}
+.previous-project-panel-misfit {
+  background: url("../assets/Tidal/Marquee/Tidal_Marquee.png") center center no-repeat;
+  background-size: cover;
+}
+.next-project-panel-misfit {
+  background: url("../assets/Sartorial/Marquee/Letter.png") center center no-repeat;
+  background-color: #cdd6de;
+  background-size: 28%;
+}
+.jumbotron {
+  background: url("../../assets/images/bw.jpg") no-repeat;
+  background-size: cover;
+  height: 685px;
+  width: 100%;
+}
+.project-cases {
+  max-width: 1440px;
+  width: 100%;
+  padding-top: 120px;
+}
+.project-cases-item {
+  position: relative;
+  height: 1000px;
+}
+.project-cases-item:not(:first-child) {
+  margin-top: 80px;
+}
+.project-case-item-info-panel {
+  position: relative;
+  padding-top: 150px;
+}
+.project-case-main-header {
+  font: 600 5rem "soleil", Sans-Serif;
+  margin-top: 15px;
+}
+.project-case-sub-header {
+  font: 600 1.5rem "ff-dagny-web-pro", Sans-Serif;
+}
+.project-case-info p {
+  font: 400 2.1rem "chaparral-pro", Serif;
+  line-height: 32px;
+  letter-spacing: 0.1rem;
+  margin-top: 50px;
+}
+.project-case-info a {
+  font: 600 1.7rem "soleil", Sans-Serif;
+  letter-spacing: 0.05rem;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #929292;
+}
+.slide-animation-to-left {
+  -moz-: transform translate3d(30%, 0px, 0px);
+  -webkit-: transform translate3d(30%, 0px, 0px);
+  -webkit-transform: translate3d(30%, 0px, 0px);
+          transform: translate3d(30%, 0px, 0px);
+  -webkit-transition: 0 0 all ease;
+  transition: 0 0 all ease;
+}
+.slide-animation-to-right {
+  -moz-: transform translate3d(-30%, 0px, 0px);
+  -webkit-: transform translate3d(-30%, 0px, 0px);
+  -webkit-transform: translate3d(-30%, 0px, 0px);
+          transform: translate3d(-30%, 0px, 0px);
+  -webkit-transition: 0 0 all ease;
+  transition: 0 0 all ease;
+}
+.project-case-image-sartorial {
+  position: absolute;
+  left: 53%;
+}
+.project-case-body-sartorial {
+  position: absolute;
+  left: 14%;
+  right: 0;
+  margin-top: 150px;
+}
+.project-case-info-sartorial {
+  padding-left: 16%;
+}
+.project-case-main-header-sartorial {
+  color: #b59b6d;
+}
+.project-case-image-tidal {
+  position: absolute;
+  right: 58%;
+}
+.project-case-item-info-panel-tidal {
+  position: relative;
+  right: 3%;
+  padding-top: 120px;
+}
+.project-case-body-tidal {
+  position: absolute;
+  right: 14%;
+  left: 0;
+  margin-top: 150px;
+}
+.project-case-info-tidal {
+  padding-left: 16%;
+}
+.project-case-main-header-tidal {
+  color: #0099cb;
+}
+.project-case-image-concerto {
+  position: absolute;
+  top: 15%;
+  left: 49%;
+}
+.project-case-body-concerto {
+  position: absolute;
+  left: 14%;
+  right: 0;
+  margin-top: 150px;
+}
+.project-case-info-concerto {
+  padding-left: 16%;
+}
+.project-case-main-header-concerto {
+  color: #f3484c;
+}
+.project-case-image-misfit {
+  position: absolute;
+  right: 58%;
+}
+.project-case-item-info-panel-misfit {
+  position: relative;
+  right: 3%;
+  padding-top: 120px;
+}
+.project-case-body-misfit {
+  position: absolute;
+  right: 14%;
+  left: 0;
+  margin-top: 150px;
+}
+.project-case-info-misfit {
+  padding-left: 16%;
+}
+.project-case-main-header-misfit {
+  color: #e55c4a;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.nav-buttons-holder {
+  padding: 45px 65px 0 0;
+  width: 220px;
+}
+.navbar-link {
+  font: 800 1.6rem "ff-dagny-web-pro", Sans-Serif;
+  letter-spacing: 0.1rem;
+  color: #6f6f6f;
+  text-decoration: none;
+}
+.navbar-link:hover {
+  color: #fafafa;
+}
+.active-nav {
+  color: #fafafa;
+}
+.slick-carousel {
+  width: 100%;
+}
+.wireframes-panel .slick-slide {
+  width: 420px !important;
+}
+.wireframes-panel .slick-slide img {
+  margin-left: auto;
+}
+.wireframes-panel .slick-dots {
+  bottom: -70px;
+}
+.final-designs-panel .slick-slide {
+  width: 420px !important;
+}
+.final-designs-panel .slick-slide img {
+  margin-left: auto;
+}
+.final-designs-panel .slick-dots {
+  bottom: -40px;
+}
+.product-shots-panel img {
+  width: 100%;
+}
+.slick-next {
+  background: url("../assets/Arrows/Next_Arrow.png") center center no-repeat !important;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+}
+.slick-next:hover {
+  cursor: pointer;
+}
+.slick-next::before {
+  content: none !important;
+}
+.slick-prev {
+  background: url("../assets/Arrows/Previous_Arrow.png") center center no-repeat !important;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  color: #000;
+}
+.slick-prev:hover {
+  cursor: pointer;
+}
+.slick-prev:before {
+  content: none !important;
+}
+.slick-disabled {
+  cursor: default !important;
+}
+.slick-slider {
+  margin-bottom: 0px;
+}
+.slick-dots {
+  bottom: 0;
+}

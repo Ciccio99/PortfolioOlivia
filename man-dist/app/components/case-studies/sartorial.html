@@ -1,0 +1,60 @@
+
+<main-navbar></main-navbar>
+<md-content id="Main_Content_Root" layout="column" layout-align="start center" ng-cloak>
+  <div layout="row" layout-align="center center" class="jumbotron-sartorial"><img ng-src="{{case_study.case_study.marquee_image}}"></div>
+  <div layout="column" ng-cloak class="project-case-content">
+    <div layout="row" layout-wrap ng-cloak class="panel-row brief-panel"><span flex="100" class="brief-header">The brief</span>
+      <div layout="column" flex="60" class="left-brief-section">
+        <p class="main-brief">{{case_study.case_study.brief}}</p>
+        <p class="sub-brief">{{case_study.case_study.sub_brief}}            </p>
+      </div>
+      <div layout="column" flex class="right-brief-section">
+        <div><span>Client</span>
+          <p>{{case_study.case_study.client}} </p>
+        </div>
+        <div><span>Role</span>
+          <p>{{case_study.case_study.role}} </p>
+        </div>
+        <div><span>Duration</span>
+          <p>{{case_study.case_study.duration}} </p>
+        </div>
+      </div>
+    </div>
+    <div ng-cloak class="panel-row product-shots-panel product-shots-panel-sartorial">
+      <slick infinite="false" slides-to-scroll="1" slides-to-show="1" dots="true" swipe-to-slide="true" init-onload="true" data="case_study.case_study.product_images" class="slick-carousel">
+        <div ng-repeat="prod_img in case_study.case_study.product_images"><img ng-src="{{prod_img}}" alt="Product image"></div>
+      </slick>
+    </div>
+    <div layout="column" layout-align="start center" ng-cloak class="panel-row solution-panel"><span class="panel-header-titles">Solution</span>
+      <p ng-bind-html="case_study.case_study.solution" class="main-solution"></p>
+    </div>
+    <div layout="column" layout-align="center center" ng-cloak class="panel-row wireframes-panel wireframes-panel-sartorial"><span class="panel-header-titles">Wireframes</span>
+      <slick infinite="false" slides-to-scroll="2" slides-to-show="3" dots="true" swipe-to-slide="true" variable-width="true" init-onload="true" data="case_study.case_study.wireframe_images" ng-cloak class="slick-carousel">
+        <div ng-repeat="wireframe_img in case_study.case_study.wireframe_images" class="wireframe-slick"><img ng-src="{{wireframe_img}}" alt="Wireframe image"></div>
+      </slick>
+    </div>
+    <div layout="column" layout-align="start center" ng-cloak class="panel-row visual-design-panel"><span class="panel-header-titles">Visual Design</span>
+      <p>{{case_study.case_study.visual_design_text}}</p><img ng-src="{{case_study.case_study.moodboard}}" alt="Sartorial Moodboard">
+    </div>
+    <div layout="column" layout-align="start center" ng-cloak class="panel-row final-designs-panel final-designs-panel-sartorial"><span class="panel-header-titles">Final Designs</span>
+      <slick infinite="false" slides-to-scroll="1" slides-to-show="2" dots="true" swipe-to-slide="true" variable-width="true" init-onload="true" data="case_study.case_study.final_design_images" class="slick-carousel">
+        <div ng-repeat="final_img in case_study.case_study.final_design_images" class="wireframe-slick"><img ng-src="{{final_img}}" alt="Final Design image"></div>
+      </slick>
+    </div>
+    <div layout="column" layout-align="center center" ng-cloak class="panel-row thanks-panel"><span>Thanks for scrolling!</span>
+      <p>Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>check out my other projects below:</p>
+    </div>
+    <div layout="row" ng-cloak class="panel-row other-projects-panel">
+      <div ui-sref="work({case_study: &quot;misfit&quot;})" flex="50" class="previous-project-panel-sartorial">
+        <div layout-fill layout="column" layout-align="center center" class="filter-layer"><span>Previous Project</span>
+          <p>Misfit</p>
+        </div>
+      </div>
+      <div ui-sref="work({case_study: &quot;tidal&quot;})" flex="50" class="next-project-panel-sartorial">
+        <div layout-fill layout="column" layout-align="center center" class="filter-layer"><span>Next Project</span>
+          <p>Tidal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</md-content>
