@@ -1,3 +1,4 @@
+main-navbar
 md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cloak)
     .jumbotron-sartorial(layout='row', layout-align='center center')
         img(ng-src='{{case_study.case_study.marquee_image}}')
@@ -49,11 +50,11 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
             p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>check out my other projects below:
 
         .panel-row.other-projects-panel(layout='row', ng-cloak)
-            .previous-project-panel(ui-sref='work({case_study: "misfit"})', flex='50')
+            .previous-project-panel-sartorial(ui-sref='work({case_study: "misfit"})', flex='50')
                 .filter-layer(layout-fill, layout='column', layout-align='center center')
                     span Previous Project
                     p Misfit
-            .next-project-panel(ui-sref='work({case_study: "tidal"})', flex='50')
+            .next-project-panel-sartorial(ui-sref='work({case_study: "tidal"})', flex='50')
                 .filter-layer(layout-fill, layout='column', layout-align='center center')
                     span Next Project
                     p Tidal

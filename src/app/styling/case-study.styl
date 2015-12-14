@@ -96,26 +96,21 @@
 
 // other projects panel
 .other-projects-panel
-    background-color rgba(0, 0, 0, 0.25)
     color #fafafa
     & div
         height 240px
         cursor pointer
-    // & .filter-layer
-    //     background-color rgba(0, 0, 0, 0.30)
-    & .previous-project-panel
-        background url('../assets/letters/M.png') center no-repeat
-    & .next-project-panel
-        background url('../assets/letters/T.png') center no-repeat
+    & .filter-layer
+        background-color rgba(0, 0, 0, 0.30)
     & span
         font 400 2.7rem font-chaparral
     & p
-        margin-top 20px
+        margin-top 5px
         font 600 3rem font-dagny
 
 // Sartorial Specific
 .jumbotron-sartorial
-    background-color #cdd6de
+    background-color sartorial-jumbo-bg-color
     height 685px
     width 100%
 
@@ -127,6 +122,14 @@
 
 .final-designs-panel-sartorial
     {dark-pagination}
+
+.previous-project-panel-sartorial
+        background url('../assets/Misfit/Marquee/misfit.png') center no-repeat
+        background-size cover
+        
+.next-project-panel-sartorial
+        background url('../assets/Tidal/Marquee/Tidal_Marquee.png') center no-repeat
+        background-size cover
 
 // Tidal Specific
 .jumbotron-tidal
@@ -149,29 +152,38 @@
     
 .final-designs-panel-tidal
     background-color light-gray-bg-color !important
+    {dark-pagination}
     
 .thanks-panel-tidal
     background-color white
 
 .previous-project-panel-tidal
-        background url('../assets/letters/S.png') center no-repeat
-
+        background url('../assets/Sartorial/Marquee/Letter.png') center center no-repeat
+        background-color sartorial-jumbo-bg-color
+        background-size 28%
+        
 .next-project-panel-tidal
-        background url('../assets/letters/M.png') center no-repeat
+        background url('../assets/Misfit/Marquee/misfit.png') center no-repeat
+        background-size cover
 
 // Misfit Specific
 .jumbotron-misfit
     width 100%
     
 .final-designs-panel-misfit
+    padding 130px 0
     background-color light-gray-bg-color !important
-    
+    {dark-pagination}
+
 .thanks-panel-misfit
     background-color white
 
 .previous-project-panel-misfit
-        background url('../assets/letters/T.png') center no-repeat
+        background url('../assets/Tidal/Marquee/Tidal_Marquee.png') center center no-repeat
+        background-size cover
 
 .next-project-panel-misfit
-        background url('../assets/letters/S.png') center no-repeat
+        background url('../assets/Sartorial/Marquee/Letter.png') center center no-repeat
+        background-color sartorial-jumbo-bg-color
+        background-size 28%
 

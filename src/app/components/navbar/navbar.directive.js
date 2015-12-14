@@ -14,15 +14,18 @@
           creationDate: '='
       },
       controller: NavbarController,
-      controllerAs: 'vm',
+      controllerAs: 'nav',
       bindToController: true
     };
 
     return directive;
 
     /** @ngInject */
-    function NavbarController() {
-      //var vm = this;
+    function NavbarController($state) {
+      var vm = this;
+      vm.includes = function(name){
+         return $state.includes(name);
+      };
     }
   }
 
