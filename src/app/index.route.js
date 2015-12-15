@@ -29,7 +29,7 @@
       .state('work', {
         url: '/work/{case_study}',
         templateUrl: function($stateParams) {
-          return '/app/components/case-studies/' + $stateParams.case_study + '.html';
+          return 'app/components/case-studies/' + $stateParams.case_study + '.html';
         },
         controller: 'CaseStudyController',
         controllerAs: 'case_study'

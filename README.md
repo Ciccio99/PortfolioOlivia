@@ -3,5 +3,5 @@
 ### Built with
 
 - Angular
-- Jass
+- Jade
 - Stylus
