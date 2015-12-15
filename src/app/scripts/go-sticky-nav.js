@@ -14,10 +14,8 @@ $(window).bind("load", function() {
 
             if (window_top_pos >= element_bot_pos - nav_height) {
                 $('#Sticky_Nav').css({position: 'fixed'});
-                $('.active-nav').css({color: '#4E4E4E'});
             } else {
                 $('#Sticky_Nav').css({position: 'absolute'});
-                $('.active-nav').css({color: '#fafafa'});
             }
         });
     }

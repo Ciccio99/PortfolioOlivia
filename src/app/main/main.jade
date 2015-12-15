@@ -1,12 +1,14 @@
 main-navbar
 md-content#Main_Content_Root(layout='column', layout-align='start center')
-    .jumbotron.become-sticky-here
+    .jumbotron.become-sticky-here(layout='row', layout-align='center center')
+        img(ng-src='../assets/images/Hello.png', alt="Hello! I'm Olivia.")
+
     .project-cases(layout='column')
 
         .project-cases-item(layout='row')
             img.project-case-image-tidal.slide-animation-to-right(src='{{main.case_studies[1].preview_image_path}}' alt='Tidal iPhone image')
             .project-case-item-info-panel.project-case-item-info-panel-tidal(flex-offset='45', flex, layout='column', layout-align='start center')
-                img(src='{{main.case_studies[1].letter_path}}', alt='Big Letter')
+                img.right-big-letter(src='{{main.case_studies[1].letter_path}}', alt='Big Letter')
                 .project-case-body-tidal(layout='column')
                     .project-case-headers(layout='column')
                         span.project-case-sub-header {{main.case_studies[1].type}}
@@ -17,7 +19,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center')
 
         .project-cases-item(layout='row')
             .project-case-item-info-panel(flex='55', layout='column', layout-align='start center')
-                img(src='{{main.case_studies[0].letter_path}}', alt='Big Letter')
+                img.left-big-letter(src='{{main.case_studies[0].letter_path}}', alt='Big Letter')
                 .project-case-body-sartorial(layout='column')
                     .project-case-headers(layout='column')
                         span.project-case-sub-header {{main.case_studies[0].type}}
@@ -43,7 +45,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center')
         .project-cases-item(layout='row')
             img.project-case-image-misfit.slide-animation-to-right(src='{{main.case_studies[3].preview_image_path}}' alt='Misfit iPhone image')
             .project-case-item-info-panel.project-case-item-info-panel-misfit(flex-offset='45', flex, layout='column', layout-align='start center')
-                img(src='{{main.case_studies[3].letter_path}}', alt='Big Letter')
+                img.right-big-letter(src='{{main.case_studies[3].letter_path}}', alt='Big Letter')
                 .project-case-body-misfit(layout='column')
                     .project-case-headers(layout='column')
                         span.project-case-sub-header {{main.case_studies[3].type}}

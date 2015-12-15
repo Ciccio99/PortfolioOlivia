@@ -6,7 +6,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
     .project-case-content(layout='column', ng-cloak)
         .panel-row.brief-panel(layout='row', layout-wrap, ng-cloak)
             span.brief-header(flex='100') The brief
-            .left-brief-section(layout='column', flex='60')
+            .left-brief-section(layout='column', flex='65')
                 p.main-brief {{case_study.case_study.brief}}
                 p.sub-brief {{case_study.case_study.sub_brief}}            
             .right-brief-section(layout='column', flex)
@@ -26,7 +26,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
 
         .panel-row.solution-panel(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Solution
-            p.main-solution(ng-bind-html='case_study.case_study.solution')
+            p.main-solution {{case_study.case_study.solution}}
 
         .panel-row.wireframes-panel.wireframes-panel-sartorial(layout='column', layout-align='center center', ng-cloak)
             span.panel-header-titles Wireframes
@@ -47,7 +47,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
 
         .panel-row.thanks-panel(layout='column', layout-align='center center', ng-cloak)
             span Thanks for scrolling!
-            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>check out my other projects below:
+            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
 
         .panel-row.other-projects-panel(layout='row', ng-cloak)
             .previous-project-panel-sartorial(ui-sref='work({case_study: "tidal"})', flex='50')

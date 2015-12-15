@@ -5,8 +5,15 @@
     width 100%
     
 .project-case-content
-    max-width 1440px
     width 100%
+
+.limit-width
+    max-width 1440px
+    margin-left auto
+    margin-right auto
+    
+.limit-width-not-centered
+    max-width 1440px
     
 .panel-header-titles
     font 600 1.6rem font-dagny
@@ -15,99 +22,134 @@
     
 /*Brief section*/
 .brief-panel
-    padding 155px 9%
+    padding 200px 9% 166px 9%
     
-.brief-panel span.brief-header 
-    font 600 2rem font-dagny
-    color medium-gray
-    margin-bottom 50px
+.brief-panel 
+    & span.brief-header 
+        font 600 2.4rem font-dagny
+        color light-gray
+        letter-spacing -0.01em
+        margin-bottom 70px
         
-.left-brief-section p.main-brief
-        font 400 2.6rem font-chaparral
-        line-height 40px
+.left-brief-section
+    & p.main-brief
+        font 400 3rem font-chaparral
+        line-height 42.5px
+        letter-spacing -0.02em
         margin-bottom 40px
+        color #333333
         
-.left-brief-section p.sub-brief
-        font 400 1.8rem font-dagny
-        color dark-gray
-        line-height 30px
+.left-brief-section 
+    & p.sub-brief
+        font 400 2.4rem font-dagny
+        color #737373
+        line-height 30pt
 
 .right-brief-section
-    padding-left 120px
-.right-brief-section div
-    padding-bottom 20px
-.right-brief-section div span
-    font 600 1.6rem font-dagny
-    line-height 40px
-.right-brief-section div p
-    font 400 1.7rem font-dagny
+    padding-left 116px
+    & div
+        padding-bottom 20px
+    & div span
+        font 600 2rem font-dagny
+        line-height 40px
+        letter-spacing -0.01em
+        color #4c4c4c
+    & div p
+        font 400 2rem font-dagny
+        letter-spacing -0.01em
+        color #4c4c4c
 
 /* Solution section*/
 .solution-panel
-    padding 130px 8%
-.solution-panel p.main-solution
-    font 400 2.6rem font-chaparral
-    text-align center
-    line-height 40px
-    margin-top 70px
-    padding 0 14%
+    padding 140px 0
+    & span
+        font 600 2.4rem font-dagny
+        color #aaaaaa
+        letter-spacing -0.01em
+    & p.main-solution
+        font 400 3.2rem font-chaparral
+        text-align center
+        letter-spacing -0.02em
+        line-height 40pt
+        margin-top 60px
+        padding 0 14%
     
 /* Wireframes panel*/
 .wireframes-panel
     background-color wireframe-bg-color
-    padding 120px 0 80px 0
-.wireframes-panel span
-        margin-bottom 55px 
-
+    padding 140px 0 80px 0
+    & span
+        margin-bottom 60px 
+        font 600 2.4rem font-dagny
+        color #959595
+        letter-spacing -0.01em
+        
 /* visual designs sections */
 .visual-design-panel
-    padding 120px 116px
-.visual-design-panel p
-        font 400 2.7rem font-chaparral
+    padding 140px 116px
+    & span 
+        font 600 2.4rem font-dagny
+        color #aaaaaa
+        letter-spacing -0.01em
+    & p
+        font 400 2.8rem font-chaparral
+        letter-spacing -0.02em
         text-align center
         line-height 40px
-        margin-top 70px
+        margin-top 60px
         padding 0 15%
-.visual-design-panel img
-        margin-top 30px
+    & img
+        margin-top 78px
 
 /* Final Designs panel*/
 .final-designs-panel
-    padding 20px 0 50px 0
-    box-shadow 0 5px 5px -6px light-gray
+    padding 20px 0 70px 0
+    box-shadow 0 10px 10px -10px medium-gray
     z-index 1
-.final-designs-panel span
-        margin-bottom 40px
+    & span
+        font 600 2.4rem font-dagny
+        color #aaaaaa
+        letter-spacing -0.01em
+        margin-top 20px
+        margin-bottom 60px
     
 /* Thanks panel*/
 .thanks-panel
-    padding 75px 20px
+    padding 95px 20px
     background-color light-gray-bg-color
-.thanks-panel span
-        font 600 3.2rem font-dagny
-.thanks-panel p
-        color medium-gray
-        margin-top 40px
+    & span
+        font 600 4.4rem font-soleil
+        color #333333
+        letter-spacing -0.03em
+    & p
+        color #8c8c8c
+        margin-top 48px
         text-align center
-        font 400 2.4rem font-chaparral
-        line-height 28px
-.thanks-panel p .thanks-link
+        font 400 3.2rem font-chaparral
+        line-height 40px
+        letter-spacing -0.02em
+    & p .thanks-link
             color link-teal
-            font 400 2.2rem font-chaparral
+            font 400 3.2rem font-chaparral
+            text-align center
+            line-height 28px
+            letter-spacing -0.02em
 
 /* other projects panel*/
 .other-projects-panel
-    color #fafafa
-.other-projects-panel div
-        height 240px
+    & div
+        height 340px
         cursor pointer
-.other-projects-panel .filter-layer
-        background-color rgba(0, 0, 0, 0.30)
-.other-projects-panel span
-        font 400 2.7rem font-chaparral
-.other-projects-panel p
-        margin-top 5px
-        font 600 3rem font-dagny
+    & .filter-layer
+        background-color rgba(0, 0, 0, 0.65)
+    & span
+        font 400 4rem font-chaparral
+        color #efefef
+        letter-spacing -0.02em
+    & p
+        font 600 4rem font-soleil
+        letter-spacing -0.03em
+        color #fafafa
 
 /* Sartorial Specific */
 .jumbotron-sartorial
@@ -136,18 +178,26 @@
 /* Tidal Specific */
 .jumbotron-tidal
     width 100%
+    & img
+        width 100%
+        
 .sub-solutions-tidal
     width 100%
-    margin-top 100px
-.sub-solutions-tidal div
-        padding 2%
-.sub-solutions-tidal span
-        font 500 2.5rem font-dagny
-.sub-solutions-tidal p 
-        margin-top 10px
-        font 400 1.8rem font-dagny
-        line-height 25px
-        color light-gray
+    margin-top 155px
+    & div
+        max-width 342px
+        &:not(:last-child)
+            margin-right 77px
+    & span
+        font 600 2.2rem font-soleil
+        letter-spacing -0.03em
+        line-height 26.4pt
+        color #333333
+    & p 
+        margin-top 20px
+        font 400 2rem font-dagny
+        line-height 30pt
+        color #737373
 
 .visual-design-panel-tidal
     background-color light-gray-bg-color
@@ -160,18 +210,20 @@
     background-color white
 
 .previous-project-panel-tidal
-        background url('../assets/Misfit/Marquee/Misfit.png') center no-repeat
-        background-size cover
+    background url('../assets/Misfit/Marquee/Misfit.png') center no-repeat
+    background-size cover
         
 .next-project-panel-tidal
-        background url('../assets/Sartorial/Marquee/Letter.png') center center no-repeat
-        background-color sartorial-jumbo-bg-color
-        background-size 28%
+    background url('../assets/Sartorial/Marquee/Letter.png') center center no-repeat
+    background-color sartorial-jumbo-bg-color
+    background-size 28%
         
 
 /* Misfit Specific */
 .jumbotron-misfit
     width 100%
+    & img
+        width 100%
     
 .final-designs-panel-misfit
     padding 130px 0
@@ -184,10 +236,11 @@
 .previous-project-panel-misfit
     background url('../assets/Sartorial/Marquee/Letter.png') center center no-repeat
     background-color sartorial-jumbo-bg-color
-    background-size 28%   
+    background-size 28%
+    width 100%
 
 .next-project-panel-misfit
     background url('../assets/Tidal/Marquee/Tidal_Marquee.png') center center no-repeat
     background-size cover
-        
+    width 100%
 
