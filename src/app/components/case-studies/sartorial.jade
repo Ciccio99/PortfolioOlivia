@@ -6,10 +6,10 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
     .project-case-content(layout='column', ng-cloak)
         .panel-row.brief-panel(layout='row', layout-wrap, ng-cloak)
             span.brief-header(flex='100') The brief
-            .left-brief-section(layout='column', flex='65')
+            .left-brief-section(layout='column', flex='65', flex-sm='100', flex-xs='100')
                 p.main-brief {{case_study.case_study.brief}}
                 p.sub-brief {{case_study.case_study.sub_brief}}            
-            .right-brief-section(layout='column', flex)
+            .right-brief-section(layout='column', flex, flex-sm='100', flex-xs='100')
                 div
                     span Client
                     p {{case_study.case_study.client}} 

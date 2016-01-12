@@ -1,1 +1,23 @@
-h1 ABOUT ME PAGE YAYAYAYAYjnbfhbbeqribaubl
+main-navbar
+md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cloak)
+
+    .jumbotron-about.become-sticky-here(layout='row', layout-align='center end')
+        img(ng-src='{{about.about.hero_image}}')
+
+    .about-panel-col(layout='column', layout-align='center start', ng-cloak)
+        .about-intro-text.about-text
+            | {{about.about.intro_text}}
+        .about-second-text.about-text
+            | {{about.about.second_text}}
+        .about-third-text.about-text(ng-bind-html="about.about.third_text")
+        .about-links.about-text
+            span
+                a(ui-sref='resume') Resume
+            span
+                a(href='{{about.about.linkedin_link}}', target='_blank') LinkedIn
+            span
+                a(href='{{about.about.dribble_link}}', target='_blank') Dribble
+            span
+                a(href='{{about.about.instagram_link}}', target='_blank') Instagram
+
+
