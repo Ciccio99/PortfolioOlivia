@@ -4,7 +4,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
         img(ng-src='{{case_study.case_study.marquee_image}}')
 
     .project-case-content(layout='column', ng-cloak)
-        .panel-row.brief-panel(layout='row', layout-wrap, ng-cloak)
+        .panel-row.brief-panel.limit-width(layout='row', layout-align='center center', layout-wrap, ng-cloak)
             span.brief-header(flex='100') The brief
             .left-brief-section(layout='column', flex='65', flex-sm='100', flex-xs='100')
                 p.main-brief {{case_study.case_study.brief}}
@@ -19,31 +19,38 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                 div
                     span Duration
                     p {{case_study.case_study.duration}} 
-        .panel-row.product-shots-panel.product-shots-panel-sartorial(ng-cloak)
-            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', dots='true', swipe-to-slide='true', init-onload='true' data="case_study.case_study.product_images")
+        .panel-row.product-shots-panel.product-shots-panel-sartorial(layout='row', layout-align='center center', ng-cloak)
+            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', dots='true', swipe-to-slide='true', init-onload='true', data="case_study.case_study.product_images")
                 div(ng-repeat='prod_img in case_study.case_study.product_images')
-                    img(ng-src='{{prod_img}}', alt='Product image')
+                    img.limit-width(ng-src='{{prod_img}}', alt='Product image')
 
-        .panel-row.solution-panel(layout='column', layout-align='start center', ng-cloak)
+        .panel-row.solution-panel.limit-width(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Solution
             p.main-solution {{case_study.case_study.solution}}
 
         .panel-row.wireframes-panel.wireframes-panel-sartorial(layout='column', layout-align='center center', ng-cloak)
             span.panel-header-titles Wireframes
-            slick.slick-carousel(infinite='false', slides-to-scroll='2', slides-to-show='3', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.wireframe_images", ng-cloak)
-                div.wireframe-slick(ng-repeat='wireframe_img in case_study.case_study.wireframe_images')
-                    img(ng-src='{{wireframe_img}}', alt='Wireframe image')
+            p.wireframes-opener {{case_study.case_study.wireframes_text}}
+            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', center-mode='true', dots='true', swipe-to-slide='true', variable-width='false', init-onload='true' data="case_study.case_study.wireframe_images", ng-cloak)
+                div.wireframe-slick(layout='column', layout-align='start center', ng-repeat='wireframe in case_study.case_study.wireframe_images')
+                    span.wireframe-asset-title {{wireframe.title}}
+                    img(ng-src='{{wireframe.image}}', alt='Wireframe image')
+                    div.wireframe-asset-breakdowns(flex, layout='row', layout-align='center center')
+                        div(layout='column', ng-repeat='explanation in wireframe.explanations')
+                            span {{explanation.title}}
+                            p {{explanation.body}}
 
-        .panel-row.visual-design-panel(layout='column', layout-align='start center', ng-cloak)
+        .panel-row.visual-design-panel(layout='column', ng-cloak)
             span.panel-header-titles Visual Design
             p {{case_study.case_study.visual_design_text}}
-            img(ng-src='{{case_study.case_study.moodboard}}', alt='Sartorial Moodboard')
+            .limit-width 
+                img(ng-src='{{case_study.case_study.moodboard}}', alt='Sartorial Moodboard')
 
         .panel-row.final-designs-panel.final-designs-panel-sartorial(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Final Designs
-            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images")
+            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='3', center-mode='true', initial-slide='0', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images")
                 div.wireframe-slick(ng-repeat='final_img in case_study.case_study.final_design_images')
-                    img(ng-src='{{final_img}}', alt='Final Design image')
+                    img.centered(ng-src='{{final_img}}', alt='Final Design image')
 
         .panel-row.thanks-panel(layout='column', layout-align='center center', ng-cloak)
             span Thanks for scrolling!

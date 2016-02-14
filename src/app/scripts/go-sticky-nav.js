@@ -13,9 +13,9 @@ $(window).bind("load", function() {
             var nav_height = $("#Sticky_Nav").outerHeight();
 
             if (window_top_pos >= element_bot_pos - nav_height) {
-                $('#Sticky_Nav').css({position: 'fixed'});
+                $('#Sticky_Nav').css({position: 'fixed', background: 'rgba(255, 255, 255, .7'});
             } else {
-                $('#Sticky_Nav').css({position: 'absolute'});
+                $('#Sticky_Nav').css({position: 'absolute',background: 'rgba(255, 255, 255, 0'});
             }
         });
     }

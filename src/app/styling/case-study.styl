@@ -8,128 +8,134 @@
     width 100%
 
 .limit-width
+    width 100%
     max-width 1440px
-    margin-left auto
-    margin-right auto
-    
+    margin auto
 .limit-width-not-centered
     max-width 1440px
     
 .panel-header-titles
-    font 600 1.6rem font-dagny
-    letter-spacing: 0.02rem
-    color normal-gray
+    font 600 1.8rem font-dagny
+    letter-spacing: -0.01em
+    line-height 40px
+    color light-gray
+    text-align center
     
 /*Brief section*/
 .brief-panel
-    padding 200px 9% 166px 9%
+    padding 177px 9% 195px 9%
     & span.brief-header 
-        font 600 2.4rem font-dagny
+        font 600 1.8rem font-dagny
         color light-gray
         letter-spacing -0.01em
-        margin-bottom 70px
+        margin-bottom 80px
         
 .left-brief-section
     & p.main-brief
-        font 400 3rem font-chaparral
-        line-height 42.5px
+        font 400 30px font-chaparral
+        line-height 4.25rem
         letter-spacing -0.02em
-        margin-bottom 40px
-        color #333333
+        margin-bottom 46px
+        color darker-gray
     & p.sub-brief
-        font 400 2.4rem font-dagny
+        font 400 1.7rem font-dagny
         color #737373
-        line-height 30pt
+        line-height 3.25rem
 
 .right-brief-section
     padding-left 116px
     & div
         padding-bottom 20px
     & div span
-        font 600 2rem font-dagny
+        font 600 1.7rem font-dagny
         line-height 40px
         letter-spacing -0.01em
         color #4c4c4c
     & div p
-        font 400 2rem font-dagny
+        font 400 1.7rem font-dagny
         letter-spacing -0.01em
         color #4c4c4c
 
 /* Solution section*/
 .solution-panel
-    padding 140px 0
-    & span
-        font 600 2.4rem font-dagny
-        color #aaaaaa
-        letter-spacing -0.01em
+    padding 118px 0 122px 0
     & p.main-solution
-        font 400 3.2rem font-chaparral
+        color darker-gray
+        font 400 2.5rem font-chaparral
         text-align center
         letter-spacing -0.02em
-        line-height 40pt
+        line-height 40px
         margin-top 60px
-        padding 0 14%
+        padding 0 19%
     
 /* Wireframes panel*/
 .wireframes-panel
     background-color wireframe-bg-color
-    padding 140px 0 80px 0
-    & span
+    padding 117px 0 80px 0
+    & span.panel-header-titles
         margin-bottom 60px 
-        font 600 2.4rem font-dagny
-        color #959595
-        letter-spacing -0.01em
+        color white-gray
+    & p.wireframes-opener
+        font 400 2.5rem font-chaparral
+        color #8a969f
+        text-align: center
+        letter-spacing -0.02em
+        line-height 40px
+        padding 0 25%
+        margin-bottom 105px
+        
         
 /* visual designs sections */
 .visual-design-panel
-    padding 140px 8%
-    & span 
-        font 600 2.4rem font-dagny
-        color #aaaaaa
-        letter-spacing -0.01em
+    padding 117px 8% 136px 8%
+    & span
+        color #b7b7b7
     & p
-        font 400 2.8rem font-chaparral
+        font 400 2.5rem font-chaparral
+        color darker-gray
         letter-spacing -0.02em
         text-align center
         line-height 40px
         margin-top 60px
-        padding 0 15%
+        margin-bottom 78px
+        padding 0 20%
     & img
-        margin-top 78px
-
+        width 100%
+        
 /* Final Designs panel*/
 .final-designs-panel
-    padding 20px 0 70px 0
     box-shadow 0 10px 10px -10px medium-gray
     z-index 1
+    padding-bottom 60px
     & span
-        font 600 2.4rem font-dagny
-        color #aaaaaa
-        letter-spacing -0.01em
-        margin-top 20px
-        margin-bottom 60px
+        font 600 3rem font-dagny
+        color #b7b7b7
+        letter-spacing -0.03em
+        line-height 40px
+        margin-bottom 50px
     
 /* Thanks panel*/
 .thanks-panel
-    padding 95px 20px
+    padding 103px 0 94px 0
     background-color light-gray-bg-color
     & span
-        font 600 4.4rem font-soleil
+        font 600 3.4rem font-soleil
         color #333333
         letter-spacing -0.03em
+        line-height 41px
         text-align center
+        margin-bottom 44px
     & p
         color #8c8c8c
-        margin-top 48px
         text-align center
-        font 400 3.2rem font-chaparral
+        font 400 2.5rem font-chaparral
         line-height 40px
         letter-spacing -0.02em
     & p .thanks-link
             color link-teal
-            font 400 3.2rem font-chaparral
+            font 400 2.5rem font-chaparral
             text-align center
-            line-height 28px
+            line-height 40px
             letter-spacing -0.02em
 
 /* other projects panel*/
@@ -140,13 +146,15 @@
     & .filter-layer
         background-color rgba(0, 0, 0, 0.65)
     & span
-        font 400 4rem font-chaparral
+        font 400 2.6rem font-chaparral
         color #efefef
         letter-spacing -0.02em
+        line-height 42px
         text-align center
     & p
-        font 600 4rem font-soleil
+        font 600 3.4rem font-soleil
         letter-spacing -0.03em
+        line-height 41px
         color #fafafa
 
 /* Sartorial Specific */
@@ -157,6 +165,8 @@
 
 .product-shots-panel-sartorial
     {light-pagination}
+    & img
+        width 100%
 
 .wireframes-panel-sartorial
     {light-pagination}
@@ -241,4 +251,19 @@
     background url('../assets/Tidal/Marquee/Tidal_Marquee.png') center center no-repeat
     background-size cover
     width 100%
+    
+/*
+    Nomad
+*/
+
+.nomad-wireframes-panel
+    {dark-pagination}
+    & div.nomad-wireframe-inner-panel
+        padding 0 6%
+        & img.nomad-wireframe-image
+            max-width 90%
+            max-height 675px
+            margin auto
+
+
 

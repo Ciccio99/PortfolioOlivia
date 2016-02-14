@@ -5,6 +5,30 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
 
     .project-cases(layout='column', ng-cloak)
         .project-cases-item(layout='row', ng-cloak)
+            img.project-case-image-nomad.slide-animation-to-right(src='{{main.case_studies[4].preview_image_path}}' alt='Nomad tablet image')
+            .project-case-item-info-panel.project-case-item-info-panel-nomad(flex-offset='45', flex, layout='column', layout-align='start center')
+                img.right-big-letter(src='{{main.case_studies[4].letter_path}}', alt='Big Letter')
+                .project-case-body-nomad(layout='column')
+                    .project-case-headers(layout='column')
+                        span.project-case-sub-header {{main.case_studies[4].type}}
+                        span.project-case-main-header.project-case-main-header-nomad {{main.case_studies[4].name}}
+                    .project-case-info.project-case-info-nomad(layout='column')
+                        p {{main.case_studies[4].description}}
+                        a.case-study-link(ui-sref='work({case_study: "nomad"})') view case study &#8594;
+
+        .project-cases-item(layout='row')
+            .project-case-item-info-panel(flex='55', layout='column', layout-align='start center')
+                img(src='{{main.case_studies[2].letter_path}}', alt='Big Letter')
+                .project-case-body-concerto(layout='column')
+                    .project-case-headers(layout='column')
+                        span.project-case-sub-header {{main.case_studies[2].type}}
+                        span.project-case-main-header.project-case-main-header-concerto {{main.case_studies[2].name}}
+                    .project-case-info.project-case-info-concerto(layout='column')
+                        p {{main.case_studies[2].description}}
+                        a.case-study-link(ui-sref='work({case_study: "concerto"})') view case study &#8594;
+            img.project-case-image-concerto.slide-animation-to-left(src='{{main.case_studies[2].preview_image_path}}' alt='Concerto Mac image')
+
+        .project-cases-item(layout='row', ng-cloak)
             img.project-case-image-tidal.slide-animation-to-right(src='{{main.case_studies[1].preview_image_path}}' alt='Tidal iPhone image')
             .project-case-item-info-panel.project-case-item-info-panel-tidal(flex-offset='45', flex, layout='column', layout-align='start center')
                 img.right-big-letter(src='{{main.case_studies[1].letter_path}}', alt='Big Letter')
@@ -27,19 +51,6 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                         p {{main.case_studies[0].description}}
                         a.case-study-link(ui-sref='work({case_study: "sartorial"})') view case study &#8594;
             img.project-case-image-sartorial.slide-animation-to-left(src='{{main.case_studies[0].preview_image_path}}' alt='Sartorial iPhone image')
-
-        //- .project-cases-item(layout='row')
-        //-     .project-case-item-info-panel(flex='55', layout='column', layout-align='start center')
-        //-         img(src='{{main.case_studies[2].letter_path}}', alt='Big Letter')
-        //-         .project-case-body-concerto(layout='column')
-        //-             .project-case-headers(layout='column')
-        //-                 span.project-case-sub-header {{main.case_studies[2].type}}
-        //-                 span.project-case-main-header.project-case-main-header-concerto {{main.case_studies[2].name}}
-        //-             .project-case-info.project-case-info-concerto(layout='column')
-        //-                 p {{main.case_studies[2].description}}
-        //-                 a.case-study-link(ui-sref='work({case_study: "concerto"})') view case study &#8594;
-        //-     img.project-case-image-concerto.slide-animation-to-left(src='{{main.case_studies[2].preview_image_path}}' alt='Concerto Mac image')
-
 
         .project-cases-item(layout='row', ng-cloak)
             img.project-case-image-misfit.slide-animation-to-right(src='{{main.case_studies[3].preview_image_path}}' alt='Misfit iPhone image')

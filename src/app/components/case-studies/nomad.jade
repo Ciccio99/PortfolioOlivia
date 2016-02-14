@@ -1,0 +1,95 @@
+main-navbar
+md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cloak)
+    .jumbotron-sartorial.become-sticky-here(layout='row', layout-align='center center')
+        img(ng-src='{{case_study.case_study.marquee_image}}')
+
+    .project-case-content(layout='column', ng-cloak)
+        .panel-row.brief-panel.limit-width(layout='row', layout-align='center center', layout-wrap, ng-cloak)
+            span.brief-header(flex='100') The brief
+            .left-brief-section(layout='column', flex='65', flex-sm='100', flex-xs='100')
+                p.main-brief {{case_study.case_study.brief}}
+                p.sub-brief {{case_study.case_study.sub_brief}}            
+            .right-brief-section(layout='column', flex, flex-sm='100', flex-xs='100')
+                div
+                    span Client
+                    p {{case_study.case_study.client}} 
+                div
+                    span Role
+                    p {{case_study.case_study.role}} 
+                div
+                    span Duration
+                    p {{case_study.case_study.duration}} 
+        .panel-row.product-shots-panel.product-shots-panel-sartorial(layout='row', layout-align='center center', ng-cloak)
+            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', dots='true', swipe-to-slide='true', init-onload='true', data="case_study.case_study.product_images")
+                div(ng-repeat='prod_img in case_study.case_study.product_images')
+                    img.limit-width(ng-src='{{prod_img}}', alt='Product image')
+
+        .panel-row.nomad-planning-panel.limit-width(layout='column', layout-align='start center', ng-cloak)
+            span.panel-header-titles How do people plan their trips?
+            p.main-solution {{case_study.case_study.planning}}
+
+        .panel-row.nomad-research-panel.limit-width(layout='column', layout-align='start center', ng-cloak)
+            span.panel-header-titles Research Results
+            div(layout='row', layout-wrap)
+                div.research-results(flex='50', layout='column', layout-align='center start', ng-repeat='results in case_study.case_study.research')
+                    span {{results.percentage}}
+                    span {{results.header}}
+                    p {{results.body}}
+
+        .panel-row.nomad-archetypes.limit-width(layout='column', layout-align='center center')
+            span.panel-header-titles User Archetypes
+            p.archetypes-text {{case_study.case_study.archetype_text}}
+            div.archetypes-contatiner(layout='row', layout-align='center center')
+                div.user-archetype(layout="column", layout-align='center center', ng-repeat="archetype in case_study.case_study.user_archetypes")
+                    img(ng-src='{{archetype.image}}')
+                    span {{archetype.title}}
+                    p {{archetype.body}}
+
+        .panel-row.solution-panel.limit-width(layout='column', layout-align='start center', ng-cloak)
+            span.panel-header-titles Solution
+            p.main-solution {{case_study.case_study.solution}}
+
+        .panel-row.wireframes-panel.nomad-wireframes-panel(layout='column', layout-align='center center', ng-cloak)
+            span.panel-header-titles Wireframes
+            p.wireframes-opener {{case_study.case_study.wireframe_text}}
+            slick.slick-carousel(infinite='false', slides-to-scroll='1', dots='true', swipe-to-slide='true', init-onload='true' data="case_study.case_study.wireframes", ng-cloak)
+                div.wireframe-slick(ng-repeat='wireframe in case_study.case_study.wireframes')
+                    .nomad-wireframe-inner-panel(layout='row', layout-align='start center')
+                        div(flex='50')
+                            img.nomad-wireframe-image(ng-src='{{wireframe.image}}', alt='Wireframe image')
+                        div(flex='50', layout='column')
+                            div(layout='column')
+                                span {{wireframe.title}}
+                                span {{wireframe.device}}
+                                p {{wireframe.summary}}
+                            div(layout='column', ng-repeat='explanation in wireframe.explanations')
+                                span {{explanation.number}}
+                                span {{explanation.title}}
+                                p {{explanation.body}}
+
+        .panel-row.visual-design-panel(layout='column', ng-cloak)
+            span.panel-header-titles Visual Design
+            p {{case_study.case_study.visual_design_text}}
+            .limit-width 
+                img(ng-src='{{case_study.case_study.moodboard}}', alt='Sartorial Moodboard')
+
+        .panel-row.final-designs-panel.final-designs-panel-sartorial(layout='column', layout-align='start center', ng-cloak)
+            span.panel-header-titles Final Designs
+            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', center-mode='true', initial-slide='0', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images", layout='row', layout-align='center center')
+                div(layout='row',layout-align='center center', ng-repeat='final_img in case_study.case_study.final_design_images')
+                    img.centered.image-width-limit(ng-src='{{final_img}}', alt='Final Design image')
+
+        .panel-row.thanks-panel(layout='column', layout-align='center center', ng-cloak)
+            span Thanks for scrolling!
+            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
+
+        .panel-row.other-projects-panel(layout='row', ng-cloak)
+            .previous-project-panel-sartorial(ui-sref='work({case_study: "tidal"})', flex='50')
+                .filter-layer(layout-fill, layout='column', layout-align='center center')
+                    span Previous Project
+                    p Tidal
+            .next-project-panel-sartorial(ui-sref='work({case_study: "misfit"})', flex='50')
+                .filter-layer(layout-fill, layout='column', layout-align='center center')
+                    span Next Project
+                    p Misfit
+

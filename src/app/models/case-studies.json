@@ -30,5 +30,13 @@
         "description": "Working hard at Misfit for my summer 2015 internship. These designs show some of my work.",
         "letter_path": "../assets/letters/M.png",
         "preview_image_path": "../assets/homepage-devices/misfit-iphone.png"
+    },
+    {
+        "id": "nomad",
+        "name": "Nomad",
+        "type": "Tablet/Mobile app",
+        "description": "Going on a vacation involves a lot of planning. There should be an easier way to travel while skipping this tedious process, and get an experience which is tailored to one's tastes.",
+        "letter_path": "../assets/letters/N.png",
+        "preview_image_path": "../assets/homepage-devices/nomad-tablet.png"
     }
 ]

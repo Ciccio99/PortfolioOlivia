@@ -1,28 +1,53 @@
 .slick-carousel
     width 100%
-    
-.wireframes-panel .slick-slide
-    width 420px !important
-.wireframes-panel .slick-slide img
-    margin-left auto
-
-.wireframes-panel .slick-dots
-        bottom -70px
-
-.final-designs-panel .slick-slide
-        width 420px !important
-.final-designs-panel .slick-slide img
-    margin-left auto
-            
-.final-designs-panel .slick-dots
-        bottom -40px
 
 .product-shots-panel img
     width 100%
 
+.final-designs-panel .slick-slide img
+    padding 0 30px
+
+.final-designs-panel .slick-dots
+    bottom -40px
+
+//
+// Wireframe carousel styling
+//
+
+.wireframes-panel 
+    & .slick-dots
+        bottom -70px
+        
+.wireframes-panel-sartorial
+    & span.wireframe-asset-title
+        display block
+        text-align center
+        font 600 3.2rem font-soleil
+        margin-bottom 26px
+        color #ffffff
+    & img
+        margin auto
+        margin-bottom 104px
+    & div.wireframe-asset-breakdowns
+        max-width 80%
+        margin auto
+        & div
+            padding 0 1%
+        & span
+            font 600 2rem font-soleil
+            color dull-gold
+            line-height 27.5px
+            letter-spacing -0.01em
+            margin-bottom 18px
+        & p
+            font 400 1.8rem font-dagny
+            color #9da0a3
+            line-height 30px
+            letter-spacing -0.01em
+
 .slick-next
-    background url('../assets/Arrows/Next_Arrow.png') center center no-repeat !important
-    right 0
+    background url('../assets/Arrows/Next_Arrow.png') right center no-repeat !important
+    right 35px
     top 0
     width 50px
     height 100%
@@ -34,12 +59,11 @@
     content none !important
 
 .slick-prev
-    background url('../assets/Arrows/Previous_Arrow.png') center center no-repeat !important
-    left 0
+    background url('../assets/Arrows/Previous_Arrow.png') left center no-repeat !important
+    left 35px
     top 0
     width 50px
     height 100%
-    color black
     
 .slick-prev:hover
     cursor pointer
@@ -54,6 +78,10 @@
 
 .slick-dots
     bottom 0px
+    
+.slick-dots
+    & li
+        margin 0
     
 light-pagination = 
     .slick-dots li button
