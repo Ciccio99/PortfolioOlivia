@@ -1,6 +1,6 @@
 main-navbar
 md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cloak)
-    .jumbotron-sartorial.become-sticky-here(layout='row', layout-align='center center')
+    .jumbotron-nomad.become-sticky-here(layout='row', layout-align='center center')
         img(ng-src='{{case_study.case_study.marquee_image}}')
 
     .project-case-content(layout='column', ng-cloak)
@@ -25,22 +25,22 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                     img.limit-width(ng-src='{{prod_img}}', alt='Product image')
 
         .panel-row.nomad-planning-panel.limit-width(layout='column', layout-align='start center', ng-cloak)
-            span.panel-header-titles How do people plan their trips?
+            span How do people plan their trips?
             p.main-solution {{case_study.case_study.planning}}
 
         .panel-row.nomad-research-panel.limit-width(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Research Results
-            div(layout='row', layout-wrap)
-                div.research-results(flex='50', layout='column', layout-align='center start', ng-repeat='results in case_study.case_study.research')
-                    span {{results.percentage}}
-                    span {{results.header}}
+            div(layout='row', layout-align='start center', layout-wrap)
+                div.research-results(flex, layout='column', ng-repeat='results in case_study.case_study.research')
+                    span.nomad-percent {{results.percentage}}
+                    span.nomad-research-header {{results.header}}
                     p {{results.body}}
 
         .panel-row.nomad-archetypes.limit-width(layout='column', layout-align='center center')
             span.panel-header-titles User Archetypes
             p.archetypes-text {{case_study.case_study.archetype_text}}
-            div.archetypes-contatiner(layout='row', layout-align='center center')
-                div.user-archetype(layout="column", layout-align='center center', ng-repeat="archetype in case_study.case_study.user_archetypes")
+            div.archetypes-contatiner(layout='row', layout-align='center start')
+                div.user-archetype(layout="column", layout-align='start center', ng-repeat="archetype in case_study.case_study.user_archetypes")
                     img(ng-src='{{archetype.image}}')
                     span {{archetype.title}}
                     p {{archetype.body}}
