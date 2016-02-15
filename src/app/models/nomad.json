@@ -35,12 +35,7 @@
                 {
                         "percentage": "77%",
                         "header": "Usually have an itinerary",
-                        "body": "Most of the sruvey takers said that they create an itinerary for their trips when they travel."
-                },
-                {
-                        "percentage": "79%",
-                        "header": "Create their itinerary before their trip",
-                        "body": "35% said they prepare an itinerary way ahead of time, while 43% said they make itineraries closer to the date of departure."
+                        "body": "Most of the survey takers said that they create an itinerary for their trips when they travel."
                 },
                 {
                         "percentage": "69%",
@@ -48,15 +43,21 @@
                         "body": "Most surbey takers saif they sometimes follow their itinerary. Their plans often change because of reason like weather, transportation, cost or operations hours."
                 },
                 {
-                        "percentage": "83%",
-                        "header": "Use a computer to plan their trip",
-                        "body": "Most people look at travel websites using their computer before going on a trip."
-                },
-                {
                         "percentage": "86%",
                         "header": "Use a phone to surf the web during their trip",
                         "body": "Most survey takers said they use their phones to look up travel websites and apps as they travel."
+                },
+                {
+                        "percentage": "79%",
+                        "header": "Create their itinerary before their trip",
+                        "body": "35% said they prepare an itinerary way ahead of time, while 43% said they make itineraries closer to the date of departure."
+                },
+                {
+                        "percentage": "83%",
+                        "header": "Use a computer to plan their trip",
+                        "body": "Most people look at travel websites using their computer before going on a trip."
                 }
+                
         ],
         "user_archetypes": [
                 {
@@ -96,19 +97,19 @@
                 },
                 {
                         "image": "../assets/Nomad/Wireframes/2.png",
-                        "title": "",
-                        "device": "",
-                        "summary": "",
+                        "title": "My Trip",
+                        "device": "Tablet",
+                        "summary": "The tablet experience is deigned for lesuire viewing during the trip. Like when you're at the airport waiting for your flight, or at breakfast when you want to plan your day.",
                         "explanations": [
                                 {
                                         "number": "01",
-                                        "title": "Personalized Suggestions",
-                                        "body": "The homepage displays a list of potential activites that you can do on your upcoming trip. This list is catered to your interests."
+                                        "title": "Quickly Navigate",
+                                        "body": "Access the tree main sections of your trip (itinerary, upcoming events and explore) through the stick menu."
                                 },
                                 {
                                         "number": "02",
-                                        "title": "Other Nomads",
-                                        "body": "Compare your adventures with other nomads' current adventures. Get inspired through the interactive map that shows nomads vacationing at different timezones."
+                                        "title": "Your Itinerary",
+                                        "body": "Insteaf of a list for an itinerary. Nomad displays your itinerary as an image timeline. You can easily scrub through and review the activites that you'll be doing at your destination."
                                 }
                         ]
                 },

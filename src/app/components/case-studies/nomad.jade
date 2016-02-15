@@ -1,7 +1,7 @@
 main-navbar
 md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cloak)
     .jumbotron-nomad.become-sticky-here(layout='row', layout-align='center center')
-        img(ng-src='{{case_study.case_study.marquee_image}}')
+        img(ng-src='{{case_study.case_study.letter_path}}')
 
     .project-case-content(layout='column', ng-cloak)
         .panel-row.brief-panel.limit-width(layout='row', layout-align='center center', layout-wrap, ng-cloak)
@@ -25,57 +25,76 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                     img.limit-width(ng-src='{{prod_img}}', alt='Product image')
 
         .panel-row.nomad-planning-panel.limit-width(layout='column', layout-align='start center', ng-cloak)
-            span How do people plan their trips?
+            span.panel-header-titles-tight How do people plan their trips?
             p.main-solution {{case_study.case_study.planning}}
 
-        .panel-row.nomad-research-panel.limit-width(layout='column', layout-align='start center', ng-cloak)
-            span.panel-header-titles Research Results
-            div(layout='row', layout-align='start center', layout-wrap)
-                div.research-results(flex, layout='column', ng-repeat='results in case_study.case_study.research')
-                    span.nomad-percent {{results.percentage}}
-                    span.nomad-research-header {{results.header}}
-                    p {{results.body}}
+        .panel-row.nomad-research-panel(layout='column', layout-align='start center', ng-cloak)
+            span.panel-header-titles-tight Research Results
+            div.research-container.limit-width(layout-fill, layout='row', layout-align='center start', layout-wrap)
+                div.research-col-container(flex, layout='column', layout-align='start end')
+                    div.research-results(layout='column')
+                        span.nomad-percent {{case_study.case_study.research[0].percentage}}
+                        span.nomad-research-header {{case_study.case_study.research[0].header}}
+                        p {{case_study.case_study.research[0].body}}
+                    div.research-results(layout='column')
+                        span.nomad-percent {{case_study.case_study.research[1].percentage}}
+                        span.nomad-research-header {{case_study.case_study.research[1].header}}
+                        p {{case_study.case_study.research[1].body}}
+                    div.research-results(layout='column')
+                        span.nomad-percent {{case_study.case_study.research[2].percentage}}
+                        span.nomad-research-header {{case_study.case_study.research[2].header}}
+                        p {{case_study.case_study.research[2].body}}
+                div.research-col-container(flex, layout='column', layout-align='start start')
+                    div.research-results(layout='column')
+                        span.nomad-percent {{case_study.case_study.research[3].percentage}}
+                        span.nomad-research-header {{case_study.case_study.research[3].header}}
+                        p {{case_study.case_study.research[3].body}}
+                    div.research-results(layout='column')
+                        span.nomad-percent {{case_study.case_study.research[4].percentage}}
+                        span.nomad-research-header {{case_study.case_study.research[4].header}}
+                        p {{case_study.case_study.research[4].body}}
 
-        .panel-row.nomad-archetypes.limit-width(layout='column', layout-align='center center')
-            span.panel-header-titles User Archetypes
+        .panel-row.nomad-archetypes-panel.limit-width(layout='column', layout-align='center center')
+            span.panel-header-titles-tight User Archetypes
             p.archetypes-text {{case_study.case_study.archetype_text}}
-            div.archetypes-contatiner(layout='row', layout-align='center start')
-                div.user-archetype(layout="column", layout-align='start center', ng-repeat="archetype in case_study.case_study.user_archetypes")
-                    img(ng-src='{{archetype.image}}')
+            div.archetypes-container(layout='row', layout-align='center start')
+                div.user-archetype(flex='30', layout="column", layout-align='start center', ng-repeat="archetype in case_study.case_study.user_archetypes")
+                    div.glyph-container(layout="column", layout-align='center')
+                        img(ng-src='{{archetype.image}}')
                     span {{archetype.title}}
                     p {{archetype.body}}
 
-        .panel-row.solution-panel.limit-width(layout='column', layout-align='start center', ng-cloak)
-            span.panel-header-titles Solution
+        .panel-row.solution-panel.nomad-solution-panel(layout='column', layout-align='start center', ng-cloak)
+            span.panel-header-titles-tight Solution
             p.main-solution {{case_study.case_study.solution}}
 
         .panel-row.wireframes-panel.nomad-wireframes-panel(layout='column', layout-align='center center', ng-cloak)
-            span.panel-header-titles Wireframes
+            span.panel-header-titles-tight Wireframes
             p.wireframes-opener {{case_study.case_study.wireframe_text}}
             slick.slick-carousel(infinite='false', slides-to-scroll='1', dots='true', swipe-to-slide='true', init-onload='true' data="case_study.case_study.wireframes", ng-cloak)
                 div.wireframe-slick(ng-repeat='wireframe in case_study.case_study.wireframes')
-                    .nomad-wireframe-inner-panel(layout='row', layout-align='start center')
+                    .nomad-wireframe-inner-panel.limit-width(layout='row', layout-align='start center')
                         div(flex='50')
                             img.nomad-wireframe-image(ng-src='{{wireframe.image}}', alt='Wireframe image')
-                        div(flex='50', layout='column')
-                            div(layout='column')
-                                span {{wireframe.title}}
-                                span {{wireframe.device}}
-                                p {{wireframe.summary}}
-                            div(layout='column', ng-repeat='explanation in wireframe.explanations')
-                                span {{explanation.number}}
-                                span {{explanation.title}}
-                                p {{explanation.body}}
+                        div.nomad-wireframe-breakdown-container(flex='50', layout='column')
+                            div.nomad-wireframe-main-info(layout='column')
+                                span.wireframe-main-info-title {{wireframe.title}}
+                                span.wireframe-main-info-device {{wireframe.device}}
+                                p.wireframe-main-info-body {{wireframe.summary}}
+                            div.wireframe-explanations(layout='column', ng-repeat='explanation in wireframe.explanations')
+                                span.wireframe-explanations-number {{explanation.number}}
+                                span.wireframe-explanations-title {{explanation.title}}
+                                p.wireframe-explanations-body {{explanation.body}}
 
         .panel-row.visual-design-panel(layout='column', ng-cloak)
-            span.panel-header-titles Visual Design
+            span.panel-header-titles-tight Visual Design
             p {{case_study.case_study.visual_design_text}}
             .limit-width 
                 img(ng-src='{{case_study.case_study.moodboard}}', alt='Sartorial Moodboard')
 
         .panel-row.final-designs-panel.final-designs-panel-sartorial(layout='column', layout-align='start center', ng-cloak)
-            span.panel-header-titles Final Designs
-            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', center-mode='true', initial-slide='0', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images", layout='row', layout-align='center center')
+            span.panel-header-titles-tight Final Designs
+            slick.slick-carousel(infinite='false', slides-to-scroll='1', center-mode='true', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images", layout='row', layout-align='center center')
                 div(layout='row',layout-align='center center', ng-repeat='final_img in case_study.case_study.final_design_images')
                     img.centered.image-width-limit(ng-src='{{final_img}}', alt='Final Design image')
 
