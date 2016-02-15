@@ -12,10 +12,12 @@ $(window).bind("load", function() {
             var element_bot_pos = element_height + element_top_pos;
             var nav_height = $("#Sticky_Nav").outerHeight();
 
-            if (window_top_pos >= element_bot_pos - nav_height) {
-                $('#Sticky_Nav').css({position: 'fixed', background: 'rgba(255, 255, 255, .93'});
+            if (window_top_pos >= element_bot_pos) {
+                $('#Sticky_Nav').css({background: 'rgba(255, 255, 255, .93'});
+                $('.nav-buttons-holder').css({padding: '0 0 0 0'});
             } else {
-                $('#Sticky_Nav').css({position: 'absolute',background: 'rgba(255, 255, 255, 0'});
+                $('#Sticky_Nav').css({background: 'rgba(255, 255, 255, 0'});
+                $('.nav-buttons-holder').css({padding: '50px 0 0 0'});
             }
         });
     }

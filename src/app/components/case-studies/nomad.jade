@@ -19,8 +19,13 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                 div
                     span Duration
                     p {{case_study.case_study.duration}} 
-        .panel-row.product-shots-panel.product-shots-panel-sartorial(layout='row', layout-align='center center', ng-cloak)
+        .panel-row.product-shots-panel.product-shots-panel-sartorial.limit-width(layout='row', layout-align='center center', ng-cloak)
             slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', dots='true', swipe-to-slide='true', init-onload='true', data="case_study.case_study.product_images")
+                div
+                    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+                    </style>
+                    <div class='embed-container'><iframe src='https://player.vimeo.com/video/155340167' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </div>
                 div(ng-repeat='prod_img in case_study.case_study.product_images')
                     img.limit-width(ng-src='{{prod_img}}', alt='Product image')
 
@@ -73,8 +78,8 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
             p.wireframes-opener {{case_study.case_study.wireframe_text}}
             slick.slick-carousel(infinite='false', slides-to-scroll='1', dots='true', swipe-to-slide='true', init-onload='true' data="case_study.case_study.wireframes", ng-cloak)
                 div.wireframe-slick(ng-repeat='wireframe in case_study.case_study.wireframes')
-                    .nomad-wireframe-inner-panel.limit-width(layout='row', layout-align='start center')
-                        div(flex='50')
+                    .nomad-wireframe-inner-panel.limit-width(layout='row', layout-align='center center')
+                        div
                             img.nomad-wireframe-image(ng-src='{{wireframe.image}}', alt='Wireframe image')
                         div.nomad-wireframe-breakdown-container(flex='50', layout='column')
                             div.nomad-wireframe-main-info(layout='column')
@@ -103,12 +108,10 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
             p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
 
         .panel-row.other-projects-panel(layout='row', ng-cloak)
-            .previous-project-panel-sartorial(ui-sref='work({case_study: "tidal"})', flex='50')
-                .filter-layer(layout-fill, layout='column', layout-align='center center')
-                    span Previous Project
-                    p Tidal
-            .next-project-panel-sartorial(ui-sref='work({case_study: "misfit"})', flex='50')
-                .filter-layer(layout-fill, layout='column', layout-align='center center')
-                    span Next Project
-                    p Misfit
+            .previous-project-panel-nomad(layout='column', layout-align='center center', ui-sref='work({case_study: "concerto"})', flex='50')
+                span Previous Project
+                p Concerto
+            .next-project-panel-nomad(layout='column', layout-align='center center', ui-sref='work({case_study: "sartorial"})', flex='50')
+                span Next Project
+                p Sartorial
 

@@ -96,7 +96,25 @@
                         ]
                 },
                 {
-                        "image": "../assets/Nomad/Wireframes/2.png",
+                        "image": "../assets/Nomad/Wireframes/2.gif",
+                        "title": "Plan A Trip",
+                        "device": "Tablet",
+                        "summary": "Deciding a destination can be tough, that's why Nomad is here to help!",
+                        "explanations": [
+                                {
+                                        "number": "01",
+                                        "title": "Catered to You",
+                                        "body": "Nomad collects information of your travels (your favorite weather, average length of stay, etc.). On top you can see a summary of your travel habits from the destinations you've visited. Underneath that, Nomad gives a list of suggested destinations that we think you'd like."
+                                },
+                                {
+                                        "number": "02",
+                                        "title": "Filter Your Results",
+                                        "body": "Not happy with your suggestions? You can edit the filters to get different results. Or even use a custom filter that's not based off your data."
+                                }
+                        ]
+                },
+                {
+                        "image": "../assets/Nomad/Wireframes/3.png",
                         "title": "My Trip",
                         "device": "Tablet",
                         "summary": "The tablet experience is deigned for lesuire viewing during the trip. Like when you're at the airport waiting for your flight, or at breakfast when you want to plan your day.",
@@ -109,43 +127,56 @@
                                 {
                                         "number": "02",
                                         "title": "Your Itinerary",
-                                        "body": "Insteaf of a list for an itinerary. Nomad displays your itinerary as an image timeline. You can easily scrub through and review the activites that you'll be doing at your destination."
-                                }
-                        ]
-                },
-                {
-                        "image": "../assets/Nomad/Wireframes/3.png",
-                        "title": "",
-                        "device": "",
-                        "summary": "",
-                        "explanations": [
-                                {
-                                        "number": "01",
-                                        "title": "Personalized Suggestions",
-                                        "body": "The homepage displays a list of potential activites that you can do on your upcoming trip. This list is catered to your interests."
-                                },
-                                {
-                                        "number": "02",
-                                        "title": "Other Nomads",
-                                        "body": "Compare your adventures with other nomads' current adventures. Get inspired through the interactive map that shows nomads vacationing at different timezones."
+                                        "body": "Instead of a list for an itinerary, Nomad displays your itinerary as an image timeline. You can easily scrub through and review the activites that you'll be doing at your destination."
                                 }
                         ]
                 },
                 {
                         "image": "../assets/Nomad/Wireframes/4.png",
-                        "title": "",
-                        "device": "",
-                        "summary": "",
+                        "title": "My Trip",
+                        "device": "Tablet",
+                        "summary": "The tablet experience is deigned for lesuire viewing during the trip. Like when you're at the airport waiting for your flight, or at breakfast when you want to plan your day.",
                         "explanations": [
                                 {
                                         "number": "01",
-                                        "title": "Personalized Suggestions",
-                                        "body": "The homepage displays a list of potential activites that you can do on your upcoming trip. This list is catered to your interests."
+                                        "title": "Upcoming Events",
+                                        "body": "Nomad shows you events that are happening at your destination, in case you missed it while planning."
                                 },
                                 {
                                         "number": "02",
-                                        "title": "Other Nomads",
-                                        "body": "Compare your adventures with other nomads' current adventures. Get inspired through the interactive map that shows nomads vacationing at different timezones."
+                                        "title": "Feeling Spontaneous",
+                                        "body": "If you have extra time in your day and want to experience something new, let Nomad suggest an activity for you to do!"
+                                }
+                        ]
+                },
+                {
+                        "image": "../assets/Nomad/Wireframes/5.png",
+                        "title": "Available On the Go",
+                        "device": "Mobile",
+                        "summary": "The mobile experience is designed for use when you're on teh go and exploring sights at your destination, You can easily access your trip information on Nomad's mobile app.",
+                        "explanations": [
+                                {
+                                        "number": "01",
+                                        "title": "Each Check In",
+                                        "body": "Using your location, Nomad lets you check in to a place easily. That way, it'll be checked off your itinerary/bucket list, and you'll have a record of where you went."
+                                }
+                        ]
+                },
+                {
+                        "image": "../assets/Nomad/Wireframes/6.gif",
+                        "title": "Explore Nearby",
+                        "device": "Mobile",
+                        "summary": "The mobile experience is designed for use when you're on teh go and exploring sights at your destination, You can easily access your trip information on Nomad's mobile app.",
+                        "explanations": [
+                                {
+                                        "number": "01",
+                                        "title": "Humanizing Search",
+                                        "body": "Search by filling in the blanks."
+                                },
+                                {
+                                        "number": "02",
+                                        "title": "Options to your search results",
+                                        "body": "Search by filling in the blanks."
                                 }
                         ]
                 }
