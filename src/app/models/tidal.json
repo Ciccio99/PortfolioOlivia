@@ -33,7 +33,8 @@
 
         "visual_design_text": "A tsunami warning and emergency guide that is accessible in digital form. The guide will provide a method of wayfinding to people to reach safety.",
         "product_images": [
-                "../assets/Tidal/Product_Shots/1.png"
+                "../assets/Tidal/Product_Shots/1.png",
+                "../assets/Tidal/Product_Shots/2.png"
         ],
         "moodboard": "../assets/Tidal/Moodboard/moodboard.png",
         "final_design_images": [

@@ -73,7 +73,7 @@
         letter-spacing -0.02em
         line-height 40px
         margin-top 60px
-        padding 0 19%
+        max-width 932px
     
 /* Wireframes panel*/
 .wireframes-panel
@@ -105,7 +105,7 @@
         line-height 40px
         margin-top 60px
         margin-bottom 78px
-        padding 0 20%
+        max-width 932px
     & img
         width 100%
         
@@ -115,10 +115,10 @@
     z-index 1
     padding-bottom 60px
     & span
-        font 600 3rem font-dagny
-        color #b7b7b7
-        letter-spacing -0.03em
-        line-height 40px
+        font 600 1.8rem font-dagny
+        color light-gray
+        letter-spacing -0.01em
+        text-align center
         margin-bottom 50px
     
 /* Thanks panel*/
@@ -234,6 +234,7 @@
         color #edf0f2
         line-height 40px
         letter-spacing -0.02em
+        color dark-gray
     & div.tidal-wireframe-inner-panel
         padding 0 6%
         & img.Tidal-wireframe-image
@@ -241,8 +242,8 @@
             max-height 675px
             margin auto
         & div.tidal-wireframe-breakdown-container
-            padding 0 8%
             margin-top 88px
+            max-width 460px
             & div.tidal-wireframe-main-info
                 margin-bottom 15px
                 & span.wireframe-main-info-number
@@ -256,10 +257,10 @@
                     letter-spacing -0.03em
                     line-height 100%
                 & p.wireframe-main-info-body
-                    font 400 1.8rem font-dagny
+                    font 400 1.7rem font-dagny
                     color #989695
                     margin-top 25px
-                    line-height 100%
+                    line-height 28px
             & div.wireframe-explanations
                 & span.wireframe-explanations-number
                     font 400 1.6rem font-soleil
@@ -461,4 +462,42 @@
 .next-project-panel-nomad
     background-color #b8c9db
 
+/*
+    Concerto
+*/
 
+.jumbotron-concerto
+    width 100%
+    height 685px
+    background linear-gradient(to top, #1d1c21, #272529)
+    
+.data-visualization-panel-concerto
+    background-color #f5f5f5
+    & div.data-visualizations-container-concerto
+        & div.concerto-gif-container
+            margin 0 20px
+        & img.concerto-hover-states-limit
+            max-width 560px
+        & div.data-visualizations-info-container
+            max-width 460px
+            margin 0 70px
+            & span.data-visualizations-title
+                font 600 3rem font-soleil
+                color #e47661
+                letter-spacing -0.03em
+                line-height 100%
+                margin-bottom 20px
+            & p.data-visualizations-body
+                font 400 1.8rem font-dagny
+                color #949291
+                line-height 30px
+        & div.concerto-hover-states-limit
+            max-width 430px
+
+.final-designs-panel-concerto
+    {dark-pagination}
+.previous-project-panel-concerto
+    background-color #72b0cd
+.next-project-panel-concerto
+    background-color #b8c9da
+                

@@ -18,7 +18,8 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                     p {{case_study.case_study.role}} 
                 div
                     span Duration
-                    p {{case_study.case_study.duration}} 
+                    p {{case_study.case_study.duration}}
+
         .panel-row.product-shots-panel.product-shots-panel-sartorial.limit-width(layout='row', layout-align='center center', ng-cloak)
             slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', dots='true', swipe-to-slide='true', init-onload='true', data="case_study.case_study.product_images")
                 div
