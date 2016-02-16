@@ -5,7 +5,7 @@
         "description": "Is there a way tsunami impact could be reduced? This project focused on procedural design for an earthquake and tsunami evacuation. Did the app just sound an alarm? If it did, you better start running, because a tusnami is coming towards your general direction, buddy. Rejoice for TIDAL!",
         "letter_path": "../../assets/letters/T.png",
         "preview_image_path": "../assets/homepage-devices/tidal-iphone.png",
-        "marquee_image": "../assets/Tidal/Marquee/Tidal_Marquee.png",
+        "marquee_image": "../assets/Tidal/Marquee/Marquee.png",
         "brief": "On December 26, 2004, the Indian Ocean was hit by a 9.1 magnitude earthquake. The earthquake triggered a massive tsunami which took hundreds of thosands of lives and devasted many countries.",
         "sub_brief": "There were no official government warnings issued in countries that were in the Indian Ocean tsunami's path because of official procedures were not in place and disorganized responses. Many people at the time were not aware of the tsunami that was heading towards them. Even though a tsunami is not preventable, the impact could of been reduced if people were alert and aware of what was happening.",
         "client": "school project",
@@ -15,20 +15,23 @@
         "sub_solutions": [
                 {
                         "title": "Natural Disaster Monitor",
-                        "body": "Tidal has an early earthquake warning system, as well as a tsunami warning system that alerts users of the app whenever they are in a threatening situation"
+                        "body": "Tidal has an early earthquake warning system, as well as a tsunami warning system that alerts users of the app whenever they are in a threatening situation",
+                        "image": "../assets/Tidal/Solutions/1.png"
                 },
                 {
                         "title": "Automated Way Finding",
-                        "body": "Tidal provides the users with an evacuation guideline."
+                        "body": "Tidal provides the users with an evacuation guideline.",
+                        "image": "./assets/Tidal/Solutions/2.png"
                 },
                 {
                         "title": "Family Monitoring",
-                        "body": "For those who are family oriented, Tidal automatically plans a route based on their family members wherabouts."
+                        "body": "For those who are family oriented, Tidal automatically plans a route based on their family members wherabouts.",
+                        "image": "./assets/Tidal/Solutions/3.png"
                 }
         ],
         "visual_design_text": "A tsunami warning and emergency guide that is accessible in digital form. The guide will provide a method of wayfinding to people to reach safety.",
         "product_images": [
-                "../assets/Tidal/Product_Shots/Shot_1.png"
+                "../assets/Tidal/Product_Shots/1.png"
         ],
         "moodboard": "../assets/Tidal/Moodboard/moodboard.png",
         "final_design_images": [

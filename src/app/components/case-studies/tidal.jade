@@ -28,6 +28,8 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
             p.main-solution {{case_study.case_study.solution}}
             .sub-solutions-tidal(layout='row', layout-align='center start', layout-wrap)
                 div(flex, flex-sm="100", layout='column', layout-align='start start', ng-repeat='sub_solution in case_study.case_study.sub_solutions')
+                    div.sub-solution-glyph-container
+                        img(ng-src="{{sub_solution.image}}")
                     span {{sub_solution.title}}
                     p {{sub_solution.body}}
         .panel-row.visual-design-panel.visual-design-panel-tidal(layout='column', layout-align='start center', ng-cloak)
