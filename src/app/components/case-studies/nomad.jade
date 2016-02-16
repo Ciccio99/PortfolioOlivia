@@ -64,7 +64,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
             p.archetypes-text {{case_study.case_study.archetype_text}}
             div.archetypes-container(layout='row', layout-align='center start')
                 div.user-archetype(flex='30', layout="column", layout-align='start center', ng-repeat="archetype in case_study.case_study.user_archetypes")
-                    div.glyph-container(layout="column", layout-align='center')
+                    div.glyph-container(layout="column", layout-align='center center')
                         img(ng-src='{{archetype.image}}')
                     span {{archetype.title}}
                     p {{archetype.body}}

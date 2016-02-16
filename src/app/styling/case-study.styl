@@ -148,10 +148,12 @@
 /* other projects panel*/
 .other-projects-panel
     & div
-        height 340px
+        height 270px
         cursor pointer
     & .filter-layer
-        background-color rgba(0, 0, 0, 0.65)
+        transition all 0.3s ease
+    & .filter-layer:hover
+        background-color rgba(255, 255, 255, 0.25)
     & span
         font 400 2.6rem font-chaparral
         color #efefef
@@ -193,30 +195,92 @@
 /* Tidal Specific */
 .jumbotron-tidal
     width 100%
-    background linear-gradient(top, #1d2b33, #02232e)
+    background linear-gradient(to bottom, #1d2b33, #02232e)
     height 685px
             
 .sub-solutions-tidal
     width 100%
     margin-top 155px
-    & div
-        max-width 342px
-        &:not(:last-child)
-            margin-right 77px
+    padding 0 5%
+    & div.tidal-sub-solution-column
+        padding 0 2%
+    & div.tidal-glyph-container
+        height 176px
+        margin-bottom 56px
+        & img
+            max-width 100%
+            max-height 100%
+            margin auto
     & span
-        font 600 2.2rem font-soleil
+        font 600 2.6rem font-soleil
         letter-spacing -0.03em
-        line-height 26.4pt
-        color #333333
+        line-height 36px
+        color #595959
     & p 
         margin-top 20px
-        font 400 2rem font-dagny
-        line-height 30pt
+        font 400 1.8rem font-dagny
+        letter-spacing: -0.01em
+        line-height 32.5px
         color #737373
-    & div.sub-solution-glyph-container
-        height 176px
-        & img 
-            width 100%
+    
+        
+.tidal-wireframes-panel
+    {dark-pagination}
+    background-color #ebebeb
+    & span.panel-header-titles-tight
+        margin-bottom 50px
+    & p.wireframes-opener
+        font 400 2.5rem font-chaparral
+        color #edf0f2
+        line-height 40px
+        letter-spacing -0.02em
+    & div.tidal-wireframe-inner-panel
+        padding 0 6%
+        & img.Tidal-wireframe-image
+            max-width 90%
+            max-height 675px
+            margin auto
+        & div.tidal-wireframe-breakdown-container
+            padding 0 8%
+            margin-top 88px
+            & div.tidal-wireframe-main-info
+                margin-bottom 15px
+                & span.wireframe-main-info-number
+                    font 400 20px font-soleil
+                    color #383838
+                    letter-spacing -0.02em
+                    line-height 100%
+                & span.wireframe-main-info-title
+                    font 600 3.6rem font-soleil
+                    color #383838
+                    letter-spacing -0.03em
+                    line-height 100%
+                & p.wireframe-main-info-body
+                    font 400 1.8rem font-dagny
+                    color #989695
+                    margin-top 25px
+                    line-height 100%
+            & div.wireframe-explanations
+                & span.wireframe-explanations-number
+                    font 400 1.6rem font-soleil
+                    color tidal-blue
+                    margin-top 25px
+                    line-height 100%
+                & span.wireframe-explanations-title
+                    font 600 2rem font-soleil
+                    color tidal-blue
+                    letter-spacing -0.01em
+                    line-height 100%
+                    padding-bottom 14px
+                & p.wireframe-explanations-body
+                    font 400 1.8rem font-dagny
+                    color #949291
+                    line-height 30px
+
+.final-designs-panel-tidal
+    & div.wireframe-slick
+        & img
+            max-width 330px   
 
 .visual-design-panel-tidal
     background-color light-gray-bg-color
@@ -229,14 +293,10 @@
     background-color white
 
 .previous-project-panel-tidal
-    background url('../assets/Misfit/Marquee/Misfit.png') center no-repeat
-    background-size cover
+    background-color #728a83
         
 .next-project-panel-tidal
-    background url('../assets/Sartorial/Marquee/Letter.png') center center no-repeat
-    background-color sartorial-jumbo-bg-color
-    background-size 28%
-        
+    background-color #f7a04f
 
 /* Misfit Specific */
 .jumbotron-misfit
@@ -377,7 +437,7 @@
                     color #fafafa
                     letter-spacing -0.02em
                 & p.wireframe-main-info-body
-                    font 400 1.6rem font-soleil
+                    font 400 1.8rem font-dagny
                     color #949291
                     line-height 27.5px
                     margin-top 36px
@@ -387,11 +447,11 @@
                     color nomad-blue
                     margin-top 45px
                 & span.wireframe-explanations-title
-                    font 400 2rem font-soleil
+                    font 600 2rem font-soleil
                     color nomad-blue
                     letter-spacing -0.01em
                 & p.wireframe-explanations-body
-                    font 400 1.6rem font-soleil
+                    font 400 1.8rem font-dagny
                     color #949291
                     line-height 27.5px
                     

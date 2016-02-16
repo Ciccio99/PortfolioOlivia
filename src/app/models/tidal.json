@@ -19,7 +19,7 @@
                         "image": "../assets/Tidal/Solutions/1.png"
                 },
                 {
-                        "title": "Automated Way Finding",
+                        "title": "Automated Wayfinding",
                         "body": "Tidal provides the users with an evacuation guideline.",
                         "image": "./assets/Tidal/Solutions/2.png"
                 },
@@ -29,6 +29,8 @@
                         "image": "./assets/Tidal/Solutions/3.png"
                 }
         ],
+        "wireframe_text": "Different devices are optimal in different stages of travel planning. Tidal offers a holistic approach to traveling, from choosing a destination to following an itinerary through a cross platform app.",
+
         "visual_design_text": "A tsunami warning and emergency guide that is accessible in digital form. The guide will provide a method of wayfinding to people to reach safety.",
         "product_images": [
                 "../assets/Tidal/Product_Shots/1.png"
@@ -41,5 +43,122 @@
                 "../assets/Tidal/Final_Designs/4.png",
                 "../assets/Tidal/Final_Designs/5.png",
                 "../assets/Tidal/Final_Designs/6.png"
+        ],
+        "wireframes": [
+                {
+                        "image": "../assets/Tidal/Wireframes/1.png",
+                        "title": "Warnings",
+                        "summary": "Tidal's warning screens alert users of natural disasters, earthquakes, or tsunamis) that threaten them.",
+                        "number": "01",
+                        "explanations": [
+                                {
+                                        "number": "01",
+                                        "title": "Location",
+                                        "body": "A user's location and family members location represented on a map. A circle outline shows the bounds of where the user is in relation to the earthquake."
+                                },
+                                {
+                                        "number": "02",
+                                        "title": "Earthquake Diagram",
+                                        "body": "The epicenter shows the source of the earthquake. While the rings around the epicenter will animate to show the earthquake pule in real time. Earthquake tremors are represented in transparent circls."
+                                },
+                                {
+                                        "number": "03",
+                                        "title": "Earthquake Details",
+                                        "body": "More details about the earthquake in relation to a user, including: an earthcountdown timer, expected magnitude of the earthquake, and the intensity of the earthquake."
+                                }
+                        ]
+                },
+                {
+                        "image": "../assets/Tidal/Wireframes/2.png",
+                        "title": "Choosing a Route",
+                        "summary": "This screen guides users through the evacuation process. Users are propmted to choose their method of transportation and choose an evacuation center to navigate to.",
+                        "number": "02",
+                        "explanations": [
+                                {
+                                        "number": "01",
+                                        "title": "Evacuation Centers",
+                                        "body": "The location pins of evacuation centers are automatically suggested to the user."
+                                },
+                                {
+                                        "number": "02",
+                                        "title": "Family Members",
+                                        "body": "Location pin of a family member is shown on the map along with her/her name."
+                                },
+                                {
+                                        "number": "03",
+                                        "title": "Your Location",
+                                        "body": "A user's location labeled with a pin."
+                                },
+                                {
+                                        "number": "04",
+                                        "title": "Method of Transportation",
+                                        "body": "Transportation options include by by car or by foot. Users can tap on the car icon and change their preferences."
+                                }
+                        ]
+                },
+                {
+                        "image": "../assets/Tidal/Wireframes/3.png",
+                        "title": "Evacuation Route",
+                        "summary": "Once a user chooses a route, they are presented with the route details.",
+                        "number": "03",
+                        "explanations": [
+                                {
+                                        "number": "01",
+                                        "title": "Family First",
+                                        "body": "One a route is chose, it will by default show a route where the user will be able to pick up a family member."
+                                },
+                                {
+                                        "number": "02",
+                                        "title": "Alternative Route",
+                                        "body": "There is also the option of traveling alone."
+                                },
+                                {
+                                        "number": "03",
+                                        "title": "Tsunami Timer",
+                                        "body": "Countdown timer decreased in size."
+                                },
+                                {
+                                        "number": "04",
+                                        "title": "Evacuation Center",
+                                        "body": "Important deatils of the evacuation center is displayed on a modal window. Only half of the modal is show, a user can swipe to display the full window to learn more."
+                                }
+                        ]
+                },
+                {
+                        "image": "../assets/Tidal/Wireframes/4.png",
+                        "title": "Navigation",
+                        "summary": "Once a user starts the navigation process, Tidal displays directions for the user to follow.",
+                        "number": "04",
+                        "explanations": [
+                                {
+                                        "number": "01",
+                                        "title": "Clear Directions",
+                                        "body": "Directions to help the user nabigate his/her way to the evacuation route. Including an arrow to show the direction and a distance indicator to coutdown how much further before a user's next step."
+                                },
+                                {
+                                        "number": "02",
+                                        "title": "Your Location",
+                                        "body": "The user represented on the map using a dot."
+                                },
+                                {
+                                        "number": "03",
+                                        "title": "Additional Info",
+                                        "body": "Hamburger menu that will show the timeline and a list of family members."
+                                }
+                        ]
+                },
+                {
+                        "image": "../assets/Tidal/Wireframes/5.png",
+                        "title": "Navigation",
+                        "summary": "Once a user reaches their destination, Tidal will send a feedback message.",
+                        "number": "05",
+                        "explanations": [
+                                {
+                                        "number": "01",
+                                        "title": "Destination",
+                                        "body": "The user's destination building is highlighted, and indicated by a location pin. The building is also labeled."
+                                }
+                        ]
+                }
         ]
 }
