@@ -12,6 +12,7 @@
         "role": "concept, user experience and visual",
         "duration": "12 weeks, Fall 2014",
         "solution": "A tsunami warning and emergency guide that is accessible in digital form. The guide will provide a method of wayfinding to people to reach safety and inform users of the steps to take in real-time. Core features include:",
+        "deck_conclusion": "Tidal aims to make information and data available for users who are in threat of natural disasters. By making users aware of a natural disaster, Tidal hopes to decrease the aftermath of such events, namely death and displacement.",
         "sub_solutions": [
                 {
                         "title": "Natural Disaster Monitor",

@@ -1,7 +1,7 @@
 main-navbar
 md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cloak)
     .jumbotron-nomad.become-sticky-here(layout='row', layout-align='center center')
-        img(ng-src='{{case_study.case_study.letter_path}}')
+        img(ng-src='{{case_study.case_study.marquee_image}}')
 
     .project-case-content(layout='column', ng-cloak)
         .panel-row.brief-panel.limit-width(layout='row', layout-align='center center', layout-wrap, ng-cloak)
@@ -20,7 +20,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                     span Duration
                     p {{case_study.case_study.duration}}
 
-        .panel-row.product-shots-panel.product-shots-panel-sartorial.limit-width(layout='row', layout-align='center center', ng-cloak)
+        .panel-row.product-shots-panel.product-shots-panel-nomad.limit-width(layout='row', layout-align='center center', ng-cloak)
             slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', dots='true', swipe-to-slide='true', init-onload='true', data="case_study.case_study.product_images")
                 div
                     <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
@@ -36,29 +36,30 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
 
         .panel-row.nomad-research-panel(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles-tight Research Results
-            div.research-container.limit-width(layout-fill, layout='row', layout-align='center start', layout-wrap)
-                div.research-col-container(flex, layout='column', layout-align='start end')
+            div.research-container.limit-width(layout='column', layout-align='start center')
+                div.research-col-container(flex, layout='row', layout-align='space between')
                     div.research-results(layout='column')
                         span.nomad-percent {{case_study.case_study.research[0].percentage}}
                         span.nomad-research-header {{case_study.case_study.research[0].header}}
                         p {{case_study.case_study.research[0].body}}
                     div.research-results(layout='column')
+                        span.nomad-percent {{case_study.case_study.research[3].percentage}}
+                        span.nomad-research-header {{case_study.case_study.research[3].header}}
+                        p {{case_study.case_study.research[3].body}}
+                div.research-col-container(flex, layout='row', layout-align='space between')
+                    div.research-results(layout='column')
                         span.nomad-percent {{case_study.case_study.research[1].percentage}}
                         span.nomad-research-header {{case_study.case_study.research[1].header}}
                         p {{case_study.case_study.research[1].body}}
                     div.research-results(layout='column')
-                        span.nomad-percent {{case_study.case_study.research[2].percentage}}
-                        span.nomad-research-header {{case_study.case_study.research[2].header}}
-                        p {{case_study.case_study.research[2].body}}
-                div.research-col-container(flex, layout='column', layout-align='start start')
-                    div.research-results(layout='column')
-                        span.nomad-percent {{case_study.case_study.research[3].percentage}}
-                        span.nomad-research-header {{case_study.case_study.research[3].header}}
-                        p {{case_study.case_study.research[3].body}}
-                    div.research-results(layout='column')
                         span.nomad-percent {{case_study.case_study.research[4].percentage}}
                         span.nomad-research-header {{case_study.case_study.research[4].header}}
                         p {{case_study.case_study.research[4].body}}
+                div.research-col-container.last-research-col-container(layout='row', layout-align='start start')
+                    div.research-results(layout='column')
+                        span.nomad-percent {{case_study.case_study.research[2].percentage}}
+                        span.nomad-research-header {{case_study.case_study.research[2].header}}
+                        p {{case_study.case_study.research[2].body}}
 
         .panel-row.nomad-archetypes-panel.limit-width(layout='column', layout-align='center center')
             span.panel-header-titles-tight User Archetypes
@@ -77,7 +78,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
         .panel-row.wireframes-panel.nomad-wireframes-panel(layout='column', layout-align='center center', ng-cloak)
             span.panel-header-titles-tight Wireframes
             p.wireframes-opener {{case_study.case_study.wireframe_text}}
-            slick.slick-carousel(infinite='false', slides-to-scroll='1', dots='true', swipe-to-slide='true', init-onload='true' data="case_study.case_study.wireframes", ng-cloak)
+            slick.slick-carousel(infinite='true', slides-to-scroll='1', dots='true', swipe-to-slide='true', init-onload='true' data="case_study.case_study.wireframes", ng-cloak)
                 div.wireframe-slick(ng-repeat='wireframe in case_study.case_study.wireframes')
                     .nomad-wireframe-inner-panel.limit-width(layout='row', layout-align='center center')
                         div
@@ -92,7 +93,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                                 span.wireframe-explanations-title {{explanation.title}}
                                 p.wireframe-explanations-body {{explanation.body}}
 
-        .panel-row.visual-design-panel(layout='column', ng-cloak)
+        .panel-row.visual-design-panel(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles-tight Visual Design
             p {{case_study.case_study.visual_design_text}}
             .limit-width 
@@ -106,13 +107,15 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
 
         .panel-row.thanks-panel(layout='column', layout-align='center center', ng-cloak)
             span Thanks for scrolling!
-            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
+            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oliviagsutanto@gmail.com?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
 
         .panel-row.other-projects-panel(layout='row', ng-cloak)
-            .previous-project-panel-nomad(layout='column', layout-align='center center', ui-sref='work({case_study: "concerto"})', flex='50')
-                span Previous Project
-                p Concerto
-            .next-project-panel-nomad(layout='column', layout-align='center center', ui-sref='work({case_study: "sartorial"})', flex='50')
-                span Next Project
-                p Sartorial
+            .previous-project-panel-nomad(layout='column', layout-align='center center', ui-sref='work({case_study: "misfit"})', flex='50')
+                .filter-layer(layout-fill, layout='column', layout-align='center center')
+                    span Previous Project
+                    p Misifit
+            .next-project-panel-nomad(layout='column', layout-align='center center', ui-sref='work({case_study: "tidal"})', flex='50')
+                .filter-layer(layout-fill, layout='column', layout-align='center center')
+                    span Next Project
+                    p Tidal
 

@@ -64,13 +64,13 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
         .panel-row.final-designs-panel.final-designs-panel-concerto.limit-width(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles-tight Final Designs
             div(layout='row')
-                slick.slick-carousel(infinite='false', slides-to-scroll='1', dots='true', swipe-to-slide='true',init-onload='true' data="case_study.case_study.final_design_images")
+                slick.slick-carousel(infinite='false', slides-to-scroll='1', dots='true', swipe-to-slide='true',init-onload='true', data="case_study.case_study.final_design_images")
                     div(ng-repeat='final_img in case_study.case_study.final_design_images')
                         img.limit-width(ng-src='{{final_img}}', alt='Final Design image')
 
         .panel-row.thanks-panel(layout='column', layout-align='center center', ng-cloak)
             span Thanks for scrolling!
-            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
+            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oliviagsutanto@gmail.com?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
 
         .panel-row.other-projects-panel(layout='row', ng-cloak)
             .previous-project-panel-concerto(ui-sref='work({case_study: "tidal"})', flex='50')

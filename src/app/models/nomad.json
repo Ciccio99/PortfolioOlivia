@@ -5,7 +5,7 @@
         "description": "Going on a vacation involves a lot of planning. There should be an easier way to travel while skipping this tedious process, and get an experience which is tailored to one's tastes.",
         "letter_path": "../../assets/letters/N.png",
         "preview_image_path": "../assets/homepage-devices/nomad-tablet.png",
-        "marquee_image": "../assets/Nomad/Marquee/marquee_background.png",
+        "marquee_image": "../assets/Nomad/Marquee/N.png",
         "brief": "Going on a vacation involves a lot of planning. There should be an easier way to travel while skipping this tedious process, and get an experience which is tailored to one's tastes.",
         "sub_brief": "Personally, I hate planning an itinerary when I travel. I prefer to jump straight into the phase where I get lost exporing my new surroundings. When challenged to reimagine the potential use of real time data, my thought went straight to tackling the problem of travel planning.",
         "client": "School project",
@@ -19,7 +19,9 @@
         "archetype_text": "After the survey, I conducted addition interviews to gain more insight on how people plan and travel on a trip. From the inteeviews, I was able to distinguish three user archetypes:",
         "product_images": [
                 "../assets/Nomad/Product_Shots/Shot_1.png",
-                "../assets/Nomad/Product_Shots/Shot_2.png"
+                "../assets/Nomad/Product_Shots/Shot_2.png",
+                "../assets/Nomad/Product_Shots/Shot_3.png",
+                "../assets/Nomad/Product_Shots/Shot_4.png"
         ],
         "final_design_images": [
                 "../assets/Nomad/Final_Designs/1.png",
@@ -40,7 +42,7 @@
                 {
                         "percentage": "69%",
                         "header": "Sometimes follow their itinerary",
-                        "body": "Most surbey takers saif they sometimes follow their itinerary. Their plans often change because of reason like weather, transportation, cost or operations hours."
+                        "body": "Most survey takers saif they sometimes follow their itinerary. Their plans often change because of reason like weather, transportation, cost or operations hours."
                 },
                 {
                         "percentage": "86%",

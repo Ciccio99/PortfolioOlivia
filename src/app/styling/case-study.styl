@@ -27,6 +27,10 @@
     color light-gray
     letter-spacing -0.01em
     text-align center   
+
+.bottom-panel-shadow
+    box-shadow 0 10px 10px -10px medium-gray
+    z-index 1
     
 /*Brief section*/
 .brief-panel
@@ -111,9 +115,7 @@
         
 /* Final Designs panel*/
 .final-designs-panel
-    box-shadow 0 10px 10px -10px medium-gray
-    z-index 1
-    padding-bottom 60px
+    padding-bottom 80px
     & span
         font 600 1.8rem font-dagny
         color light-gray
@@ -179,18 +181,52 @@
 
 .wireframes-panel-sartorial
     {light-pagination}
+    & span.panel-header-titles
+        color #fcfeff
 
 .final-designs-panel-sartorial
     {dark-pagination}
+    & img
+        max-height 636px
+        
+.deck-panel-sartorial
+    padding 118px 0 122px 0
+    background-color #dfe6eb
+    box-shadow 0 10px 10px -10px medium-gray
+    z-index 1
+    & span
+        color #fcfeff
+    & p
+        font 400 2.5rem font-chaparral
+        color #8a969f
+        text-align: center
+        letter-spacing -0.02em
+        line-height 40px
+        padding 0 15%  
+        margin-top 63px
+        margin-bottom 40px
+    & a.sartorial-deck-btn-link
+        & div.sartorial-deck-btn
+            text-align center
+            width 220px
+            height 60px
+            background-color #fafafa
+            color #8a969f
+            
+            border-radius 40px
+            font 600 1.8rem font-dagny
+            letter-spacing -0.02em
+            transition all 0.25s ease
+            &:hover
+                background-color #667682
+                color #f5f5f5
+                
 
 .previous-project-panel-sartorial
-    background url('../assets/Tidal/Marquee/Tidal_Marquee.png') center no-repeat
-    background-size cover
+    background-color #f7a04f
         
 .next-project-panel-sartorial
-    background url('../assets/Misfit/Marquee/Misfit.png') center no-repeat
-    background-size cover
-        
+    background-color #e98b6a        
 
 /* Tidal Specific */
 .jumbotron-tidal
@@ -289,6 +325,36 @@
 .final-designs-panel-tidal
     background-color light-gray-bg-color !important
     {dark-pagination}
+
+.deck-panel-tidal
+    padding 118px 0 122px 0
+    background-color #dadce0
+    & span
+        color #fcfeff
+    & p
+        font 400 2.5rem font-chaparral
+        color #878d94
+        text-align: center
+        letter-spacing -0.02em
+        line-height 40px
+        padding 0 15%  
+        margin-top 63px
+        margin-bottom 40px
+    & a.tidal-deck-btn-link
+        & div.tidal-deck-btn
+            text-align center
+            width 220px
+            height 60px
+            background-color #fafafa
+            color #8a969f
+            
+            border-radius 40px
+            font 600 1.8rem font-dagny
+            letter-spacing -0.02em
+            transition all 0.25s ease
+            &:hover
+                background-color #1e434f
+                color #f5f5f5
     
 .thanks-panel-tidal
     background-color white
@@ -310,19 +376,17 @@
     background-color light-gray-bg-color !important
     {dark-pagination}
 
+.wireframe-slick-misfit
+    padding 0 40px
+
 .thanks-panel-misfit
     background-color white
 
 .previous-project-panel-misfit
-    background url('../assets/Sartorial/Marquee/Letter.png') center center no-repeat
-    background-color sartorial-jumbo-bg-color
-    background-size 28%
-    width 100%
+    background-color #b8c9da
 
 .next-project-panel-misfit
-    background url('../assets/Tidal/Marquee/Tidal_Marquee.png') center center no-repeat
-    background-size cover
-    width 100%
+    background-color #728a83
     
 /*
     Nomad
@@ -333,10 +397,11 @@
     height 685px
     background-color #434545
     & img
-        max-height 400px
+        max-height 730px
         
 .nomad-planning-panel
-    padding 100px 0
+    padding 140px 0 100px 0 
+    max-width 939px
     & span
         font 600 1.6rem font-dagny
         color light-gray
@@ -348,25 +413,31 @@
         letter-spacing -0.02em
         line-height 36px
         margin-top 50px
-        padding 0 15%
+        
+.product-shots-panel-nomad
+    {dark-pagination}
+    & img
+        width 100%
         
 .nomad-research-panel
-    background-color #fcfcfc
+    background-color #f5f5f5
     & span.panel-header-titles-tight
         margin-top 100px
     & div.research-container
         margin-top 30px
         margin-bottom 124px
+        max-width 920px
         & div.research-col-container
             margin 0 5%
+            width 100%           
         & div.research-results
-            max-width 390px
-            margin-top 66px
+            max-width 420px
+            margin-top 50px
             & span.nomad-percent
                 color #595959
                 font 600 5.2rem font-soleil
                 letter-spacing -0.03rem
-                margin-bottom 33px
+                margin-bottom 10px
             & span.nomad-research-header
                 font 600 2rem font-soleil
                 color #65b0b3
@@ -375,7 +446,7 @@
             & p
                 font 400 1.8rem font-dagny
                 line-height 32.5px
-                letter-spacing -0.01em
+                letter-spacing -0.012em
                 color #737373
 
 .nomad-archetypes-panel
@@ -413,6 +484,7 @@
 .nomad-wireframes-panel
     {dark-pagination}
     background-color #434545
+    padding-bottom 100px
     & span.panel-header-titles-tight
         margin-bottom 50px
     & p.wireframes-opener
@@ -457,10 +529,10 @@
                     line-height 27.5px
                     
 .previous-project-panel-nomad
-    background-color #f89f45
+    background-color #e98b6a
         
 .next-project-panel-nomad
-    background-color #b8c9db
+    background-color #72b0cd
 
 /*
     Concerto

@@ -5,7 +5,7 @@
         "type": "Mobile app",
         "description": "Challenge creativity on a daily basis, through a photo sharing platform and also build brand loyalty.",
         "letter_path": "../assets/letters/S.png",
-        "preview_image_path": "../assets/homepage-devices/sartorial-iphone.png"
+        "preview_image_path": "../assets/homepage-devices/sartorial.png"
     },
     {
         "id": "tidal",
@@ -13,30 +13,35 @@
         "type": "Mobile app",
         "description": "Is there a way tsunami impact could be reduced? This project focused on procedural design for an earthquake and tsunami evacuation.",
         "letter_path": "../assets/letters/T.png",
-        "preview_image_path": "../assets/homepage-devices/tidal-iphone.png"
+        "preview_image_path": "../assets/homepage-devices/tidal.png"
     },
     {
         "id": "concerto",
         "name": "Concerto",
-        "type": "Mobile app",
-        "description": "Ever wonder where music artists make all that sweet dough? This case studies explores the world of music concerts, the cost it takes to bring them to the people and the profit margins musicians see from it.",
+        "type": "Data visualization",
+        "description": "Concerto is a data visualization prototype. We take a look at the \"ingredients\" of a tour and see what it takes to make a top grossing concert.",
         "letter_path": "../assets/letters/C.png",
-        "preview_image_path": "../assets/homepage-devices/concerto-macbook.png"
+        "preview_image_path": "../assets/homepage-devices/concerto.png"
     },
     {
         "id": "misfit",
         "name": "Misfit Wearables Internship",
         "type": "Mobile app",
-        "description": "Working hard at Misfit for my summer 2015 internship. These designs show some of my work.",
+        "description": "During the Summer of 2015, I had the opportunity to work at Misfit Wearables as a user experience designer. Here's a sneak peek of some of the work I did.",
         "letter_path": "../assets/letters/M.png",
-        "preview_image_path": "../assets/homepage-devices/misfit-iphone.png"
+        "preview_image_path": "../assets/homepage-devices/misfit.png"
     },
     {
         "id": "nomad",
         "name": "Nomad",
-        "type": "Tablet/Mobile app",
-        "description": "Going on a vacation involves a lot of planning. There should be an easier way to travel while skipping this tedious process, and get an experience which is tailored to one's tastes.",
+        "type": "Multi-platform app",
+        "description": "Going on a vacation involves a lot of planning. Skip the tedious process of planning a vacation and get an experience that's tailored to your taste.",
         "letter_path": "../assets/letters/N.png",
-        "preview_image_path": "../assets/homepage-devices/nomad-tablet.png"
+        "preview_image_path": "../assets/homepage-devices/nomad.png"
+    },
+    {
+        "linkedin_link": "https://www.linkedin.com/in/oliviagsutanto",
+        "dribbble_link": "https://dribbble.com/oliviagsutanto",
+        "instagram_link": "https://www.instagram.com/oliviagsutanto/"
     }
 ]

@@ -5,7 +5,10 @@
     width 100%
 
 .final-designs-panel .slick-dots
-    bottom -40px
+    bottom -50px
+
+.product-shots-panel-nomad .slick-dots
+    bottom -45px
 
 //
 // Wireframe carousel styling
@@ -25,22 +28,35 @@
     & img
         margin auto
         margin-bottom 104px
+        max-height 652px
     & div.wireframe-asset-breakdowns
-        max-width 80%
         margin auto
-        & div
-            padding 0 1%
+        max-width 700px
         & span
             font 600 2rem font-soleil
             color dull-gold
             line-height 27.5px
             letter-spacing -0.01em
-            margin-bottom 18px
+            margin-bottom 10px
+        & span.sartorial-explanation-number
+            font 400 1.5rem font-soleil
+            color dull-gold
+            line-height 100%
+            letter-spacing -0.02em
+            margin-bottom 5px
         & p
             font 400 1.8rem font-dagny
             color #9da0a3
             line-height 30px
             letter-spacing -0.01em
+    & div.wireframe-asset-breakdowns.wireframe-asset-breakdowns-create
+        max-width 1080px
+        & div
+            max-width 325px
+            &:not(:last-child)
+                margin-right 53px
+                
+
 
 .slick-next
     background url('../assets/Arrows/Next_Arrow.png') right center no-repeat !important

@@ -10,13 +10,13 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
         .about-second-text.about-text
             | {{about.about.second_text}}
         .about-third-text.about-text(ng-bind-html="about.about.third_text")
-        .about-links.about-text
+        .about-links.about-text.limt-width
             span
                 a(ui-sref='resume') Resume
             span
                 a(href='{{about.about.linkedin_link}}', target='_blank') LinkedIn
             span
-                a(href='{{about.about.dribble_link}}', target='_blank') Dribble
+                a(href='{{about.about.dribbble_link}}', target='_blank') Dribbble
             span
                 a(href='{{about.about.instagram_link}}', target='_blank') Instagram
 

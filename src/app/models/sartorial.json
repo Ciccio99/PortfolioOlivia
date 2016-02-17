@@ -14,6 +14,7 @@
         "solution": "A mobile application that challenges our habits and makes dressing up fun. Sartorial provides color palettes based on real time weather; challenging users to create a new looks using color pallete.",
         "wireframes_text": "Sartorial's core features addresses three objectives that pertains to a fashionista: what to wear, sharing photos of outfits, and brand loyalty.",
         "visual_design_text": "I wanted Sartorial's visual language to reflect the elegant, bold, feminine and clean design or editorial magazines.",
+        "deck_conclusion": "Sartorial adds a twist to the mundane and sometimes frustrating task of dressing up. The app challenges users to break away from habits and to be creative within certain restrictions.",
         "product_images": [
                 "../assets/Sartorial/Product_Shots/Shot_1.png",
                 "../assets/Sartorial/Product_Shots/Shot_2.png"
@@ -38,14 +39,17 @@
                         "explanations": 
                         [
                                 {
+                                        "number": "01",
                                         "title": "Color Challenges",
                                         "body": "Users are presented with difference color pallettes. These color palettes are organized by color combinations."
                                 },
                                 {
+                                        "number": "02",
                                         "title": "Upload a photo",
                                         "body": "After creating thir outfits, users are encouraged to upload a photo of their outfit."
                                 },
                                 {
+                                        "number": "03",
                                         "title": "Sync Colors",
                                         "body": "Sartorial analyzes the photo to make sure the users used the correct colors to complete the challenge."
                                 }
@@ -58,10 +62,12 @@
                         "explanations": 
                         [
                                 {
+                                        "number": "04",
                                         "title": "Create Post",
                                         "body": "The user is prompted to write a title for his/her post."
                                 },
                                 {
+                                        "number": "05",
                                         "title": "Tag Items",
                                         "body": "The user is encouraged to tag their clothing items in their outfit."
                                 }
@@ -97,6 +103,14 @@
                 "../assets/Sartorial/Final_Designs/1.png",
                 "../assets/Sartorial/Final_Designs/2.png",
                 "../assets/Sartorial/Final_Designs/3.png",
-                "../assets/Sartorial/Final_Designs/4.png"
+                "../assets/Sartorial/Final_Designs/4.png",
+                "../assets/Sartorial/Final_Designs/5.png",
+                "../assets/Sartorial/Final_Designs/6.png",
+                "../assets/Sartorial/Final_Designs/7.png",
+                "../assets/Sartorial/Final_Designs/8.png",
+                "../assets/Sartorial/Final_Designs/9.png",
+                "../assets/Sartorial/Final_Designs/10.png",
+                "../assets/Sartorial/Final_Designs/11.png",
+                "../assets/Sartorial/Final_Designs/12.png"
         ]
 }

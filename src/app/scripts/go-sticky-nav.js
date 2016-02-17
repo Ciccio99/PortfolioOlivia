@@ -12,12 +12,16 @@ $(window).bind("load", function() {
             var element_bot_pos = element_height + element_top_pos;
             var nav_height = $("#Sticky_Nav").outerHeight();
 
-            if (window_top_pos >= element_bot_pos) {
+            if (window_top_pos >= element_bot_pos - 35) {
                 $('#Sticky_Nav').css({background: 'rgba(255, 255, 255, .93'});
                 $('.nav-buttons-holder').css({padding: '0 0 0 0'});
+                $('.navbar-logo-container').css({top: '16px', 'max-width': '38px'});
+                $('.active-nav').css({color: '#050505'});
             } else {
                 $('#Sticky_Nav').css({background: 'rgba(255, 255, 255, 0'});
                 $('.nav-buttons-holder').css({padding: '50px 0 0 0'});
+                $('.navbar-logo-container').css({top: '32px', 'max-width': '70px'});
+                $('.active-nav').css({color: '#efefef'});
             }
         });
     }

@@ -31,16 +31,46 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
         .panel-row.wireframes-panel.wireframes-panel-sartorial(layout='column', layout-align='center center', ng-cloak)
             span.panel-header-titles Wireframes
             p.wireframes-opener {{case_study.case_study.wireframes_text}}
-            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', center-mode='true', dots='true', swipe-to-slide='true', variable-width='false', init-onload='true' data="case_study.case_study.wireframe_images", ng-cloak)
-                div.wireframe-slick(layout='column', layout-align='start center', ng-repeat='wireframe in case_study.case_study.wireframe_images')
-                    span.wireframe-asset-title {{wireframe.title}}
-                    img(ng-src='{{wireframe.image}}', alt='Wireframe image')
-                    div.wireframe-asset-breakdowns(flex, layout='row', layout-align='center center')
-                        div(layout='column', ng-repeat='explanation in wireframe.explanations')
+            slick.slick-carousel(infinite='true', slides-to-scroll='1', slides-to-show='1', center-mode='true', dots='true', swipe-to-slide='true', variable-width='false', init-onload='true' data="case_study.case_study.wireframe_images", ng-cloak)
+                div.wireframe-slick(layout='column', layout-align='start center')
+                    span.wireframe-asset-title {{case_study.case_study.wireframe_images[0].title}}
+                    img(ng-src='{{case_study.case_study.wireframe_images[0].image}}', alt='Wireframe image')
+                    div.wireframe-asset-breakdowns(flex, layout='row', layout-align='center start')
+                        div(layout='column', ng-repeat='explanation in case_study.case_study.wireframe_images[0].explanations')
+                            span {{explanation.title}}
+                            p {{explanation.body}}
+                div.wireframe-slick(layout='column', layout-align='start center')
+                    span.wireframe-asset-title {{case_study.case_study.wireframe_images[1].title}}
+                    img(ng-src='{{case_study.case_study.wireframe_images[1].image}}', alt='Wireframe image')
+                    div.wireframe-asset-breakdowns.wireframe-asset-breakdowns-create(flex, layout='row', layout-align='center start')
+                        div(layout='column', ng-repeat='explanation in case_study.case_study.wireframe_images[1].explanations')
+                            span.sartorial-explanation-number {{explanation.number}}
+                            span {{explanation.title}}
+                            p {{explanation.body}}
+                div.wireframe-slick(layout='column', layout-align='start center')
+                    span.wireframe-asset-title {{case_study.case_study.wireframe_images[2].title}}
+                    img(ng-src='{{case_study.case_study.wireframe_images[2].image}}', alt='Wireframe image')
+                    div.wireframe-asset-breakdowns.wireframe-asset-breakdowns-create(flex, layout='row', layout-align='center start')
+                        div(layout='column', ng-repeat='explanation in case_study.case_study.wireframe_images[2].explanations')
+                            span.sartorial-explanation-number {{explanation.number}}
+                            span {{explanation.title}}
+                            p {{explanation.body}}
+                div.wireframe-slick(layout='column', layout-align='start center')
+                    span.wireframe-asset-title {{case_study.case_study.wireframe_images[3].title}}
+                    img(ng-src='{{case_study.case_study.wireframe_images[3].image}}', alt='Wireframe image')
+                    div.wireframe-asset-breakdowns(flex, layout='row', layout-align='center start')
+                        div(layout='column', ng-repeat='explanation in case_study.case_study.wireframe_images[3].explanations')
+                            span {{explanation.title}}
+                            p {{explanation.body}}
+                div.wireframe-slick(layout='column', layout-align='start center')
+                    span.wireframe-asset-title {{case_study.case_study.wireframe_images[4].title}}
+                    img(ng-src='{{case_study.case_study.wireframe_images[4].image}}', alt='Wireframe image')
+                    div.wireframe-asset-breakdowns(flex, layout='row', layout-align='center start')
+                        div(layout='column', ng-repeat='explanation in case_study.case_study.wireframe_images[4].explanations')
                             span {{explanation.title}}
                             p {{explanation.body}}
 
-        .panel-row.visual-design-panel(layout='column', ng-cloak)
+        .panel-row.visual-design-panel(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Visual Design
             p {{case_study.case_study.visual_design_text}}
             .limit-width 
@@ -48,19 +78,26 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
 
         .panel-row.final-designs-panel.final-designs-panel-sartorial(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Final Designs
-            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', center-mode='true', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images")
+            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='3', center-mode='true', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images")
                 div.wireframe-slick(ng-repeat='final_img in case_study.case_study.final_design_images')
                     img.centered(ng-src='{{final_img}}', alt='Final Design image')
 
+        .panel-row.deck-panel-sartorial(layout='column', layout-align='start center', ng-cloak)
+            span.panel-header-titles-tight Conclusion
+            p {{case_study.case_study.deck_conclusion}}
+            a.sartorial-deck-btn-link(href="../assets/Sartorial/sartorial-deck.pdf", target="_blank")
+                div.sartorial-deck-btn(layout='row', layout-align='center center')
+                    | View Process Deck
+
         .panel-row.thanks-panel(layout='column', layout-align='center center', ng-cloak)
             span Thanks for scrolling!
-            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
+            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oliviagsutanto@gmail.com?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
 
         .panel-row.other-projects-panel(layout='row', ng-cloak)
-            .previous-project-panel-sartorial(ui-sref='work({case_study: "tidal"})', flex='50')
+            .previous-project-panel-sartorial(ui-sref='work({case_study: "concerto"})', flex='50')
                 .filter-layer(layout-fill, layout='column', layout-align='center center')
                     span Previous Project
-                    p Tidal
+                    p Concerto
             .next-project-panel-sartorial(ui-sref='work({case_study: "misfit"})', flex='50')
                 .filter-layer(layout-fill, layout='column', layout-align='center center')
                     span Next Project

@@ -60,21 +60,28 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
 
         .panel-row.final-designs-panel.final-designs-panel-tidal(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Final Designs
-            slick.slick-carousel(infinite='false', center-mode="true", slides-to-show='3', dots='true', swipe-to-slide='true', variable-width='false', init-onload='true' data="case_study.case_study.final_design_images")
+            slick.slick-carousel(infinite='false', center-mode="true", slides-to-show='3', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images")
                 div.wireframe-slick(ng-repeat='final_img in case_study.case_study.final_design_images')
                     img(ng-src='{{final_img}}', alt='Final Design image')
 
+        .panel-row.deck-panel-tidal.bottom-panel-shadow(layout='column', layout-align='start center', ng-cloak)
+            span.panel-header-titles-tight Conclusion
+            p {{case_study.case_study.deck_conclusion}}
+            a.tidal-deck-btn-link(href="../assets/Tidal/tidal-deck.pdf", target="_blank")
+                div.tidal-deck-btn(layout='row', layout-align='center center')
+                    | View Process Deck
+
         .panel-row.thanks-panel.limited-width.thanks-panel-tidal(layout='column', layout-align='center center', ng-cloak)
             span Thanks for scrolling!
-            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
+            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oliviagsutanto@gmail.com?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
 
         .panel-row.other-projects-panel(layout='row', layout-align='center center', ng-cloak)
-            .previous-project-panel-tidal(ui-sref='work({case_study: "misfit"})', flex='50')
+            .previous-project-panel-tidal(ui-sref='work({case_study: "nomad"})', flex='50')
                 .filter-layer(layout-fill, layout='column', layout-align='center center')
                     span Previous Project
-                    p Misfit
-            .next-project-panel-tidal(ui-sref='work({case_study: "sartorial"})', flex='50')
+                    p Nomad
+            .next-project-panel-tidal(ui-sref='work({case_study: "concerto"})', flex='50')
                 .filter-layer(layout-fill, layout='column', layout-align='center center')
                     span Next Project
-                    p Sartorial
+                    p Concerto
 
