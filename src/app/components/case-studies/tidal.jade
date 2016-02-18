@@ -20,16 +20,39 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                     span Duration
                     p {{case_study.case_study.duration}} 
 
-        .panel-row.product-shots-panel(layout='row', layout-align='center center', ng-cloak)
-            img(ng-src='{{case_study.case_study.product_images[0]}}', alt='Product image')
+        .panel-row.product-shots-panel.limit-width(layout='row', layout-align='center center', ng-cloak)
+            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', dots='true', swipe-to-slide='true', init-onload='true', data="case_study.case_study.product_images")
+                div(ng-repeat='prod_img in case_study.case_study.product_images')
+                    img.limit-width(ng-src='{{prod_img}}', alt='Product image')
 
         .panel-row.solution-panel.limit-width(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Solution
             p.main-solution {{case_study.case_study.solution}}
             .sub-solutions-tidal(layout='row', layout-align='center start', layout-wrap)
-                div(flex, flex-sm="100", layout='column', layout-align='start start', ng-repeat='sub_solution in case_study.case_study.sub_solutions')
+                div.tidal-sub-solution-column(flex='33', flex-sm="100", layout='column', ng-repeat='sub_solution in case_study.case_study.sub_solutions')
+                    div.tidal-glyph-container(layout='row', layout-align='center center')
+                        img(ng-src="{{sub_solution.image}}")
                     span {{sub_solution.title}}
                     p {{sub_solution.body}}
+        .panel-row.wireframes-panel.tidal-wireframes-panel(layout='column', layout-align='center center', ng-cloak)
+            span.panel-header-titles-tight UX Breakdown
+            p.wireframes-opener {{case_study.case_study.wireframe_text}}
+            slick.slick-carousel(infinite='true', slides-to-scroll='1', dots='true', swipe-to-slide='true', init-onload='true' data="case_study.case_study.wireframes", ng-cloak)
+                div.wireframe-slick(ng-repeat='wireframe in case_study.case_study.wireframes')
+                    .tidal-wireframe-inner-panel.limit-width(layout='row', layout-align='center start')
+                        div(flex='50')
+                            img.tidal-wireframe-image(ng-src='{{wireframe.image}}', alt='Wireframe image')
+                        div.tidal-wireframe-breakdown-container(flex='50', layout='column')
+                            div.tidal-wireframe-main-info(layout='column')
+                                span.wireframe-main-info-number {{wireframe.number}}
+                                span.wireframe-main-info-title {{wireframe.title}}
+                                span.wireframe-main-info-device {{wireframe.device}}
+                                p.wireframe-main-info-body {{wireframe.summary}}
+                            div.wireframe-explanations(layout='column', ng-repeat='explanation in wireframe.explanations')
+                                span.wireframe-explanations-number {{explanation.number}}
+                                span.wireframe-explanations-title {{explanation.title}}
+                                p.wireframe-explanations-body {{explanation.body}}
+
         .panel-row.visual-design-panel.visual-design-panel-tidal(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Visual Design
             p.limit-width {{case_study.case_study.visual_design_text}}
@@ -37,21 +60,28 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
 
         .panel-row.final-designs-panel.final-designs-panel-tidal(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Final Designs
-            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='2', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images")
+            slick.slick-carousel(infinite='false', slides-to-show='1', variable-width='true', center-mode='true', dots='true', swipe-to-slide='true', init-onload='true' data="case_study.case_study.final_design_images")
                 div.wireframe-slick(ng-repeat='final_img in case_study.case_study.final_design_images')
                     img(ng-src='{{final_img}}', alt='Final Design image')
 
+        .panel-row.deck-panel-tidal.bottom-panel-shadow(layout='column', layout-align='start center', ng-cloak)
+            span.panel-header-titles-tight Conclusion
+            p {{case_study.case_study.deck_conclusion}}
+            a.tidal-deck-btn-link(href="../assets/Tidal/tidal-deck.pdf", target="_blank")
+                div.tidal-deck-btn(layout='row', layout-align='center center')
+                    | View Process Deck
+
         .panel-row.thanks-panel.limited-width.thanks-panel-tidal(layout='column', layout-align='center center', ng-cloak)
             span Thanks for scrolling!
-            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
+            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oliviagsutanto@gmail.com?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
 
         .panel-row.other-projects-panel(layout='row', layout-align='center center', ng-cloak)
-            .previous-project-panel-tidal(ui-sref='work({case_study: "misfit"})', flex='50')
+            .previous-project-panel-tidal(ui-sref='work({case_study: "nomad"})', flex='50')
                 .filter-layer(layout-fill, layout='column', layout-align='center center')
                     span Previous Project
-                    p Misfit
-            .next-project-panel-tidal(ui-sref='work({case_study: "sartorial"})', flex='50')
+                    p Nomad
+            .next-project-panel-tidal(ui-sref='work({case_study: "concerto"})', flex='50')
                 .filter-layer(layout-fill, layout='column', layout-align='center center')
                     span Next Project
-                    p Sartorial
+                    p Concerto
 

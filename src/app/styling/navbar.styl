@@ -1,19 +1,31 @@
 header
-    position absolute
+    position fixed
     top 0
     left 0
     right 0
-    z-index 999
+    z-index 9999
+    height 70px
 
+.navbar-logo-container
+    position absolute
+    max-width 70px
+    left 30px
+    top 32px
+    transition all 0.5s ease
+    cursor pointer
+    & img 
+        width 100%
+    
 .nav-buttons-holder
-    padding-top 54px;
+    transition all 0.5s ease
+    padding-top 50px;
        
 .navbar-link
-    font 800 2rem font-dagny
+    font 800 1.4rem font-dagny
     letter-spacing 0.1rem
     color nav-gray
     text-decoration none
-    padding-right 76px
+    padding-right 55px
     letter-spacing 0.11em
     &:last-child
         padding-right 60px

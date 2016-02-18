@@ -1,53 +1,86 @@
 @require './constants'
 
 .jumbotron
-	background url('../../assets/images/bw.jpg') no-repeat
+	background url('../../assets/images/Background.png') no-repeat 
 	background-size cover
-	height 685px
 	width 100%
+	& div.main-jumbotron-container
+		margin-top 260px
+		margin-bottom 243px
+		& div.main-jumbotron-image-container
+			max-width 578px
+			& img 
+				width 100%
+		& span
+			font 400 3rem font-chaparral
+			color #e6e6e6
+			line-height 36px
+			letter-spacing -0.03em
+			margin-top 25px
 
 .project-cases
 	max-width 1440px
 	width 100%
-	padding-top 180px
 	
 /* Shared case study styling elements*/
+
+.case-study-link
+	& img
+		padding-left 20px
+		width 27px
+
+.max-ipad-width
+	max-width 1077px
+	& img
+		width 1077px
+
+.max-iphone-width
+	max-width 814px
+	& img
+		width 814px
+
+.max-mac-width	
+	max-width 1288px
+	& img
+		width 1288px
 
 .project-cases-item
 	position relative
 	height 1000px
 	
 .project-cases-item:not(:first-child)
-	margin-top 190px
+	margin-top 0px
 
 .project-case-item-info-panel
 	position relative
 	padding-top 150px
 
 .project-case-main-header 
-	font 600 5rem font-soleil
-	margin-top 17px
-	letter-spacing -0.03em
+	font 600 5.6rem font-soleil
+	margin-top 15px
+	letter-spacing -0.04em
+	line-height 100%
 	
 .project-case-sub-header
-	font 600 2.4rem font-dagny
+	font 600 1.8rem font-dagny
 	color sub-header
 	letter-spacing -0.01em
+	line-height 100%
 	
 .project-case-info p
-	font 400 2.8rem font-chaparral
-	line-height 32px
-	letter-spacing: -0.02em
-	margin-top 68px
+	font 400 2.5rem font-chaparral
+	line-height 35px
+	letter-spacing -0.02em
+	margin-top 60px
 	color #373737
-	line-height 46px
 		
 .project-case-info a
-	font 600 2.4rem font-soleil
+	font 600 1.8rem font-soleil
 	letter-spacing -0.03em
+	line-height 100%
 	margin-top 40px
 	text-decoration none
-	color normal-gray
+	color #939393
 
 .right-big-letter
 	position relative
@@ -56,29 +89,71 @@
 .left-big-letter
 	position relative
 	left 8%
+	                
+// Case study specific styling elements
 
-/* Case study specific styling elements
-	 Sartorial*/
+/*
+	Nomad
+*/
+.project-case-image-nomad
+	position absolute
+	top 15%
+	left 55%
+
+.project-case-item-info-panel-nomad
+	position relative
+	right 3%
+
+.project-case-body-nomad
+	position absolute
+	left 14%
+	right 0
+	margin-top 150px
+	& div.project-case-headers
+		padding-left 27px
+
+.project-case-info-nomad
+	padding-left 16%
+	padding-right 5%
+
+.project-case-main-header-nomad
+	color #5e927d
+	 
+/*
+	Sartorial
+*/
+.project-case-item-sartorial
+	height 950px
+	
 .project-case-image-sartorial
 	position absolute
-	left 53%
+	right 57%
+	top -18%
+
+.project-case-item-info-panel-sartorial
+	position relative
+	right 3%
 
 .project-case-body-sartorial
 	position absolute
-	left 10%
-	right 0
+	right 14%
+	left 0
 	margin-top 150px
 
 .project-case-info-sartorial
-	padding-left 16%
+	padding-left 18%
 
 .project-case-main-header-sartorial
 	color #ad956b
 	
 /* Tidal*/
+.project-case-item-tidal
+	height 900px
+
 .project-case-image-tidal
 	position absolute
-	right 58%
+	right 57%
+	top -18%
 
 .project-case-item-info-panel-tidal
 	position relative
@@ -91,16 +166,20 @@
 	margin-top 150px
 
 .project-case-info-tidal
-	padding-left 16%
+	padding-left 17%
 
 .project-case-main-header-tidal 
 	color #0099cb
 
 /* Concerto */
+
+.project-case-item-concerto
+	height 950px
+
 .project-case-image-concerto
 	position absolute
-	top 15%
-	left 49%
+	top 2%
+	left 52.4%
 
 .project-case-body-concerto
 	position absolute
@@ -109,7 +188,8 @@
 	margin-top 150px
 
 .project-case-info-concerto
-	padding-left 16%
+	padding-left 18%
+	padding-right 2%
 	
 .project-case-main-header-concerto
 	color #f3484c
@@ -117,15 +197,13 @@
 /*  Misfit*/
 .project-case-image-misfit
 	position absolute
-	right 58%
+	top -23%
+	left 57.5%
 
-.project-case-item-info-panel-misfit
-	position relative
-	right 3%
 .project-case-body-misfit
 	position absolute
-	right 14%
-	left 0
+	left 14%
+	right 0
 	margin-top 150px
 
 .project-case-info-misfit
@@ -134,3 +212,25 @@
 .project-case-main-header-misfit
 	color #e55c4a
 
+.main-page-social-media-panel
+	position relative
+	max-height 120px
+	& div.social-media-links
+		position absolute
+		margin-bottom 0px !important
+		left 9%
+		& span
+			&:not(:last-child)
+				margin-right 12%
+			& a
+				font 600 2rem font-dagny
+				color #949499
+				&:hover
+					color #279b92
+	& div.copy-right
+		position absolute
+		right 8.5%
+		& span
+			font 400 1.6rem font-dagny
+			color #c0c0c0
+			

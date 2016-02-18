@@ -19,26 +19,26 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                 div
                     span Duration
                     p {{case_study.case_study.duration}} 
-        .panel-row.product-shots-panel(layout='row', layout-align='center center', ng-cloak)
+        .panel-row.product-shots-panel.limit-width(layout='row', layout-align='center center', ng-cloak)
             img(ng-src='{{case_study.case_study.product_images[0]}}', alt='Product image')
 
         .panel-row.final-designs-panel.final-designs-panel-misfit(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Final Designs
-            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='2', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images")
-                div.wireframe-slick(ng-repeat='final_img in case_study.case_study.final_design_images')
+            slick.slick-carousel(infinite='false', slides-to-scroll='1', dots='true', swipe-to-slide='true', center-mode='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images")
+                div.wireframe-slick-misfit(ng-repeat='final_img in case_study.case_study.final_design_images')
                     img(ng-src='{{final_img}}', alt='Final Design image')
 
         .panel-row.thanks-panel.thanks-panel-misfit(layout='column', layout-align='center center', ng-cloak)
             span Thanks for scrolling!
-            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oxg7534@rit.edu?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
+            p Like what you see? Don't be shy and <a class='thanks-link' href="mailto:oliviagsutanto@gmail.com?Subject=Hello%20there!" target="_top">say hello!</a><br>Or check out my other projects below:
 
         .panel-row.other-projects-panel(layout='row', ng-cloak)
             .previous-project-panel-misfit(ui-sref='work({case_study: "sartorial"})', flex='50')
                 .filter-layer(layout-fill, layout='column', layout-align='center center')
                     span Previous Project
                     p Sartorial
-            .next-project-panel-misfit(ui-sref='work({case_study: "tidal"})', flex='50')
+            .next-project-panel-misfit(ui-sref='work({case_study: "nomad"})', flex='50')
                 .filter-layer(layout-fill, layout='column', layout-align='center center')
                     span Next Project
-                    p Tidal
+                    p Nomad
 

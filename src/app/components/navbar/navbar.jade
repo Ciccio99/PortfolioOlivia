@@ -1,4 +1,6 @@
 header#Sticky_Nav(layout='row', layout-align='end center')
+    div.navbar-logo-container(ui-sref='home')
+        img(ng-src='../assets/images/olivia-logo.svg', alt="Olivia's Logo")
     section.nav-buttons-holder(layout='row')
         a.navbar-link.active-nav(ui-sref='home', ng-show='nav.includes("work")') WORK
         a.navbar-link.active-nav(ui-sref='home', ui-sref-active="active-nav", ng-hide='nav.includes("work")') WORK

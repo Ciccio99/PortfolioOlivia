@@ -8,145 +8,168 @@
     width 100%
 
 .limit-width
+    width 100%
     max-width 1440px
-    margin-left auto
-    margin-right auto
+    margin auto
     
 .limit-width-not-centered
     max-width 1440px
     
 .panel-header-titles
-    font 600 1.6rem font-dagny
-    letter-spacing: 0.02rem
-    color normal-gray
+    font 600 1.8rem font-dagny
+    letter-spacing: -0.01em
+    line-height 40px
+    color light-gray
+    text-align center
+    
+.panel-header-titles-tight
+    font 600 1.8rem font-dagny
+    color light-gray
+    letter-spacing -0.01em
+    text-align center   
+
+.bottom-panel-shadow
+    box-shadow 0 10px 10px -10px medium-gray
+    z-index 1
     
 /*Brief section*/
 .brief-panel
-    padding 200px 9% 166px 9%
+    padding 177px 9% 195px 9%
     & span.brief-header 
-        font 600 2.4rem font-dagny
+        font 600 1.8rem font-dagny
         color light-gray
         letter-spacing -0.01em
-        margin-bottom 70px
+        margin-bottom 80px
         
 .left-brief-section
     & p.main-brief
-        font 400 3rem font-chaparral
-        line-height 42.5px
+        font 400 30px font-chaparral
+        line-height 4.25rem
         letter-spacing -0.02em
-        margin-bottom 40px
-        color #333333
+        margin-bottom 46px
+        color darker-gray
     & p.sub-brief
-        font 400 2.4rem font-dagny
+        font 400 1.7rem font-dagny
         color #737373
-        line-height 30pt
+        line-height 3.25rem
 
 .right-brief-section
     padding-left 116px
     & div
         padding-bottom 20px
     & div span
-        font 600 2rem font-dagny
-        line-height 40px
+        font 600 1.7rem font-dagny
+        line-height 250%
         letter-spacing -0.01em
         color #4c4c4c
     & div p
-        font 400 2rem font-dagny
+        font 400 1.7rem font-dagny
         letter-spacing -0.01em
+        line-height 26px
         color #4c4c4c
 
 /* Solution section*/
 .solution-panel
-    padding 140px 0
-    & span
-        font 600 2.4rem font-dagny
-        color #aaaaaa
-        letter-spacing -0.01em
+    padding 118px 0 122px 0
     & p.main-solution
-        font 400 3.2rem font-chaparral
+        color darker-gray
+        font 400 2.5rem font-chaparral
         text-align center
         letter-spacing -0.02em
-        line-height 40pt
+        line-height 40px
         margin-top 60px
-        padding 0 14%
+        max-width 932px
     
 /* Wireframes panel*/
 .wireframes-panel
     background-color wireframe-bg-color
-    padding 140px 0 80px 0
-    & span
+    padding 117px 0 80px 0
+    & span.panel-header-titles
         margin-bottom 60px 
-        font 600 2.4rem font-dagny
-        color #959595
-        letter-spacing -0.01em
+        color white-gray
+    & p.wireframes-opener
+        font 400 2.5rem font-chaparral
+        color #8a969f
+        text-align: center
+        letter-spacing -0.02em
+        line-height 40px
+        margin-bottom 105px
+        max-width 940px
+        
         
 /* visual designs sections */
 .visual-design-panel
-    padding 140px 8%
-    & span 
-        font 600 2.4rem font-dagny
-        color #aaaaaa
-        letter-spacing -0.01em
+    padding 117px 8% 136px 8%
+    & span
+        color #b7b7b7
     & p
-        font 400 2.8rem font-chaparral
+        font 400 2.5rem font-chaparral
+        color darker-gray
         letter-spacing -0.02em
         text-align center
         line-height 40px
         margin-top 60px
-        padding 0 15%
+        margin-bottom 78px
+        max-width 932px
     & img
-        margin-top 78px
-
+        width 100%
+        
 /* Final Designs panel*/
 .final-designs-panel
-    padding 20px 0 70px 0
-    box-shadow 0 10px 10px -10px medium-gray
-    z-index 1
+    padding-bottom 80px
     & span
-        font 600 2.4rem font-dagny
-        color #aaaaaa
+        font 600 1.8rem font-dagny
+        color light-gray
         letter-spacing -0.01em
-        margin-top 20px
-        margin-bottom 60px
+        text-align center
+        margin-bottom 50px
+    & img
+        margin-left auto
+        margin-right auto
     
 /* Thanks panel*/
 .thanks-panel
-    padding 95px 20px
+    padding 103px 0 94px 0
     background-color light-gray-bg-color
     & span
-        font 600 4.4rem font-soleil
+        font 600 3.4rem font-soleil
         color #333333
         letter-spacing -0.03em
+        line-height 41px
         text-align center
+        margin-bottom 44px
     & p
         color #8c8c8c
-        margin-top 48px
         text-align center
-        font 400 3.2rem font-chaparral
+        font 400 2.5rem font-chaparral
         line-height 40px
         letter-spacing -0.02em
     & p .thanks-link
             color link-teal
-            font 400 3.2rem font-chaparral
+            font 400 2.5rem font-chaparral
             text-align center
-            line-height 28px
+            line-height 40px
             letter-spacing -0.02em
 
 /* other projects panel*/
 .other-projects-panel
     & div
-        height 340px
+        height 270px
         cursor pointer
     & .filter-layer
-        background-color rgba(0, 0, 0, 0.65)
+        transition all 0.3s ease
+    & .filter-layer:hover
+        background-color rgba(255, 255, 255, 0.25)
     & span
-        font 400 4rem font-chaparral
+        font 400 2.6rem font-chaparral
         color #efefef
         letter-spacing -0.02em
+        line-height 42px
         text-align center
     & p
-        font 600 4rem font-soleil
+        font 600 3.4rem font-soleil
         letter-spacing -0.03em
+        line-height 41px
         color #fafafa
 
 /* Sartorial Specific */
@@ -157,45 +180,147 @@
 
 .product-shots-panel-sartorial
     {light-pagination}
+    & img
+        width 100%
 
 .wireframes-panel-sartorial
     {light-pagination}
+    & span.panel-header-titles
+        color #fcfeff
 
 .final-designs-panel-sartorial
     {dark-pagination}
+        
+.deck-panel-sartorial
+    padding 118px 0 122px 0
+    background-color #dfe6eb
+    box-shadow 0 10px 10px -10px medium-gray
+    z-index 1
+    & span
+        color #fcfeff
+    & p
+        font 400 2.5rem font-chaparral
+        color #8a969f
+        text-align: center
+        letter-spacing -0.02em
+        line-height 40px
+        padding 0 1%  
+        margin-top 63px
+        margin-bottom 40px
+        max-width 940px
+    & a.sartorial-deck-btn-link
+        & div.sartorial-deck-btn
+            text-align center
+            width 220px
+            height 60px
+            background-color #fafafa
+            color #8a969f
+            
+            border-radius 40px
+            font 600 1.8rem font-dagny
+            letter-spacing -0.02em
+            transition all 0.25s ease
+            &:hover
+                background-color #667682
+                color #f5f5f5
+                
 
 .previous-project-panel-sartorial
-    background url('../assets/Tidal/Marquee/Tidal_Marquee.png') center no-repeat
-    background-size cover
+    background-color #f7a04f
         
 .next-project-panel-sartorial
-    background url('../assets/Misfit/Marquee/Misfit.png') center no-repeat
-    background-size cover
-        
+    background-color #e98b6a        
 
 /* Tidal Specific */
 .jumbotron-tidal
     width 100%
-    & img
-        width 100%
-        
+    background linear-gradient(to bottom, #1d2b33, #02232e)
+    height 685px
+            
 .sub-solutions-tidal
     width 100%
     margin-top 155px
-    & div
-        max-width 342px
-        &:not(:last-child)
-            margin-right 77px
+    padding 0 5%
+    & div.tidal-sub-solution-column
+        padding 0 2%
+    & div.tidal-glyph-container
+        height 176px
+        margin-bottom 56px
+        & img
+            max-width 100%
+            max-height 100%
+            margin auto
     & span
-        font 600 2.2rem font-soleil
+        font 600 2.6rem font-soleil
         letter-spacing -0.03em
-        line-height 26.4pt
-        color #333333
+        line-height 36px
+        color #595959
     & p 
         margin-top 20px
-        font 400 2rem font-dagny
-        line-height 30pt
+        font 400 1.8rem font-dagny
+        letter-spacing: -0.01em
+        line-height 32.5px
         color #737373
+    
+        
+.tidal-wireframes-panel
+    {dark-pagination}
+    background-color #ebebeb
+    & span.panel-header-titles-tight
+        margin-bottom 50px
+    & p.wireframes-opener
+        font 400 2.5rem font-chaparral
+        color #edf0f2
+        line-height 40px
+        letter-spacing -0.02em
+        color dark-gray
+    & div.tidal-wireframe-inner-panel
+        padding 0 6%
+        & img.Tidal-wireframe-image
+            max-width 90%
+            max-height 675px
+            margin auto
+        & div.tidal-wireframe-breakdown-container
+            margin-top 88px
+            max-width 460px
+            & div.tidal-wireframe-main-info
+                margin-bottom 15px
+                & span.wireframe-main-info-number
+                    font 400 20px font-soleil
+                    color #383838
+                    letter-spacing -0.02em
+                    line-height 100%
+                & span.wireframe-main-info-title
+                    font 600 3.6rem font-soleil
+                    color #383838
+                    letter-spacing -0.03em
+                    line-height 100%
+                & p.wireframe-main-info-body
+                    font 400 1.7rem font-dagny
+                    color #989695
+                    margin-top 25px
+                    line-height 28px
+            & div.wireframe-explanations
+                & span.wireframe-explanations-number
+                    font 400 1.6rem font-soleil
+                    color tidal-blue
+                    margin-top 25px
+                    line-height 100%
+                & span.wireframe-explanations-title
+                    font 600 2rem font-soleil
+                    color tidal-blue
+                    letter-spacing -0.01em
+                    line-height 100%
+                    padding-bottom 14px
+                & p.wireframe-explanations-body
+                    font 400 1.8rem font-dagny
+                    color #949291
+                    line-height 30px
+
+.final-designs-panel-tidal
+    & div.wireframe-slick
+        & img
+            max-width 330px   
 
 .visual-design-panel-tidal
     background-color light-gray-bg-color
@@ -203,42 +328,359 @@
 .final-designs-panel-tidal
     background-color light-gray-bg-color !important
     {dark-pagination}
+
+.deck-panel-tidal
+    padding 118px 0 122px 0
+    background-color #dadce0
+    & span
+        color #fcfeff
+    & p
+        font 400 2.5rem font-chaparral
+        color #878d94
+        text-align: center
+        letter-spacing -0.02em
+        line-height 40px
+        padding 0 15%  
+        margin-top 63px
+        margin-bottom 40px
+    & a.tidal-deck-btn-link
+        & div.tidal-deck-btn
+            text-align center
+            width 220px
+            height 60px
+            background-color #fafafa
+            color #8a969f
+            
+            border-radius 40px
+            font 600 1.8rem font-dagny
+            letter-spacing -0.02em
+            transition all 0.25s ease
+            &:hover
+                background-color #1e434f
+                color #f5f5f5
     
 .thanks-panel-tidal
     background-color white
 
 .previous-project-panel-tidal
-    background url('../assets/Misfit/Marquee/Misfit.png') center no-repeat
-    background-size cover
+    background-color #728a83
         
 .next-project-panel-tidal
-    background url('../assets/Sartorial/Marquee/Letter.png') center center no-repeat
-    background-color sartorial-jumbo-bg-color
-    background-size 28%
-        
+    background-color #f7a04f
 
 /* Misfit Specific */
 .jumbotron-misfit
     width 100%
+    background linear-gradient(to top, #d1af8e, #d8bc9e)  
     & img
         width 100%
+        max-width 1440px !important
     
 .final-designs-panel-misfit
     padding 130px 0
     background-color light-gray-bg-color !important
     {dark-pagination}
 
+.wireframe-slick-misfit
+    padding 0 40px
+
 .thanks-panel-misfit
     background-color white
 
 .previous-project-panel-misfit
-    background url('../assets/Sartorial/Marquee/Letter.png') center center no-repeat
-    background-color sartorial-jumbo-bg-color
-    background-size 28%
-    width 100%
+    background-color #b8c9da
 
 .next-project-panel-misfit
-    background url('../assets/Tidal/Marquee/Tidal_Marquee.png') center center no-repeat
-    background-size cover
-    width 100%
+    background-color #728a83
+    
+/*
+    Nomad
+*/
 
+.jumbotron-nomad
+    width 100%
+    height 685px
+    background-color #434545
+    & img
+        max-height 730px
+        
+.nomad-planning-panel
+    padding 140px 0 100px 0 
+    max-width 939px
+    & span
+        font 600 1.6rem font-dagny
+        color light-gray
+        letter-spacing -0.01em
+    & p
+        color darker-gray
+        font 400 2.4rem font-chaparral
+        text-align center
+        letter-spacing -0.02em
+        line-height 36px
+        margin-top 50px
+        
+.product-shots-panel-nomad
+    {dark-pagination}
+    & img
+        width 100%
+        
+.nomad-research-panel
+    background-color #f5f5f5
+    & span.panel-header-titles-tight
+        margin-top 100px
+    & div.research-container
+        margin-top 30px
+        margin-bottom 124px
+        max-width 920px
+        & div.research-col-container
+            margin 0 5%
+            width 100%           
+        & div.research-results
+            max-width 420px
+            margin-top 50px
+            & span.nomad-percent
+                color #595959
+                font 600 5.2rem font-soleil
+                letter-spacing -0.03rem
+                margin-bottom 10px
+            & span.nomad-research-header
+                font 600 2rem font-soleil
+                color #65b0b3
+                letter-spacing -0.01em
+                margin-bottom 10px
+            & p
+                font 400 1.8rem font-dagny
+                line-height 32.5px
+                letter-spacing -0.012em
+                color #737373
+
+.nomad-archetypes-panel
+    & span.panel-header-titles-tight
+        margin-top 100px
+        margin-bottom 80px
+    & p.archetypes-text
+        color darker-gray
+        font 400 2.4rem font-chaparral
+        text-align center
+        letter-spacing -0.02em
+        line-height 36px
+        padding 0 17%
+    & div.archetypes-container
+        margin 134px 0
+        & div.user-archetype
+            & div.glyph-container
+                height 180px
+            & span
+                margin-top 50px
+                font 600 3.2rem font-soleil
+                color #595959
+                letter-spacing -0.03em
+            & p
+                margin-top 20px
+                font 400 1.8rem font-dagny
+                color #808080
+                line-height 32.5px
+                letter-spacing -0.01em
+                padding 0 9%
+
+.nomad-solution-panel
+    background-color #fcfcfc
+                
+.nomad-wireframes-panel
+    {dark-pagination}
+    background-color #434545
+    padding-bottom 100px
+    & span.panel-header-titles-tight
+        margin-bottom 50px
+    & p.wireframes-opener
+        font 400 2.5rem font-chaparral
+        color #edf0f2
+        line-height 40px
+        letter-spacing -0.02em
+    & div.nomad-wireframe-inner-panel
+        padding 0 6%
+        & img.nomad-wireframe-image
+            max-width 90%
+            max-height 675px
+            margin auto
+        & div.nomad-wireframe-breakdown-container
+            padding 0 8%
+            & div.nomad-wireframe-main-info
+                & span.wireframe-main-info-title
+                    font 600 3.6rem font-soleil
+                    color #ffffff
+                    letter-spacing -0.03em
+                & span.wireframe-main-info-device
+                    font 600 2rem font-soleil
+                    color #fafafa
+                    letter-spacing -0.02em
+                & p.wireframe-main-info-body
+                    font 400 1.8rem font-dagny
+                    color #949291
+                    line-height 27.5px
+                    margin-top 36px
+            & div.wireframe-explanations
+                & span.wireframe-explanations-number
+                    font 400 1.6rem font-soleil
+                    color nomad-blue
+                    margin-top 45px
+                & span.wireframe-explanations-title
+                    font 600 2rem font-soleil
+                    color nomad-blue
+                    letter-spacing -0.01em
+                & p.wireframe-explanations-body
+                    font 400 1.8rem font-dagny
+                    color #949291
+                    line-height 27.5px
+.final-designs-panel-nomad 
+    & img
+        margin-left auto !important
+        margin-right auto !important
+
+.previous-project-panel-nomad
+    background-color #e98b6a
+        
+.next-project-panel-nomad
+    background-color #72b0cd
+
+/*
+    Concerto
+*/
+
+.jumbotron-concerto
+    width 100%
+    height 685px
+    background linear-gradient(to top, #1d1c21, #272529)
+
+.product-shots-panel-concerto
+    background-color black
+    
+.data-visualization-panel-concerto
+    background-color #f5f5f5
+    padding-top 148px    
+    & p.data-visualization-text
+        font 400 2.5rem font-chaparral
+        color darker-gray
+        letter-spacing -0.02em
+        text-align center
+        line-height 40px
+        max-width 920px
+        margin-top 60px
+        margin-bottom 78px
+
+    & div.d-v-panel-1
+        margin-top 130px
+        & div.data-visualizations-info-container
+            margin-top 50px
+        & div.concerto-gif-container-1
+            padding-right 110px
+    & div.d-v-panel-2
+        margin-top 170px
+        & img 
+            margin-left 80px
+    & div.d-v-panel-3
+        margin-top 40px
+        padding-right 0 !important
+        & div.data-visualizations-info-container
+            margin-top 140px
+    & div.d-v-panel-4
+        margin-top 120px
+    & div.data-visualizations-container-concerto
+        & div.concerto-visual-panels-container
+            width 100%
+            padding 0 10%
+        & div.concerto-gif-container
+            margin 0 20px
+        & img.concerto-hover-states-limit
+            max-width 560px
+        & div.data-visualizations-info-container
+            max-width 460px
+            & span.data-visualizations-title
+                font 600 3rem font-soleil
+                color #e47661
+                letter-spacing -0.03em
+                line-height 100%
+                margin-bottom 20px
+            & p.data-visualizations-body
+                font 400 1.8rem font-dagny
+                color #949291
+                line-height 30px
+        & div.concerto-hover-states-limit
+            max-width 430px
+        & div.concerto-gif-container-1
+            max-width 420px
+            & img
+                width 100%
+        & div.concerto-gif-container-3
+            & img
+                width 100%
+        & div.d-v-container-3
+            padding-top 150px
+        & div.d-v-container-4
+            padding-top 70px
+        & div.concerto-gif-container-4
+            max-width 640px
+            & img
+                width 100%
+    div.concerto-hover-states-btn-container
+        width 280px
+        & div.hover-states-btn
+            margin-top 44px
+            text-align center
+            border 1px solid light-gray
+            height 32px
+            & span
+                font 600 1.1rem font-soleil
+                color light-gray
+                letter-spacing 0.05em
+                line-height 100%
+        & div.right-hover-btn
+            border-left 0
+    
+        
+
+.final-designs-panel-concerto
+    {dark-pagination}
+    & div.inner-final-concerto-img-holder
+            max-width 980px
+.previous-project-panel-concerto
+    background-color #72b0cd
+.next-project-panel-concerto
+    background-color #b8c9da
+
+
+.d-v-button-clicked
+    background-color darker-gray
+    color #ffffff
+                
+.deck-panel-concerto
+    padding 118px 0 122px 0
+    background-color #f5f5f5
+    box-shadow 0 10px 10px -10px medium-gray
+    z-index 1
+    & span
+        color light-gray
+    & p
+        font 400 2.5rem font-chaparral
+        color darker-gray
+        text-align: center
+        letter-spacing -0.02em
+        line-height 40px
+        padding 0 15%  
+        margin-top 63px
+        margin-bottom 40px
+    & a.concerto-deck-btn-link
+        & div.concerto-deck-btn
+            text-align center
+            width 220px
+            height 60px
+            background-color darker-gray
+            color #efefef
+            
+            border-radius 40px
+            font 600 1.8rem font-dagny
+            letter-spacing -0.02em
+            transition all 0.25s ease
+            &:hover
+                background-color light-gray
+                color #f5f5f5

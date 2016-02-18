@@ -1,0 +1,53 @@
+{
+        "id": "concerto",
+        "name": "Concerto",
+        "type": "Tablet/Mobile app",
+        "description": "Ever wonder where music artists make all that sweet dough? This case studies explores the world of music concerts, the cost it takes to bring them to the people and the profit margins musicians see from it.",
+        "letter_path": "../../assets/letters/C.png",
+        "preview_image_path": "../assets/homepage-devices/concerto-macbook.png",
+        "marquee_image": "../assets/Concerto/Marquee/C.png",
+        "brief": "Did you know that live performances make up 80% of an artist's income? That's why many artists fo all out during their concert tours, to give their fans the best experience possible listening to live music.",
+        "sub_brief": "We often see gigantic vieo screen, spectacular fireworks and intense tour schedules. But does more in quantity bring up an artist more income? Concerto is a data visualization prototype that takes a look at the top 20 grossing concert tours of all time. We take a look at the \"ingrediant\" of a tour and see what it takes to make a top grossing concert.",
+        "client": "School project",
+        "role": "Concept, user experience, visual design and animation",
+        "duration": "8 week, Fall 2015",
+        "data_visualization_text": "It was a challenge to design for a data visualization which has many layers of information. I was able to solve this problem of layering through progressive disclosure, highlighted below:",
+        "deck_conclusion": "Read about the process of this project in more detail.",
+        "data_visualizations": [
+                {
+                        "title": "Special Effects & Tour Stats",
+                        "body": "The concert tours are dividd into two sections, where users can either view the data by special effects or by tour statitstics. Each concert tour is represented by a circle. The size of the circle correlates to the total gross of the concert.",
+                        "gif_1": "../assets/Concerto/Data_Visualizations/01(a).gif",
+                        "gif_2": "../assets/Concerto/Data_Visualizations/01(c).gif",
+                        "gif_3": "../assets/Concerto/Data_Visualizations/01(b).gif"
+                },
+                {
+                        "title": "Filter",
+                        "body": "Both the Special Effects page and Tour Statistics page have filters that allow the users to change the measurements shown on the y-axis.",
+                        "gif_1": "../assets/Concerto/Data_Visualizations/02.gif"
+                },
+                {
+                        "title": "Hover States",
+                        "body": "When a user hovers over a concert bubble, the bubble expands to display more information, including the name of concert tour and the artist. Other concept bubbles will shrink.",
+                        "gif_1": "../assets/Concerto/Data_Visualizations/03(a).gif",
+                        "gif_2": "../assets/Concerto/Data_Visualizations/03(b).gif"
+                },
+                {
+                        "title": "Concerto Tour Map",
+                        "body": "When a user clicks on a bubble, it will take them to a Concert Tour Map page. The map highlights the cities where a tour performed. The size of the rings are correlated to the attendance during the concert.",
+                        "gif_1": "../assets/Concerto/Data_Visualizations/04.gif"
+                }
+        ],
+        "visual_design_text": "In relation to the energy and iredescent quality of concerts, I wanted Concerto's visual design to be just as vibrant and colorful; paired with simple and clean typography.",
+        "moodboard": "../assets/Concerto/Moodboard/moodboard.png",
+        "product_images": [
+                "../assets/Concerto/Product_Shots/Shot_1.png"
+        ],
+        "final_design_images": [
+                "../assets/Concerto/Final_Designs/1.png",
+                "../assets/Concerto/Final_Designs/2.png",
+                "../assets/Concerto/Final_Designs/3.png",
+                "../assets/Concerto/Final_Designs/4.png",
+                "../assets/Concerto/Final_Designs/5.png"
+        ]
+}
