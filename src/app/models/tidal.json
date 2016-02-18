@@ -50,7 +50,7 @@
                 {
                         "image": "../assets/Tidal/Wireframes/1.png",
                         "title": "Warnings",
-                        "summary": "Tidal's warning screens alert users of natural disasters, earthquakes, or tsunamis) that threaten them.",
+                        "summary": "Tidal's warning screens alert users of natural disasters (earthquakes and tsunamis) that threaten them.",
                         "number": "01",
                         "explanations": [
                                 {
@@ -61,12 +61,12 @@
                                 {
                                         "number": "02",
                                         "title": "Earthquake Diagram",
-                                        "body": "The epicenter shows the source of the earthquake. While the rings around the epicenter will animate to show the earthquake pule in real time. Earthquake tremors are represented in transparent circls."
+                                        "body": "The epicenter shows the source of the earthquake. While the rings around the epicenter will animate to show the earthquake pulse in real time. Earthquake tremors are represented in transparent circles."
                                 },
                                 {
                                         "number": "03",
                                         "title": "Earthquake Details",
-                                        "body": "More details about the earthquake in relation to a user, including: an earthcountdown timer, expected magnitude of the earthquake, and the intensity of the earthquake."
+                                        "body": "More details about the earthquake in relation to a user, including: an earthquake countdown timer, expected magnitude of the earthquake, and the intensity of the earthquake."
                                 }
                         ]
                 },
@@ -107,7 +107,7 @@
                                 {
                                         "number": "01",
                                         "title": "Family First",
-                                        "body": "One a route is chose, it will by default show a route where the user will be able to pick up a family member."
+                                        "body": "Once a route is chosen, it will by default show a route where the user will be able to pick up a family member."
                                 },
                                 {
                                         "number": "02",
@@ -122,7 +122,7 @@
                                 {
                                         "number": "04",
                                         "title": "Evacuation Center",
-                                        "body": "Important deatils of the evacuation center is displayed on a modal window. Only half of the modal is show, a user can swipe to display the full window to learn more."
+                                        "body": "Important details of the evacuation center is displayed on a modal window. Only half of the modal is show, a user can swipe to display the full window to learn more."
                                 }
                         ]
                 },
@@ -135,7 +135,7 @@
                                 {
                                         "number": "01",
                                         "title": "Clear Directions",
-                                        "body": "Directions to help the user nabigate his/her way to the evacuation route. Including an arrow to show the direction and a distance indicator to coutdown how much further before a user's next step."
+                                        "body": "Directions to help the user navigate his/her way to the evacuation route. Including an arrow to show the direction and a distance indicator to countdown how much further before a user's next step."
                                 },
                                 {
                                         "number": "02",

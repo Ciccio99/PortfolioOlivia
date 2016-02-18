@@ -6,17 +6,17 @@
         "letter_path": "../../assets/letters/C.png",
         "preview_image_path": "../assets/homepage-devices/concerto-macbook.png",
         "marquee_image": "../assets/Concerto/Marquee/C.png",
-        "brief": "Did you know that live performances make up 80% of an artist's income? That's why many artists fo all out during their concert tours, to give their fans the best experience possible listening to live music.",
-        "sub_brief": "We often see gigantic vieo screen, spectacular fireworks and intense tour schedules. But does more in quantity bring up an artist more income? Concerto is a data visualization prototype that takes a look at the top 20 grossing concert tours of all time. We take a look at the \"ingrediant\" of a tour and see what it takes to make a top grossing concert.",
+        "brief": "Did you know that live performances make up 80% of an artist's income? Which is why many artists strive to give audiences the best concert experience possible.",
+        "sub_brief": "I was particularly interested in analyzing special effects and scale of top grossing concerts. I wanted to solve the question: do these two features correlate with the revenue that artists gain from concerts? Concerto is a data visualization prototype that takes a look at the top 20 grossing concert tours of all time. We take a look at the \"ingredients\" of a tour and see what it takes to make a top grossing concert.",
         "client": "School project",
         "role": "Concept, user experience, visual design and animation",
-        "duration": "8 week, Fall 2015",
+        "duration": "8 weeks, Fall 2015",
         "data_visualization_text": "It was a challenge to design for a data visualization which has many layers of information. I was able to solve this problem of layering through progressive disclosure, highlighted below:",
         "deck_conclusion": "Read about the process of this project in more detail.",
         "data_visualizations": [
                 {
                         "title": "Special Effects & Tour Stats",
-                        "body": "The concert tours are dividd into two sections, where users can either view the data by special effects or by tour statitstics. Each concert tour is represented by a circle. The size of the circle correlates to the total gross of the concert.",
+                        "body": "The concert tours are divided into two sections, where users can either view the data by special effects or by tour statitstics. Each concert tour is represented by a circle. The size of the circle correlates to the total gross of the concert.",
                         "gif_1": "../assets/Concerto/Data_Visualizations/01(a).gif",
                         "gif_2": "../assets/Concerto/Data_Visualizations/01(c).gif",
                         "gif_3": "../assets/Concerto/Data_Visualizations/01(b).gif"
@@ -28,7 +28,7 @@
                 },
                 {
                         "title": "Hover States",
-                        "body": "When a user hovers over a concert bubble, the bubble expands to display more information, including the name of concert tour and the artist. Other concept bubbles will shrink.",
+                        "body": "When a user hovers over a concert bubble, the bubble expands to display more information, including the name of the tour and the artists. Other the concert bubbles will minimize.",
                         "gif_1": "../assets/Concerto/Data_Visualizations/03(a).gif",
                         "gif_2": "../assets/Concerto/Data_Visualizations/03(b).gif"
                 },

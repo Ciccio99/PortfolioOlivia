@@ -32,6 +32,9 @@
     box-shadow 0 10px 10px -10px medium-gray
     z-index 1
     
+.panel-p-width-limit
+    max-width 940px
+    
 /*Brief section*/
 .brief-panel
     padding 177px 9% 195px 9%
@@ -187,6 +190,9 @@
     {light-pagination}
     & span.panel-header-titles
         color #fcfeff
+    & div.wireframe-slick
+        & img
+            padding 0 8%
 
 .final-designs-panel-sartorial
     {dark-pagination}
@@ -324,6 +330,8 @@
 
 .visual-design-panel-tidal
     background-color light-gray-bg-color
+    & img 
+        width 100%
     
 .final-designs-panel-tidal
     background-color light-gray-bg-color !important
@@ -629,11 +637,15 @@
             text-align center
             border 1px solid light-gray
             height 32px
+            cursor pointer
             & span
                 font 600 1.1rem font-soleil
                 color light-gray
                 letter-spacing 0.05em
                 line-height 100%
+            &:focus
+                outline none
+                border 0
         & div.right-hover-btn
             border-left 0
     
@@ -641,8 +653,10 @@
 
 .final-designs-panel-concerto
     {dark-pagination}
-    & div.inner-final-concerto-img-holder
-            max-width 980px
+    & div.concerto-final-design-img-holder
+        padding 0 5%
+    & img.concerto-final-design-img
+        width 100%
 .previous-project-panel-concerto
     background-color #72b0cd
 .next-project-panel-concerto

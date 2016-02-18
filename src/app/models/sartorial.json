@@ -7,13 +7,13 @@
         "preview_image_path": "../assets/homepage-devices/sartorial-iphone.png",
         "marquee_image": "../assets/Sartorial/Marquee/Letter.png",
         "brief": "Clothing is a product essential to our daily lives. However, too often we get into a rut when it comes to dressing up; we have favorite outfits that we wear over and over again.",
-        "sub_brief": "In this school, project we were challenged to think of a creative solution to a problem using a mobile photosharing app. Aside from content sharing platform, I wanted the app to challenge the user's creativity regularaly, as well as build brand loyalty between clothes lovers and their favorite brands.",
+        "sub_brief": "In this project we were challenged to think of a creative solution to a problem using a mobile photosharing app. Aside from content sharing platform, I wanted the app to challenge the user's creativity regularly, as well as build brand loyalty between consumers and their favorite brands.",
         "client": "School project",
         "role": "Concept, user experience and visual design",
         "duration": "9 weeks, Spring 2015",
-        "solution": "A mobile application that challenges our habits and makes dressing up fun. Sartorial provides color palettes based on real time weather; challenging users to create a new looks using color pallete.",
+        "solution": "A mobile application that challenges our habits and makes dressing up fun. Sartorial provides color palettes based on real time weather; challenging the user to create a new looks using a color pallete.",
         "wireframes_text": "Sartorial's core features addresses three objectives that pertains to a fashionista: what to wear, sharing photos of outfits, and brand loyalty.",
-        "visual_design_text": "I wanted Sartorial's visual language to reflect the elegant, bold, feminine and clean design or editorial magazines.",
+        "visual_design_text": "I wanted Sartorial's visual language to reflect the elegant, bold, feminine and clean design of editorial magazines.",
         "deck_conclusion": "Sartorial adds a twist to the mundane and sometimes frustrating task of dressing up. The app challenges users to break away from habits and to be creative within certain restrictions.",
         "product_images": [
                 "../assets/Sartorial/Product_Shots/Shot_1.png",
@@ -28,7 +28,7 @@
                         [
                                 {
                                         "title": "Stay Updated",
-                                        "body": "The home screen features a user's feed that consists of posts from people that a user follows. Through the home screen a user can also access the notificans page."
+                                        "body": "The home screen features a user's feed that consists of posts from people that a user follows. Through the home screen a user can also access the notifications page."
                                 }
                         ]
 
@@ -46,7 +46,7 @@
                                 {
                                         "number": "02",
                                         "title": "Upload a photo",
-                                        "body": "After creating thir outfits, users are encouraged to upload a photo of their outfit."
+                                        "body": "After assembling an outfit for the day, users are encouraged to upload a photo of their outfit."
                                 },
                                 {
                                         "number": "03",
