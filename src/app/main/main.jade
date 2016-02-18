@@ -15,7 +15,8 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                         span.project-case-main-header.project-case-main-header-nomad {{main.case_studies[4].name}}
                     .project-case-info.project-case-info-nomad(layout='column')
                         p {{main.case_studies[4].description}}
-                        a.case-study-link(ui-sref='work({case_study: "nomad"})') view case study &#8594;
+                        a.case-study-link(ui-sref='work({case_study: "nomad"})') view case study 
+                            img(ng-src='../assets/Arrows/Main_Page_Arrow.png')
             .project-case-image-nomad.max-ipad-width
                 img.slide-animation-to-left(src='{{main.case_studies[4].preview_image_path}}' alt='Nomad tablet image')
 
@@ -29,7 +30,8 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                         span.project-case-main-header.project-case-main-header-tidal {{main.case_studies[1].name}}
                     .project-case-info.project-case-info-tidal(layout='column')
                         p {{main.case_studies[1].description}}
-                        a.case-study-link(ui-sref='work({case_study: "tidal"})') view case study &#8594;
+                        a.case-study-link(ui-sref='work({case_study: "tidal"})') view case study
+                            img(ng-src='../assets/Arrows/Main_Page_Arrow.png')
 
         .project-cases-item.project-case-item-concerto(layout='row')
             .project-case-item-info-panel(flex='60', layout='column', layout-align='start center')
@@ -39,7 +41,8 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                         span.project-case-main-header.project-case-main-header-concerto {{main.case_studies[2].name}}
                     .project-case-info.project-case-info-concerto(layout='column')
                         p {{main.case_studies[2].description}}
-                        a.case-study-link(ui-sref='work({case_study: "concerto"})') view case study &#8594;
+                        a.case-study-link(ui-sref='work({case_study: "concerto"})') view case study
+                            img(ng-src='../assets/Arrows/Main_Page_Arrow.png')
             .project-case-image-concerto.max-mac-width
                 img.slide-animation-to-left(src='{{main.case_studies[2].preview_image_path}}' alt='Concerto Mac image')
 
@@ -53,7 +56,8 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                         span.project-case-main-header.project-case-main-header-sartorial {{main.case_studies[0].name}}
                     .project-case-info.project-case-info-sartorial(layout='column')
                         p {{main.case_studies[0].description}}
-                        a.case-study-link(ui-sref='work({case_study: "sartorial"})') view case study &#8594;
+                        a.case-study-link(ui-sref='work({case_study: "sartorial"})') view case study
+                            img(ng-src='../assets/Arrows/Main_Page_Arrow.png')
 
         .project-cases-item(layout='row', ng-cloak)
             .project-case-item-info-panel(flex='60', layout='column', layout-align='start center')
@@ -63,10 +67,11 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                         span.project-case-main-header.project-case-main-header-misfit {{main.case_studies[3].name}}
                     .project-case-info.project-case-info-misfit(layout='column')
                         p {{main.case_studies[3].description}}
-                        a.case-study-link(ui-sref='work({case_study: "misfit"})') view case study &#8594;
+                        a.case-study-link(ui-sref='work({case_study: "misfit"})') view case study
+                            img(ng-src='../assets/Arrows/Main_Page_Arrow.png')
             .project-case-image-misfit.max-iphone-width
                 img.slide-animation-to-left(src='{{main.case_studies[3].preview_image_path}}' alt='Misfit iPhone image')
-        .main-page-social-media-panel.limit-width(layout='row')
+        .project-cases-item.main-page-social-media-panel.limit-width(layout='row', layout-align='center end' ng-cloak)
             .social-media-links
                 span
                     a(ui-sref='resume') Resume
@@ -76,3 +81,5 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                     a(href='{{main.case_studies[5].dribbble_link}}', target='_blank') Dribbble
                 span
                     a(href='{{main.case_studies[5].instagram_link}}', target='_blank') Instagram
+            .copy-right
+                span Copyright Olivia Grace 2016

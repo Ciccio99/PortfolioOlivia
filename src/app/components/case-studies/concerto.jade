@@ -20,8 +20,8 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                     span Duration
                     p {{case_study.case_study.duration}} 
 
-        .panel-row.product-shots-panel.product-shots-panel-concerto.limit-width(layout='row', layout-align='center center', ng-cloak)
-            slick.slick-carousel(infinite='false', slides-to-scroll='1', slides-to-show='1', dots='true', swipe-to-slide='true', init-onload='true', data="case_study.case_study.product_images")
+        .panel-row.product-shots-panel.product-shots-panel-concerto(layout='row', layout-align='center center', ng-cloak)
+            slick.slick-carousel.limit-width(infinite='false', slides-to-scroll='1', slides-to-show='1', dots='true', swipe-to-slide='true', init-onload='true', data="case_study.case_study.product_images")
                 div
                     <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/149517260' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
                 div(ng-repeat='prod_img in case_study.case_study.product_images')
@@ -29,29 +29,48 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
 
         .panel-row.solution-panel.data-visualization-panel-concerto(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles-tight Data Visualizations
+            p.data-visualization-text {{case_study.case_study.data_visualization_text}}
             div.data-visualizations-container-concerto.limit-width(layout='column', layout-align='start center')
-                div(layout='row', layout-align='center center')
+                div.concerto-visual-panels-container.d-v-panel-1(layout='row', layout-align='space-between')
                     div.data-visualizations-info-container(layout='column')
                         span.data-visualizations-title {{case_study.case_study.data_visualizations[0].title}}
                         p.data-visualizations-body {{case_study.case_study.data_visualizations[0].body}}
-                    div.concerto-gif-container
-                        img(ng-src="{{case_study.case_study.data_visualizations[0].gif_1}}")
-                div(layout='row', layout-align='center center')
+                        div.concerto-hover-states-btn-container(layout='row')
+                            div.hover-states-btn.left-hover-btn(layout='row', layout-align='center center', flex='50', ng-click="case_study.switchHoverStatesTo2()", ng-class="{'d-v-button-clicked': case_study.show_hover_1 || case_study.show_hover_2}") 
+                                span SPECIAL EFFECTS
+                            div.hover-states-btn.right-hover-btn(layout='row', layout-align='center center', flex='50', ng-click="case_study.switchHoverStatesTo3()", ng-class="{'d-v-button-clicked': case_study.show_hover_3}") 
+                                span TOUR STATISTICS
+                    div.concerto-gif-container-1(ng-show='case_study.show_hover_1')
+                        img(ng-src='{{case_study.case_study.data_visualizations[0].gif_1}}')
+                    div.concerto-gif-container-1(ng-show="case_study.show_hover_2")
+                        img(ng-src='{{case_study.case_study.data_visualizations[0].gif_2}}')
+                    div.concerto-gif-container-1(ng-show='case_study.show_hover_3')
+                        img(ng-src='{{case_study.case_study.data_visualizations[0].gif_3}}')
+
+                div.concerto-visual-panels-container.d-v-panel-2(layout='row', layout-align='space between')
                     div.concerto-gif-container
                         img(ng-src="{{case_study.case_study.data_visualizations[1].gif_1}}")
                     div.data-visualizations-info-container(layout='column')
                         span.data-visualizations-title {{case_study.case_study.data_visualizations[1].title}}
                         p.data-visualizations-body {{case_study.case_study.data_visualizations[1].body}}
-                div(layout='row', layout-align='center center')
-                    div.data-visualizations-info-container(layout='column')
+
+                div.concerto-visual-panels-container.d-v-panel-3(layout='row', layout-align='space between')
+                    div.data-visualizations-info-container.d-v-container-3(layout='column')
                         span.data-visualizations-title {{case_study.case_study.data_visualizations[2].title}}
                         p.data-visualizations-body {{case_study.case_study.data_visualizations[2].body}}
-                    div.concerto-gif-container
-                        img.concerto-hover-states-limit(ng-src="{{case_study.case_study.data_visualizations[2].gif_1}}")
-                div(layout='row', layout-align='center center')
-                    div.concerto-gif-container
+                        div.concerto-hover-states-btn-container(layout='row')
+                            div.hover-states-btn.left-hover-btn(layout='row', layout-align='center center', flex='50', ng-click="case_study.switchHoverStatesTo4()", ng-class="{'d-v-button-clicked': case_study.show_hover_4}") 
+                                span SPECIAL EFFECTS
+                            div.hover-states-btn.right-hover-btn(layout='row', layout-align='center center', flex='50', ng-click="case_study.switchHoverStatesTo5()", ng-class="{'d-v-button-clicked': case_study.show_hover_5}") 
+                                span TOUR STATISTICS
+                    div.concerto-gif-container-3
+                        img(ng-show='case_study.show_hover_4', ng-src="{{case_study.case_study.data_visualizations[2].gif_1}}")
+                    div.concerto-gif-container-3
+                        img(ng-show='case_study.show_hover_5', ng-src="{{case_study.case_study.data_visualizations[2].gif_2}}")
+                div.concerto-visual-panels-container.d-v-panel-4(layout='row', layout-align='space between')
+                    div.concerto-gif-container-4
                         img(ng-src="{{case_study.case_study.data_visualizations[3].gif_1}}")
-                    div.data-visualizations-info-container(layout='column')
+                    div.data-visualizations-info-container.d-v-container-4(layout='column')
                         span.data-visualizations-title {{case_study.case_study.data_visualizations[3].title}}
                         p.data-visualizations-body {{case_study.case_study.data_visualizations[3].body}}
 
@@ -64,9 +83,16 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
         .panel-row.final-designs-panel.final-designs-panel-concerto.limit-width(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles-tight Final Designs
             div(layout='row')
-                slick.slick-carousel(infinite='false', slides-to-scroll='1', dots='true', swipe-to-slide='true',init-onload='true', data="case_study.case_study.final_design_images")
-                    div(ng-repeat='final_img in case_study.case_study.final_design_images')
-                        img.limit-width(ng-src='{{final_img}}', alt='Final Design image')
+                slick.slick-carousel(infinite='false', slides-to-scroll='1', dots='true', swipe-to-slide='true',init-onload='true', center-mode='true', data="case_study.case_study.final_design_images")
+                    div.concerto-final-img-holder(ng-repeat='final_img in case_study.case_study.final_design_images')
+                        div.inner-final-concerto-img-holder.centered
+                            img.limit-width(ng-src='{{final_img}}', alt='Final Design image')
+        .panel-row.deck-panel-concerto(layout='column', layout-align='start center', ng-cloak)
+            span.panel-header-titles-tight Liked this Project?
+            p {{case_study.case_study.deck_conclusion}}
+            a.concerto-deck-btn-link(href="../assets/Concerto/concerto-deck.pdf", target="_blank")
+                div.concerto-deck-btn(layout='row', layout-align='center center')
+                    | View Process Deck
 
         .panel-row.thanks-panel(layout='column', layout-align='center center', ng-cloak)
             span Thanks for scrolling!

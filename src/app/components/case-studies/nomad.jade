@@ -99,11 +99,11 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
             .limit-width 
                 img(ng-src='{{case_study.case_study.moodboard}}', alt='Sartorial Moodboard')
 
-        .panel-row.final-designs-panel.final-designs-panel-sartorial(layout='column', layout-align='start center', ng-cloak)
+        .panel-row.final-designs-panel.final-designs-panel-nomad(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles-tight Final Designs
-            slick.slick-carousel(infinite='false', slides-to-scroll='1', center-mode='true', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images", layout='row', layout-align='center center')
-                div(layout='row',layout-align='center center', ng-repeat='final_img in case_study.case_study.final_design_images')
-                    img.centered.image-width-limit(ng-src='{{final_img}}', alt='Final Design image')
+            slick.slick-carousel(infinite='false', slides-to-show='1', variable-width='true', center-mode='true', dots='true', swipe-to-slide='true', init-onload='true' data="case_study.case_study.final_design_images")
+                div(ng-repeat='final_img in case_study.case_study.final_design_images')
+                        img(ng-src='{{final_img}}', alt='Final Design image')
 
         .panel-row.thanks-panel(layout='column', layout-align='center center', ng-cloak)
             span Thanks for scrolling!

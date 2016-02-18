@@ -19,7 +19,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
                 div
                     span Duration
                     p {{case_study.case_study.duration}} 
-        .panel-row.product-shots-panel(layout='row', layout-align='center center', ng-cloak)
+        .panel-row.product-shots-panel.limit-width(layout='row', layout-align='center center', ng-cloak)
             img(ng-src='{{case_study.case_study.product_images[0]}}', alt='Product image')
 
         .panel-row.final-designs-panel.final-designs-panel-misfit(layout='column', layout-align='start center', ng-cloak)

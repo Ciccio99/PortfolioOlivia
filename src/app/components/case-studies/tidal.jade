@@ -60,7 +60,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
 
         .panel-row.final-designs-panel.final-designs-panel-tidal(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Final Designs
-            slick.slick-carousel(infinite='false', center-mode="true", slides-to-show='3', dots='true', swipe-to-slide='true', variable-width='true', init-onload='true' data="case_study.case_study.final_design_images")
+            slick.slick-carousel(infinite='false', slides-to-show='1', variable-width='true', center-mode='true', dots='true', swipe-to-slide='true', init-onload='true' data="case_study.case_study.final_design_images")
                 div.wireframe-slick(ng-repeat='final_img in case_study.case_study.final_design_images')
                     img(ng-src='{{final_img}}', alt='Final Design image')
 

@@ -3,7 +3,7 @@
         "id": "sartorial",
         "name": "Sartorial",
         "type": "Mobile app",
-        "description": "Challenge creativity on a daily basis, through a photo sharing platform and also build brand loyalty.",
+        "description": "Make dressing up fun and challenge your creativity on a daily basis through this photo sharing platform.",
         "letter_path": "../assets/letters/S.png",
         "preview_image_path": "../assets/homepage-devices/sartorial.png"
     },
@@ -11,7 +11,7 @@
         "id": "tidal",
         "name": "Tidal",
         "type": "Mobile app",
-        "description": "Is there a way tsunami impact could be reduced? This project focused on procedural design for an earthquake and tsunami evacuation.",
+        "description": "What if there was a way to reduce the impact of a tsunami? This project explores procedural design for an earthquake and tsunami evacuation.",
         "letter_path": "../assets/letters/T.png",
         "preview_image_path": "../assets/homepage-devices/tidal.png"
     },
@@ -27,7 +27,7 @@
         "id": "misfit",
         "name": "Misfit Wearables Internship",
         "type": "Mobile app",
-        "description": "During the Summer of 2015, I had the opportunity to work at Misfit Wearables as a user experience designer. Here's a sneak peek of some of the work I did.",
+        "description": "During the Summer of 2015, I had the opportunity to work at Misfit Wearables as a user experience designer. Here's a sneak peek of some of the work I did during my internship.",
         "letter_path": "../assets/letters/M.png",
         "preview_image_path": "../assets/homepage-devices/misfit.png"
     },
@@ -35,7 +35,7 @@
         "id": "nomad",
         "name": "Nomad",
         "type": "Multi-platform app",
-        "description": "Going on a vacation involves a lot of planning. Skip the tedious process of planning a vacation and get an experience that's tailored to your taste.",
+        "description": "Skip the tedious process of planning your vacation and get an experience that is tailored to your taste.",
         "letter_path": "../assets/letters/N.png",
         "preview_image_path": "../assets/homepage-devices/nomad.png"
     },

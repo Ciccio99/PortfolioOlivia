@@ -2,21 +2,21 @@
         "id": "Nomad",
         "name": "Nomad",
         "type": "Tablet/Mobile app",
-        "description": "Going on a vacation involves a lot of planning. There should be an easier way to travel while skipping this tedious process, and get an experience which is tailored to one's tastes.",
+        "description": "Going on a vacation involves a lot of planning. There should be an easier way to travel while skipping this tedious process, and still get an experience that is tailored to one's tastes.",
         "letter_path": "../../assets/letters/N.png",
         "preview_image_path": "../assets/homepage-devices/nomad-tablet.png",
         "marquee_image": "../assets/Nomad/Marquee/N.png",
-        "brief": "Going on a vacation involves a lot of planning. There should be an easier way to travel while skipping this tedious process, and get an experience which is tailored to one's tastes.",
-        "sub_brief": "Personally, I hate planning an itinerary when I travel. I prefer to jump straight into the phase where I get lost exporing my new surroundings. When challenged to reimagine the potential use of real time data, my thought went straight to tackling the problem of travel planning.",
+        "brief": "Going on a vacation involves a lot of planning. There should be an easier way to travel while skipping this tedious process, and still get an experience that is tailored to one's tastes.",
+        "sub_brief": "When challenged to reimagine the potential use of real time data, my thought went straight to the problem of travel planning. I found that more often than not, planning a vacation negates the essence of being an explorer. Through information on a user's real-time location, I wanted to streamline the planning process and let the users jump straight into their adventure.",
         "client": "School project",
-        "role": "Concept, user experience, and visual design",
-        "duration": "8 week, Fall 2015",
-        "planning": "Before beginning to design a solution, I conducted a survey to discover people's behaviors. Through the 60 people which I surveyed, I focused on two stages of traveling pre-trip and on the trip. From the survey, I gathered the following results:",
-        "wireframe_text": "Different devices are optimal in different stages of travel planning. Nomad offers a holistic approach to traveling, from choosing a destination to following an itinerary through a cross platform app.",
-        "solution": "Reimagine the process of planning a trip through a real time travel itinerary. A multiplatform app which helps people plan for their travels. Talk about being catered to a user's tastes, real time and multiplatform.",
+        "role": "Concept, research, user experience, and visual design",
+        "duration": "10 weeks, Fall 2015",
+        "planning": "Before beginning to design a solution, I conducted a survey to discover people's behaviors regarding travel planning. I focused on researching two stages: before the trip and during the trip. Out of the 60 people that completed the survey, I gathered the following results:",
+        "wireframe_text": "Different devices are optimal in different stages of travel planning. From choosing a destination to following an itinerary, Nomad offers a holistic approach to traveling through its cross-platform app.",
+        "solution": "Reimagine the process of travel planning through a real time travel itinerary. Nomad is a multi-platform app which helps people plan their vacation, by suggesting sights and activities that is tailored to their tastes.",
         "visual_design_text": "I wanted Nomad's interface to be war, friendly, nostalgic, and relaxing to the user. The imagery used throughout the app should also be vibrant and colorful.",
         "moodboard": "../assets/Nomad/Moodboard/moodboard.png",
-        "archetype_text": "After the survey, I conducted addition interviews to gain more insight on how people plan and travel on a trip. From the inteeviews, I was able to distinguish three user archetypes:",
+        "archetype_text": "After the survey, I conducted additional interviews to gain more insight on how people plan and travel on a trip. From the interviews, I was able to distinguish three distinct user archetypes:",
         "product_images": [
                 "../assets/Nomad/Product_Shots/Shot_1.png",
                 "../assets/Nomad/Product_Shots/Shot_2.png",
@@ -65,7 +65,7 @@
                 {
                         "image": "../assets/Nomad/Glyphs/glyph_1.png",
                         "title": "Easy Going",
-                        "body": "These nomads are free spriited and really enjoy wondering around a new city. They like to take their time and usually don't have a solid plan."
+                        "body": "These nomads are free spirited and really enjoy wondering around a new city. They like to take their time and usually don't have a solid plan."
                 },
                 {
                         "image": "../assets/Nomad/Glyphs/glyph_2.png",
@@ -178,7 +178,7 @@
                                 {
                                         "number": "02",
                                         "title": "Options to your search results",
-                                        "body": "Search by filling in the blanks."
+                                        "body": "The search results are displayed in cards which can be quickly digested."
                                 }
                         ]
                 }

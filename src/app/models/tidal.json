@@ -8,31 +8,31 @@
         "marquee_image": "../assets/Tidal/Marquee/Marquee.png",
         "brief": "On December 26, 2004, the Indian Ocean was hit by a 9.1 magnitude earthquake. The earthquake triggered a massive tsunami which took hundreds of thosands of lives and devasted many countries.",
         "sub_brief": "There were no official government warnings issued in countries that were in the Indian Ocean tsunami's path because of official procedures were not in place and disorganized responses. Many people at the time were not aware of the tsunami that was heading towards them. Even though a tsunami is not preventable, the impact could of been reduced if people were alert and aware of what was happening.",
-        "client": "school project",
-        "role": "concept, user experience and visual",
+        "client": "School project",
+        "role": "Concept, user experience and visual design",
         "duration": "12 weeks, Fall 2014",
         "solution": "A tsunami warning and emergency guide that is accessible in digital form. The guide will provide a method of wayfinding to people to reach safety and inform users of the steps to take in real-time. Core features include:",
         "deck_conclusion": "Tidal aims to make information and data available for users who are in threat of natural disasters. By making users aware of a natural disaster, Tidal hopes to decrease the aftermath of such events, namely death and displacement.",
         "sub_solutions": [
                 {
                         "title": "Natural Disaster Monitor",
-                        "body": "Tidal has an early earthquake warning system, as well as a tsunami warning system that alerts users of the app whenever they are in a threatening situation",
+                        "body": "Tidal has an early earthquake warning system, and a tsunami warning system that alerts users whenever they are in a threatening situation.",
                         "image": "../assets/Tidal/Solutions/1.png"
                 },
                 {
                         "title": "Automated Wayfinding",
-                        "body": "Tidal provides the users with an evacuation guideline.",
+                        "body": "Tidal establishes and provides users with a clear procedure to navigate to safety.",
                         "image": "./assets/Tidal/Solutions/2.png"
                 },
                 {
                         "title": "Family Monitoring",
-                        "body": "For those who are family oriented, Tidal automatically plans a route based on their family members wherabouts.",
+                        "body": "Tidal helps to minimize family members being displaced by being able to plan routes based on their family members' wherabouts.",
                         "image": "./assets/Tidal/Solutions/3.png"
                 }
         ],
-        "wireframe_text": "Different devices are optimal in different stages of travel planning. Tidal offers a holistic approach to traveling, from choosing a destination to following an itinerary through a cross platform app.",
+        "wireframe_text": "Tidal's user experience is rooted in procedural design. Tidal's experience is divided into three stages: the initial warning, wayfinding and notifications.",
 
-        "visual_design_text": "A tsunami warning and emergency guide that is accessible in digital form. The guide will provide a method of wayfinding to people to reach safety.",
+        "visual_design_text": "Because of its nature as an evacuation guide, Tidal's visual language cannot afford to distract users. Vibrant colors and larger font sizes are used only to highlight important content.",
         "product_images": [
                 "../assets/Tidal/Product_Shots/1.png",
                 "../assets/Tidal/Product_Shots/2.png"

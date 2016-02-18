@@ -24,6 +24,11 @@
 	
 /* Shared case study styling elements*/
 
+.case-study-link
+	& img
+		padding-left 20px
+		width 27px
+
 .max-ipad-width
 	max-width 1077px
 	& img
@@ -104,6 +109,8 @@
 	left 14%
 	right 0
 	margin-top 150px
+	& div.project-case-headers
+		padding-left 27px
 
 .project-case-info-nomad
 	padding-left 16%
@@ -207,11 +214,11 @@
 
 .main-page-social-media-panel
 	position relative
-	& div
+	max-height 120px
+	& div.social-media-links
 		position absolute
-		margin-top 123px
-		margin-bottom 112px !important
-		left 8%
+		margin-bottom 0px !important
+		left 9%
 		& span
 			&:not(:last-child)
 				margin-right 12%
@@ -220,3 +227,10 @@
 				color #949499
 				&:hover
 					color #279b92
+	& div.copy-right
+		position absolute
+		right 8.5%
+		& span
+			font 400 1.6rem font-dagny
+			color #c0c0c0
+			
