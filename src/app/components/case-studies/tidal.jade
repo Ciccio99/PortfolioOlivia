@@ -55,8 +55,9 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
 
         .panel-row.visual-design-panel.visual-design-panel-tidal(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Visual Design
-            p.limit-width {{case_study.case_study.visual_design_text}}
-            img(ng-src='{{case_study.case_study.moodboard}}', alt='Sartorial Moodboard')
+            p.panel-p-width-limit {{case_study.case_study.visual_design_text}}
+            div.limit-width
+                img(ng-src='{{case_study.case_study.moodboard}}', alt='Sartorial Moodboard')
 
         .panel-row.final-designs-panel.final-designs-panel-tidal(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles Final Designs

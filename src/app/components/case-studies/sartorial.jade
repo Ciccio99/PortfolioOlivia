@@ -31,7 +31,7 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
         .panel-row.wireframes-panel.wireframes-panel-sartorial(layout='column', layout-align='center center', ng-cloak)
             span.panel-header-titles Wireframes
             p.wireframes-opener {{case_study.case_study.wireframes_text}}
-            slick.slick-carousel(infinite='true', slides-to-scroll='1', slides-to-show='1', center-mode='true', dots='true', swipe-to-slide='true', variable-width='false', init-onload='true' data="case_study.case_study.wireframe_images", ng-cloak)
+            slick.slick-carousel(infinite='true', slides-to-scroll='1', slides-to-show='1', dots='true', swipe-to-slide='true', init-onload='true' data="case_study.case_study.wireframe_images", ng-cloak)
                 div.wireframe-slick(layout='column', layout-align='start center')
                     span.wireframe-asset-title {{case_study.case_study.wireframe_images[0].title}}
                     img(ng-src='{{case_study.case_study.wireframe_images[0].image}}', alt='Wireframe image')

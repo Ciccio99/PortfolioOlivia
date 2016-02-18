@@ -80,13 +80,20 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
             .limit-width 
                 img(ng-src='{{case_study.case_study.moodboard}}', alt='concerto Moodboard')
 
-        .panel-row.final-designs-panel.final-designs-panel-concerto.limit-width(layout='column', layout-align='start center', ng-cloak)
+        //- .panel-row.final-designs-panel.final-designs-panel-concerto.limit-width(layout='column', layout-align='start center', ng-cloak)
+        //-     span.panel-header-titles-tight Final Designs
+        //-     div(layout='row')
+        //-         slick.slick-carousel(infinite='false', slides-to-scroll='1', dots='true', swipe-to-slide='true', init-onload='true', data="case_study.case_study.final_design_images")
+        //-             div.concerto-final-img-holder(ng-repeat='final_img in case_study.case_study.final_design_images')
+        //-                 img(ng-src='{{final_img}}', alt='Final Design image')
+        .panel-row.final-designs-panel.final-designs-panel-concerto(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles-tight Final Designs
-            div(layout='row')
-                slick.slick-carousel(infinite='false', slides-to-scroll='1', dots='true', swipe-to-slide='true',init-onload='true', center-mode='true', data="case_study.case_study.final_design_images")
-                    div.concerto-final-img-holder(ng-repeat='final_img in case_study.case_study.final_design_images')
-                        div.inner-final-concerto-img-holder.centered
-                            img.limit-width(ng-src='{{final_img}}', alt='Final Design image')
+            slick.slick-carousel(infinite='false', slides-to-show='1', center-mode='true', dots='true', swipe-to-slide='true', init-onload='true' data="case_study.case_study.final_design_images")
+                div(ng-repeat='final_img in case_study.case_study.final_design_images')
+                    div.concerto-final-design-img-holder
+                        img.concerto-final-design-img(ng-src='{{final_img}}', alt='Final Design image')
+
+
         .panel-row.deck-panel-concerto(layout='column', layout-align='start center', ng-cloak)
             span.panel-header-titles-tight Liked this Project?
             p {{case_study.case_study.deck_conclusion}}

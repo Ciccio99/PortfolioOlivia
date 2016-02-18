@@ -12,12 +12,11 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
         .about-third-text.about-text(ng-bind-html="about.about.third_text")
         .about-links.about-text.limt-width
             span
-                a(ui-sref='resume') Resume
+                a(href="mailto:oliviagsutanto@gmail.com?Subject=Hello%20there!" target="_top") Mail
             span
                 a(href='{{about.about.linkedin_link}}', target='_blank') LinkedIn
             span
                 a(href='{{about.about.dribbble_link}}', target='_blank') Dribbble
             span
                 a(href='{{about.about.instagram_link}}', target='_blank') Instagram
-
-
+    include ../footer/footer

@@ -74,12 +74,11 @@ md-content#Main_Content_Root(layout='column', layout-align='start center', ng-cl
         .project-cases-item.main-page-social-media-panel.limit-width(layout='row', layout-align='center end' ng-cloak)
             .social-media-links
                 span
-                    a(ui-sref='resume') Resume
+                    a(href="mailto:oliviagsutanto@gmail.com?Subject=Hello%20there!" target="_top") Mail
                 span
                     a(href='{{main.case_studies[5].linkedin_link}}', target='_blank') LinkedIn
                 span
                     a(href='{{main.case_studies[5].dribbble_link}}', target='_blank') Dribbble
                 span
                     a(href='{{main.case_studies[5].instagram_link}}', target='_blank') Instagram
-            .copy-right
-                span Copyright Olivia Grace 2016
+    include ../components/footer/footer
