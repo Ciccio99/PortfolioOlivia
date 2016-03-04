@@ -14,7 +14,7 @@
         "planning": "Before beginning to design a solution, I conducted a survey to discover people's behaviors regarding travel planning. I focused on researching two stages: before the trip and during the trip. Out of the 60 people that completed the survey, I gathered the following results:",
         "wireframe_text": "Different devices are optimal in different stages of travel planning. From choosing a destination to following an itinerary, Nomad offers a holistic approach to traveling through its cross-platform app.",
         "solution": "Reimagine the process of travel planning through a real time travel itinerary. Nomad is a multi-platform app which helps people plan their vacation, by suggesting sights and activities that is tailored to their tastes.",
-        "visual_design_text": "I wanted Nomad's interface to be war, friendly, nostalgic, and relaxing to the user. The imagery used throughout the app should also be vibrant and colorful.",
+        "visual_design_text": "I wanted Nomad's interface to be warm, friendly, nostalgic, and relaxing to the user. The imagery used throughout the app should also be vibrant and colorful.",
         "moodboard": "../assets/Nomad/Moodboard/moodboard.png",
         "archetype_text": "After the survey, I conducted additional interviews to gain more insight on how people plan and travel on a trip. From the interviews, I was able to distinguish three distinct user archetypes:",
         "product_images": [
@@ -100,7 +100,7 @@
                 {
                         "image": "../assets/Nomad/Wireframes/2.gif",
                         "title": "Plan A Trip",
-                        "device": "Tablet",
+                        "device": "Desktop",
                         "summary": "Deciding a destination can be tough, that's why Nomad is here to help!",
                         "explanations": [
                                 {
